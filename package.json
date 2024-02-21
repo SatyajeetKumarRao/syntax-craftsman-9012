@@ -1,0 +1,25 @@
+{
+  "name": "syntax-craftsman-9012",
+  "version": "1.0.0",
+  "description": "This repository is for construction week project for course JS204.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install_fe": "cd backend && npm i && cd ..",
+    "install_be": "cd frontend && npm i && cd ..",
+    "install_all": "npm run install_fe && npm run install_be",
+    "start_fe": "cd frontend && npm start && cd ..",
+    "start_be": "cd backend && npm start && cd .."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SatyajeetKumarRao/syntax-craftsman-9012.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SatyajeetKumarRao/syntax-craftsman-9012/issues"
+  },
+  "homepage": "https://github.com/SatyajeetKumarRao/syntax-craftsman-9012#readme"
+}

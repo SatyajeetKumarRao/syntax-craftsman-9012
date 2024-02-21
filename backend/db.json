@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "email": "satyajeet@gmail.com",
+      "password": "$2a$10$05QyEIKLxLILW3hmDDNa9OUN29mcCQaZy/ayj2kMLizBQyyxeI1gO",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "email": "admin1@gmail.com",
+      "password": "$2a$10$408xtkC5Bbr76dzazXf7O.P7FdspfHTQhgOgidBj1EgVmjGLIYdQO",
+      "role": "admin",
+      "id": 2
+    },
+    {
+      "email": "admin2@gmail.com",
+      "password": "$2a$10$oOrECYVDfYh.gT3r40KOb.1aZdrDiPyE0zthc7jUufGXiJN/t8IiO",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "user1@gmail.com",
+      "password": "$2a$10$0oax7Qg8ATfFNsMV1xwk5.JaX65G.nki.cRQl9yn4kX4O3/OZEpJu",
+      "role": "user",
+      "id": 4
+    }
+  ],
+  "product": [
+    {
+      "id": "1",
+      "title": "a title",
+      "views": 100
+    },
+    {
+      "id": "2",
+      "title": "another title",
+      "views": 200
+    }
+  ]
+}
