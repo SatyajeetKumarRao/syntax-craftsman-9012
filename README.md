@@ -3,7 +3,7 @@ This repository is for construction week project for course JS204.
 
 <br>
 
-# Before staring to code, Please go through the <a href="https://masai-school.notion.site/MSI-CW-Block-33-064ef60239a34a76ad8ca8ba4ed58eba?pvs=4"> notion doc</a> to understand how branching is going to work.
+# Before staring to code, Please go through the <a href="https://masai-school.notion.site/MSI-CW-Block-33-064ef60239a34a76ad8ca8ba4ed58eba?pvs=4" target="_blank"> notion doc</a> to understand how branching is going to work.
 
 
 1 - **Open any drive or folder with VS code**
