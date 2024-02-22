@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+footer {
+
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+
+    #footer {
+
+
+        color: white;
+        font-family: "Figtree", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        width: 100%;
+        max-width: 1440px;
+
+        >.f_top {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+
+        }
+
+        .heading {
+            font-size: 16px;
+        }
+
+        .f_link {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin: 0px;
+            padding: 0px;
+            gap: 15px;
+
+            >li {
+                font-size: 14px;
+
+                >a {
+                    color: white;
+                    text-decoration: none;
+                }
+
+                >a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        >.f_top>.f_top_right {
+
+            >.f_link {
+
+
+                >li:nth-of-type(1) {
+                    >img {
+                        width: 200px;
+                    }
+                }
+
+                >li:nth-of-type(2) {
+                    >a {
+                        >img {
+                            width: 100px;
+                        }
+                    }
+
+                    >.play_store_link:hover {
+                        >img {
+                            content: url(../images/google_play_light.png);
+                        }
+                    }
+
+                    >.app_store_link:hover {
+                        >img {
+                            content: url(../images/app_store_light.png);
+                        }
+                    }
+
+                }
+
+                >li:nth-of-type(5) {
+
+                    margin-top: 10px;
+
+                    >a {
+                        font-size: 12px;
+                        width: fit-content;
+                        height: fit-content;
+                        padding: 10px;
+                        border-radius: 5px;
+                        background-color: rgb(37, 37, 37);
+                    }
+
+                    >a:hover {
+                        color: black;
+                        background-color: white;
+                        text-decoration: none;
+                        transition: all .5s ease;
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .effect {
+        width: 100%;
+        letter-spacing: 3px;
+
+        .buttons {
+
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+    .effect {
+        display: flex;
+
+        a {
+            text-decoration: none !important;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            margin-right: 20px;
+            font-size: 15px;
+            overflow: hidden;
+            position: relative;
+            color: #ffffff;
+            border: 2px solid #212121;
+
+            i {
+                position: relative;
+                z-index: 3;
+            }
+
+            &:last-child {
+                margin-right: 0px;
+            }
+
+            &:before {
+                content: "";
+                display: inline-block;
+                height: 100%;
+                vertical-align: middle;
+            }
+
+            i {
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+
+    /* varrius effect */
+    .effect.varrius {
+
+        a {
+            transition: all 0.2s linear 0s;
+
+            &:after {
+                content: "";
+                display: block;
+                width: 90%;
+                height: 90%;
+                top: -110%;
+                left: 0;
+                right: 0;
+                margin: auto;
+                position: absolute;
+                background-color: #ffffff;
+                border-radius: 50%;
+            }
+
+            &:hover {
+                color: #000000;
+
+                &:after {
+                    top: 5%;
+                    transition: all 0.2s linear 0s;
+                }
+            }
+        }
+    }
+
+}
