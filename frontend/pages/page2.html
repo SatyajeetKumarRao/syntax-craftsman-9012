@@ -19,7 +19,7 @@
     body {
       display: flex;
       justify-content: center;
-      background-color: #f7f7f7;
+      background-color: #f0f0f0;
       font-family: "Poppins", sans-serif;
       font-weight: 400;
       font-style: normal;
@@ -118,8 +118,8 @@
 
     .sidebar {
       display: block;
-      width: 25%;
-      background-color: #f0f0f0;
+      width: 30%;
+      /* background-color: #d4cdcd; */
       transition: width 0.3s ease;
       overflow-y: auto;
       height: 100vh
@@ -133,6 +133,134 @@
     .custom-dropdown-menu {
       margin-top: 20px !important;
       left: -95% !important;
+    }
+
+    .fruit-vegie-card {
+      width: 90%;
+      height: 20%;
+      background-color: #fff;
+      border-radius: 2%;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+
+    .fruit-vegie-card>p>a {
+      color: #6ca609;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .fruit-vegie-card>ul {
+      list-style: none;
+    }
+
+    .rating-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .rating-container input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    /* first-dropdown */
+    .dropbtn {
+      display: flex;
+      width: 95%;
+      background-color: #f1f1f1;
+      color: black;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9a9;
+      width: 95%;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      z-index: 1;
+    }
+
+    .ratings {
+      display: flex;
+    }
+
+    .rating-option {
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+    }
+
+    .rating-option:hover {
+      background-color: #ddd;
+    }
+
+    .show {
+      display: block;
+    }
+
+    /* checkbox css */
+    .material-checkbox {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #777777;
+      cursor: pointer;
+    }
+
+    .material-checkbox input[type="checkbox"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .checkmark {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      border: 2px solid #454B00;
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+
+    .material-checkbox input[type="checkbox"]:checked~.checkmark {
+      background-color: #2F3300;
+      border-color: #454B00;
+    }
+
+    .material-checkbox input[type="checkbox"]:checked~.checkmark:after {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 6px;
+      width: 4px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .material-checkbox input[type="checkbox"]:focus~.checkmark {
+      box-shadow: 0 0 0 2px #dfec5065;
+    }
+
+    .material-checkbox:hover input[type="checkbox"]~.checkmark {
+      border-color: #C3CF34;
+    }
+
+    .material-checkbox input[type="checkbox"]:disabled~.checkmark {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    .material-checkbox input[type="checkbox"]:disabled~.checkmark:hover {
+      border-color: #4d4d4d;
     }
   </style>
 </head>
@@ -190,19 +318,46 @@
     <div class="sidebar_content">
       <!-- Sidebar starts from here -->
       <div class="sidebar" id="sidebar">
-        <h4>Shop by Categories</h4>
-        <ul>
-          <li>Fruits &#38 Vegetabes</li>
-        </ul>
+        <h6 class="fw-bold mb-2">Shop by Categories</h6>
 
-        <h4>Refined by</h4>
-        <ul>
-          <li>Product Rating</li>
-          <li>Brands</li>
-          <li>Brands</li>
-          <li>Brands</li>
-          <li>Brands</li>
-        </ul>
+        <div class="fruit-vegie d-flex mb-2">
+          <box-icon type="solid" name="chevron-left"></box-icon>
+          <a href="" class="text-decoration-none text-dark">Fruits &#38 Vegetabes</a>
+        </div>
+        <div class="fruit-vegie-card mb-2">
+          <p><a href="">Exotic Fruits &#38 Veggies</a></p>
+          <ul>
+            <li><a href="" class="text-decoration-none text-dark">Exotic Fruits</a></li>
+            <li><a href="" class="text-decoration-none text-dark">Exotic Vegetables</a></li>
+          </ul>
+        </div>
+        <!-- rating dropdown -->
+        <h6 class="fw-bold">Refined by</h6>
+        <div class="Refined-items">
+          <div class="rating-dropdown">
+            <div class="dropdown">
+              <div onclick="toggleDropdown()" class="dropbtn">
+                <p class="me-5 ms-2">Show Rating</p>
+                <box-icon name="chevron-down"></box-icon>
+              </div>
+              <div id="dropdownContent" class="dropdown-content">
+                <div class="rating-container">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <div class="ratings">
+                    <span class="rating-option" onclick="setRating(1)">★</span>
+                    <span class="rating-option" onclick="setRating(2)">★</span>
+                    <span class="rating-option" onclick="setRating(3)">★</span>
+                    <span class="rating-option" onclick="setRating(4)">★</span>
+                    <span class="rating-option" onclick="setRating(5)">★</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <!-- Content -->
@@ -227,23 +382,10 @@
   </div>
 
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-  <script>
-    function toggleSidebar() {
-      const sidebar = document.getElementById('sidebar');
-      const hide_filter_btn = document.querySelector('.hide-filter-btn');
-      sidebar.classList.toggle('hidden-sidebar');
-
-      // Change the text of filter button
-      if (hide_filter_btn.innerText === "Hide Filters") {
-        hide_filter_btn.innerText = "Show Filters";
-      } else {
-        hide_filter_btn.innerText = "Hide Filters";
-      }
-    }
-  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <script src="../scripts/page2.js"></script>
 
 </body>
 
