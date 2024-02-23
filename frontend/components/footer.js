@@ -33,11 +33,11 @@ function createFooter() {
         </div>
         <div class="f_top_right">
             <ul class="f_link">
-                <li><img src="./images/footer_logo.png" alt="Bigbasket Logo"></li>
+                <li><img src="https://i.ibb.co/qDr6gKb/footer-logo.png" alt="Bigbasket Logo"></li>
                 <li>
-                    <a class="play_store_link" href=""><img src="./images/goole_play_dark.png"
+                    <a class="play_store_link" href=""><img src="https://i.ibb.co/jDvBfyc/goole-play-dark.png"
                             alt="Play Store"></a>
-                    <a class="app_store_link" href=""><img src="./images/app_store_dark.png"
+                    <a class="app_store_link" href=""><img src="https://i.ibb.co/k5F8k44/app-store-dark.png"
                             alt="App Store"></a>
                 </li>
                 <li>

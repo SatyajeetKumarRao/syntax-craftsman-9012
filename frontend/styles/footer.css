@@ -7,6 +7,8 @@ body {
 }
 
 footer {
+    margin-top: 50px;
+    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,13 +161,13 @@ footer {
 
                     >.play_store_link:hover {
                         >img {
-                            content: url(../images/google_play_light.png);
+                            content: url(https://i.ibb.co/FgKMHVW/google-play-light.png);
                         }
                     }
 
                     >.app_store_link:hover {
                         >img {
-                            content: url(../images/app_store_light.png);
+                            content: url(https://i.ibb.co/thGfgMX/app-store-light.png);
                         }
                     }
                 }

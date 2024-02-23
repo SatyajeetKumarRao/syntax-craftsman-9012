@@ -10,453 +10,482 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>Fruits &#38 Vegetables</title>
+
   <link rel="stylesheet" href="../styles/page2.css">
+  <link rel="stylesheet" href="../styles/header.css">
+  <link rel="stylesheet" href="../styles/footer.css">
 </head>
 
 <body>
-  <div class="main-section">
-    <!-- path section -->
-    <div class="path">
-      <box-icon name="home" flip="horizontal" color="#817f7f"></box-icon>
-      <p>
-        <a href="">Home/</a>
-        <a href="">Fruits &#38 Vegetables/</a>
-        <span>Exotic Fruits &#38 Veggies</span>
-      </p>
-    </div>
-    <hr>
-    <div class="main-heading">
-      <p>Exotic Fruits &#38 Veggies (<span>23</span>)</p>
-    </div>
-    <div class="buttons-menu">
-      <!-- hide-filter-botton -->
-      <div id="hide-filter" onclick="toggleSidebar()">
-        <div class="hide-logo">
-          <box-icon type="solid" name="low-vision"></box-icon>
-        </div>
-        <div class="hide-filter-btn">Hide Filters</div>
-      </div>
 
-      <!-- Relevance button -->
-      <div class="dropdown">
+  <main>
 
+    <div class="main-section">
+      <!-- path section -->
+      <div class="path">
+        <box-icon name="home" flip="horizontal" color="#817f7f"></box-icon>
+        <p>
+          <a href="">Home/</a>
+          <a href="">Fruits &#38 Vegetables/</a>
+          <span>Exotic Fruits &#38 Veggies</span>
+        </p>
       </div>
-      <div class="dropdown" id="relevance">
-        <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Relevance
-        </div>
-        <div class="relevance-logo">
-          <box-icon name="filter"></box-icon>
-        </div>
-        <ul class="dropdown-menu custom-dropdown-menu">
-          <li><a class="dropdown-item" href="#">Price - High to Low</a></li>
-          <hr>
-          <li><a class="dropdown-item" href="#">Price - Low to High</a></li>
-          <hr>
-          <li><a class="dropdown-item" href="#">Rupee Saving - Low to High</a></li>
-          <hr>
-          <li><a class="dropdown-item" href="#">Rupee Saving - High to Low</a></li>
-          <hr>
-          <li><a class="dropdown-item" href="#">% Off - High to Low</a></li>
-        </ul>
+      <hr>
+      <div class="main-heading">
+        <p>Exotic Fruits &#38 Veggies (<span>23</span>)</p>
       </div>
-    </div>
-    <hr />
-    <!-- sideBar and content -->
-    <div class="sidebar_content">
-      <!-- Sidebar starts from here -->
-      <div class="sidebar" id="sidebar">
-        <h6 class="fw-bold mb-2">Shop by Categories</h6>
+      <div class="buttons-menu">
+        <!-- hide-filter-botton -->
+        <div id="hide-filter">
+          <div class="hide-logo">
+            <box-icon type="solid" name="low-vision"></box-icon>
+          </div>
+          <div class="hide-filter-btn">Hide Filters</div>
+        </div>
 
-        <div class="fruit-vegie d-flex mb-2">
-          <box-icon type="solid" name="chevron-left"></box-icon>
-          <a href="" class="text-decoration-none text-dark">Fruits &#38 Vegetabes</a>
+        <!-- Relevance button -->
+        <div class="dropdown">
+
         </div>
-        <div class="fruit-vegie-card mb-2">
-          <p><a href="">Exotic Fruits &#38 Veggies</a></p>
-          <ul>
-            <li><a href="" class="text-decoration-none text-dark">Exotic Fruits</a></li>
-            <li><a href="" class="text-decoration-none text-dark">Exotic Vegetables</a></li>
+        <div class="dropdown" id="relevance">
+          <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Relevance
+          </div>
+          <div class="relevance-logo">
+            <box-icon name="filter"></box-icon>
+          </div>
+          <ul class="dropdown-menu custom-dropdown-menu">
+            <li><a class="dropdown-item" href="#">Price - High to Low</a></li>
+            <hr>
+            <li><a class="dropdown-item" href="#">Price - Low to High</a></li>
+            <hr>
+            <li><a class="dropdown-item" href="#">Rupee Saving - Low to High</a></li>
+            <hr>
+            <li><a class="dropdown-item" href="#">Rupee Saving - High to Low</a></li>
+            <hr>
+            <li><a class="dropdown-item" href="#">% Off - High to Low</a></li>
           </ul>
         </div>
-        <h6 class="fw-bold">Refined by</h6>
-        <div class="Refined-items">
-          <!-- rating dropdown -->
-          <div class="rating-dropdown">
-            <div class="dropdown">
-              <div onclick="toggleDropdown()" class="dropbtn">
-                <p class="me-5 ms-2">Show Rating</p>
-                <box-icon name="chevron-down"></box-icon>
-              </div>
-              <div id="dropdownContent" class="dropdown-content">
-                <div class="rating-container">
-                  <label class="material-checkbox ms-3">
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <div class="ratings">
-                    <span class="rating-option" onclick="setRating(1)">★</span>
-                    <span class="rating-option" onclick="setRating(2)">★</span>
-                    <span class="rating-option" onclick="setRating(3)">★</span>
-                    <span class="rating-option" onclick="setRating(4)">★</span>
-                    <span class="rating-option" onclick="setRating(5)">★</span>
+      </div>
+      <hr />
+      <!-- sideBar and content -->
+      <div class="sidebar_content">
+        <!-- Sidebar starts from here -->
+        <div class="sidebar" id="sidebar">
+          <h6 class="fw-bold mb-2">Shop by Categories</h6>
+
+          <div class="fruit-vegie d-flex mb-2">
+            <box-icon type="solid" name="chevron-left"></box-icon>
+            <a href="" class="text-decoration-none text-dark">Fruits &#38 Vegetabes</a>
+          </div>
+          <div class="fruit-vegie-card mb-2">
+            <p><a href="">Exotic Fruits &#38 Veggies</a></p>
+            <ul>
+              <li><a href="" class="text-decoration-none text-dark">Exotic Fruits</a></li>
+              <li><a href="" class="text-decoration-none text-dark">Exotic Vegetables</a></li>
+            </ul>
+          </div>
+          <h6 class="fw-bold">Refined by</h6>
+          <div class="Refined-items">
+            <!-- rating dropdown -->
+            <div class="rating-dropdown">
+              <div class="dropdown">
+                <div onclick="toggleDropdown()" class="dropbtn">
+                  <p class="me-5 ms-2">Show Rating</p>
+                  <box-icon name="chevron-down"></box-icon>
+                </div>
+                <div id="dropdownContent" class="dropdown-content">
+                  <div class="rating-container">
+                    <label class="material-checkbox ms-3">
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="ratings">
+                      <span class="rating-option" onclick="setRating(1)">★</span>
+                      <span class="rating-option" onclick="setRating(2)">★</span>
+                      <span class="rating-option" onclick="setRating(3)">★</span>
+                      <span class="rating-option" onclick="setRating(4)">★</span>
+                      <span class="rating-option" onclick="setRating(5)">★</span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- end -->
+            <!-- Brand Dropdown -->
+            <div class="brand-menu mt-5">
+              <div class="brand-btn d-flex mb-3 border border-secondary-subtle">
+                <span class="sBtn-text me-5">Brands</span>
+                <box-icon name="chevron-down" class="ms-5"></box-icon>
+              </div>
+              <div class="options  ">
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Fresho</a>
+                </div>
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark">Tadaa</a>
+                </div>
+
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Price Dropdown -->
+            <div class="price-menu mt-5">
+              <div class="price-btn d-flex mb-3 border border-secondary-subtle">
+                <span class="sBtn-text me-5">Price</span>
+                <box-icon name="chevron-down" class="ms-5"></box-icon>
+              </div>
+              <div class="options  ">
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Less than Rs 20</a>
+                </div>
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark">Rs 21 to 50</a>
+                </div>
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark">Rs 51 to 100</a>
+                </div>
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark">Rs 101 to 200</a>
+                </div>
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark">Rs 201 to 500</a>
+                </div>
+
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Discount Dropdown -->
+            <div class="discount-menu mt-5">
+              <div class="discount-btn d-flex mb-3 border border-secondary-subtle">
+                <span class="sBtn-text me-5">Discount</span>
+                <box-icon name="chevron-down" class="ms-5"></box-icon>
+              </div>
+              <div class="options  ">
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">More than 25%</a>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Country of Origin Dropdown -->
+            <div class="country-menu mt-5">
+              <div class="country-btn d-flex mb-3 border border-secondary-subtle">
+                <span class="sBtn-text me-3">Country of Origin</span>
+                <box-icon name="chevron-down" class="ms-2"></box-icon>
+              </div>
+              <div class="options  ">
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Chile</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Greece</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">India</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Iran</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Italy</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">New Zealand</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Peru</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">South Africa</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Spain</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Thailand</a>
+                </div>
+
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Food Preference Dropdown -->
+            <div class="food-menu mt-5">
+              <div class="food-btn d-flex mb-3 border border-secondary-subtle">
+                <span class="sBtn-text me-2">Food Preference</span>
+                <box-icon name="chevron-down" class="ms-2"></box-icon>
+              </div>
+              <div class="options  ">
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">Vegetarian</a>
+                </div>
+              </div>
+            </div>
+            <!-- end -->
+            <!-- Pack Size Dropdown -->
+            <div class="pack-menu mt-5">
+              <div class="pack-btn d-flex mb-3 border border-secondary-subtle">
+                <span class="sBtn-text me-5">Pack Size</span>
+                <box-icon name="chevron-down" class="ms-5"></box-icon>
+              </div>
+              <div class="options  ">
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">500 g</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">4 pcs</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">3 pcs</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">250 g</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">225 g</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">200 g</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">2 pcs Approx(300-400 g)</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">2 pcs</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">125 g</a>
+                </div>
+
+                <div class="option d-flex mt-3">
+                  <label class="material-checkbox ms-3">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+                  <a href="" class="text-decoration-none text-dark ">100g</a>
+                </div>
+
+              </div>
+            </div>
+            <!-- end -->
+
           </div>
-          <!-- end -->
-          <!-- Brand Dropdown -->
-          <div class="brand-menu mt-5">
-            <div class="brand-btn d-flex mb-3 border border-secondary-subtle">
-              <span class="sBtn-text me-5">Brands</span>
-              <box-icon name="chevron-down" class="ms-5"></box-icon>
-            </div>
-            <div class="options  ">
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Fresho</a>
-              </div>
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark">Tadaa</a>
-              </div>
+        </div>
 
-            </div>
-          </div>
-          <!-- end -->
-          <!-- Price Dropdown -->
-          <div class="price-menu mt-5">
-            <div class="price-btn d-flex mb-3 border border-secondary-subtle">
-              <span class="sBtn-text me-5">Price</span>
-              <box-icon name="chevron-down" class="ms-5"></box-icon>
-            </div>
-            <div class="options  ">
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Less than Rs 20</a>
-              </div>
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark">Rs 21 to 50</a>
-              </div>
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark">Rs 51 to 100</a>
-              </div>
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark">Rs 101 to 200</a>
-              </div>
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark">Rs 201 to 500</a>
-              </div>
-
-            </div>
-          </div>
-          <!-- end -->
-          <!-- Discount Dropdown -->
-          <div class="discount-menu mt-5">
-            <div class="discount-btn d-flex mb-3 border border-secondary-subtle">
-              <span class="sBtn-text me-5">Discount</span>
-              <box-icon name="chevron-down" class="ms-5"></box-icon>
-            </div>
-            <div class="options  ">
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">More than 25%</a>
-              </div>
-            </div>
-          </div>
-          <!-- end -->
-          <!-- Country of Origin Dropdown -->
-          <div class="country-menu mt-5">
-            <div class="country-btn d-flex mb-3 border border-secondary-subtle">
-              <span class="sBtn-text me-3">Country of Origin</span>
-              <box-icon name="chevron-down" class="ms-2"></box-icon>
-            </div>
-            <div class="options  ">
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Chile</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Greece</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">India</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Iran</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Italy</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">New Zealand</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Peru</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">South Africa</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Spain</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Thailand</a>
-              </div>
-              
-            </div>
-          </div>
-          <!-- end -->
-          <!-- Food Preference Dropdown -->
-          <div class="food-menu mt-5">
-            <div class="food-btn d-flex mb-3 border border-secondary-subtle">
-              <span class="sBtn-text me-2">Food Preference</span>
-              <box-icon name="chevron-down" class="ms-2"></box-icon>
-            </div>
-            <div class="options  ">
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">Vegetarian</a>
-              </div>
-            </div>
-          </div>
-          <!-- end -->
-          <!-- Pack Size Dropdown -->
-          <div class="pack-menu mt-5">
-            <div class="pack-btn d-flex mb-3 border border-secondary-subtle">
-              <span class="sBtn-text me-5">Pack Size</span>
-              <box-icon name="chevron-down" class="ms-5"></box-icon>
-            </div>
-            <div class="options  ">
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">500 g</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">4 pcs</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">3 pcs</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">250 g</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">225 g</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">200 g</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">2 pcs Approx(300-400 g)</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">2 pcs</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">125 g</a>
-              </div>
-
-              <div class="option d-flex mt-3">
-                <label class="material-checkbox ms-3">
-                  <input type="checkbox">
-                  <span class="checkmark"></span>
-                </label>
-                <a href="" class="text-decoration-none text-dark ">100g</a>
-              </div>
-
-            </div>
-          </div>
-          <!-- end -->
-
+        <!-- Content -->
+        <div class="content ms-4" id="content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam aut libero odio? Hic error sit tempora,
+          sapiente assumenda repellendus, odit ratione autem laborum libero illo velit. Ipsa vel tempora dolorem omnis,
+          earum fuga aliquid, praesentium culpa nemo libero aspernatur! Ad quo iusto necessitatibus consectetur
+          obcaecati
+          sint similique consequatur iste omnis, nesciunt perspiciatis soluta repudiandae harum non excepturi sed?
+          Veniam
+          a accusamus id velit, fugit voluptas voluptatem adipisci beatae possimus nesciunt voluptatibus, saepe error
+          cum
+          recusandae ratione est nemo ex expedita magnam laborum. Eveniet, ea? Esse corporis ipsa ex ad error vero
+          voluptate. Cumque tenetur molestiae enim odit, obcaecati ea.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil porro vel magni earum explicabo reiciendis
+          blanditiis quam, perferendis repellendus, non et ducimus nobis magnam omnis modi itaque molestias vero
+          voluptatibus mollitia rerum cumque debitis? Dicta porro in at totam rem ad tenetur deserunt voluptas molestiae
+          deleniti eos dolorem, obcaecati quidem? Iste rerum, dolores similique quo maiores corporis delectus sit nisi
+          explicabo. Fuga laboriosam minus quis voluptatum facilis architecto iste quas voluptas asperiores. Culpa
+          dignissimos necessitatibus, accusantium sed sequi ipsam eum alias quo quasi ipsum labore nobis minus quis
+          incidunt? Sint error repellat accusantium maxime minima odio animi pariatur aperiam cum.
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis aut odit vero consectetur exercitationem
+          dolores harum iusto quas explicabo expedita velit autem laboriosam minima voluptas, minus molestias eos sed
+          aliquid reiciendis. Iure animi saepe mollitia sapiente consectetur amet itaque deserunt. Dolores nostrum quos
+          ipsa eum aut repellendus pariatur est recusandae ea harum quidem, numquam nesciunt optio iure, quod dolorum,
+          in
+          ratione sint alias ullam aliquam? Temporibus, maiores fugit odio esse consectetur amet numquam ipsa quibusdam
+          culpa asperiores maxime nobis voluptate, architecto magni. Est fuga enim dolorum ipsa, porro a nemo obcaecati
+          consequuntur molestias maxime distinctio adipisci consequatur optio aliquid voluptates, facere quae at
+          pariatur
+          rem totam exercitationem quibusdam! Possimus eum dolorem incidunt sequi doloribus, corporis nobis nostrum
+          totam
+          laboriosam modi? Odio mollitia harum in optio molestias consectetur blanditiis incidunt accusamus illo saepe
+          placeat quibusdam dicta qui sint modi eveniet deserunt non, cum cumque obcaecati iusto adipisci. Fugit
+          officia,
+          ducimus voluptas consequuntur sequi officiis et dolorem ratione quod reprehenderit. Officiis nulla consequatur
+          unde excepturi dolor aliquam tempore voluptatum voluptates corporis amet est autem ad magnam deserunt esse
+          possimus voluptatibus incidunt dolorem delectus, debitis aspernatur laboriosam eos ex quae! Modi, iure eum
+          quaerat consequuntur, repellat officia eveniet quidem ad dolorum labore alias.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus doloremque laudantium consequatur! Cum
+          aliquid rem culpa facere voluptatum sit dolor nulla optio error nisi! Molestias error reiciendis commodi fuga,
+          repudiandae magni nihil reprehenderit, corporis distinctio cumque sapiente magnam? Consequuntur aspernatur
+          laboriosam quia illum hic deleniti! Eligendi ullam repellat pariatur reiciendis aliquid quo dolores provident
+          quam id numquam, officia veritatis mollitia ipsum tenetur illo ad vitae nulla voluptates perferendis tempora
+          asperiores ipsa consequuntur. Dolorem recusandae maxime atque eligendi maiores cumque totam, facere
+          distinctio.
+          Quibusdam nemo iure voluptatem minima laborum, blanditiis reiciendis eligendi. Odio corporis tempora iure
+          reiciendis assumenda quidem asperiores! Nihil quisquam pariatur obcaecati rem, in odio officiis eveniet et ea
+          ad
+          doloribus temporibus, atque deleniti natus consequuntur illum odit. Dolore maxime eveniet, nisi illum nobis
+          harum deserunt hic vel voluptatum, modi consequuntur asperiores ab tenetur fuga quidem dignissimos velit
+          accusamus. Repellat nulla cumque perspiciatis nesciunt, voluptate expedita quos omnis assumenda quasi
+          obcaecati
+          voluptatum labore, impedit eum non suscipit cum. Eos culpa id dolor veritatis rerum, nobis animi non
+          laudantium
+          deserunt, officia quasi nesciunt ut natus, laborum corporis tempora nulla! Aliquid dolor odit eos illo.
+          Repudiandae deserunt veritatis consequatur dicta quia voluptate voluptas! Non minima quibusdam, voluptatibus
+          sed
+          ipsam ad aliquid temporibus iure magnam fugiat reiciendis perspiciatis vero nisi velit eum maxime unde
+          doloremque ratione? Officia culpa dolore enim vero sapiente eaque, totam, nostrum, repellat officiis sunt
+          animi
+          temporibus alias laudantium doloribus eligendi sit adipisci voluptas assumenda illo quos minima cum.
+          Doloremque,
+          illo eos? Atque repellendus quae perferendis officia, libero deserunt aspernatur ducimus saepe et sint nisi
+          voluptatum quidem porro quis nam voluptatem possimus sed asperiores! Quisquam, eveniet non hic consequuntur
+          dicta totam? Minima impedit nisi totam. Animi dolor perspiciatis maiores nesciunt non in repellat distinctio
+          quae odio voluptatem, voluptatum sint, consequuntur reprehenderit inventore quo quos possimus harum vel culpa!
         </div>
       </div>
 
-      <!-- Content -->
-      <div class="content ms-4" id="content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ullam aut libero odio? Hic error sit tempora,
-        sapiente assumenda repellendus, odit ratione autem laborum libero illo velit. Ipsa vel tempora dolorem omnis,
-        earum fuga aliquid, praesentium culpa nemo libero aspernatur! Ad quo iusto necessitatibus consectetur obcaecati
-        sint similique consequatur iste omnis, nesciunt perspiciatis soluta repudiandae harum non excepturi sed? Veniam
-        a accusamus id velit, fugit voluptas voluptatem adipisci beatae possimus nesciunt voluptatibus, saepe error cum
-        recusandae ratione est nemo ex expedita magnam laborum. Eveniet, ea? Esse corporis ipsa ex ad error vero
-        voluptate. Cumque tenetur molestiae enim odit, obcaecati ea.
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil porro vel magni earum explicabo reiciendis
-        blanditiis quam, perferendis repellendus, non et ducimus nobis magnam omnis modi itaque molestias vero
-        voluptatibus mollitia rerum cumque debitis? Dicta porro in at totam rem ad tenetur deserunt voluptas molestiae
-        deleniti eos dolorem, obcaecati quidem? Iste rerum, dolores similique quo maiores corporis delectus sit nisi
-        explicabo. Fuga laboriosam minus quis voluptatum facilis architecto iste quas voluptas asperiores. Culpa
-        dignissimos necessitatibus, accusantium sed sequi ipsam eum alias quo quasi ipsum labore nobis minus quis
-        incidunt? Sint error repellat accusantium maxime minima odio animi pariatur aperiam cum.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis aut odit vero consectetur exercitationem
-        dolores harum iusto quas explicabo expedita velit autem laboriosam minima voluptas, minus molestias eos sed
-        aliquid reiciendis. Iure animi saepe mollitia sapiente consectetur amet itaque deserunt. Dolores nostrum quos
-        ipsa eum aut repellendus pariatur est recusandae ea harum quidem, numquam nesciunt optio iure, quod dolorum, in
-        ratione sint alias ullam aliquam? Temporibus, maiores fugit odio esse consectetur amet numquam ipsa quibusdam
-        culpa asperiores maxime nobis voluptate, architecto magni. Est fuga enim dolorum ipsa, porro a nemo obcaecati
-        consequuntur molestias maxime distinctio adipisci consequatur optio aliquid voluptates, facere quae at pariatur
-        rem totam exercitationem quibusdam! Possimus eum dolorem incidunt sequi doloribus, corporis nobis nostrum totam
-        laboriosam modi? Odio mollitia harum in optio molestias consectetur blanditiis incidunt accusamus illo saepe
-        placeat quibusdam dicta qui sint modi eveniet deserunt non, cum cumque obcaecati iusto adipisci. Fugit officia,
-        ducimus voluptas consequuntur sequi officiis et dolorem ratione quod reprehenderit. Officiis nulla consequatur
-        unde excepturi dolor aliquam tempore voluptatum voluptates corporis amet est autem ad magnam deserunt esse
-        possimus voluptatibus incidunt dolorem delectus, debitis aspernatur laboriosam eos ex quae! Modi, iure eum
-        quaerat consequuntur, repellat officia eveniet quidem ad dolorum labore alias.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus doloremque laudantium consequatur! Cum
-        aliquid rem culpa facere voluptatum sit dolor nulla optio error nisi! Molestias error reiciendis commodi fuga,
-        repudiandae magni nihil reprehenderit, corporis distinctio cumque sapiente magnam? Consequuntur aspernatur
-        laboriosam quia illum hic deleniti! Eligendi ullam repellat pariatur reiciendis aliquid quo dolores provident
-        quam id numquam, officia veritatis mollitia ipsum tenetur illo ad vitae nulla voluptates perferendis tempora
-        asperiores ipsa consequuntur. Dolorem recusandae maxime atque eligendi maiores cumque totam, facere distinctio.
-        Quibusdam nemo iure voluptatem minima laborum, blanditiis reiciendis eligendi. Odio corporis tempora iure
-        reiciendis assumenda quidem asperiores! Nihil quisquam pariatur obcaecati rem, in odio officiis eveniet et ea ad
-        doloribus temporibus, atque deleniti natus consequuntur illum odit. Dolore maxime eveniet, nisi illum nobis
-        harum deserunt hic vel voluptatum, modi consequuntur asperiores ab tenetur fuga quidem dignissimos velit
-        accusamus. Repellat nulla cumque perspiciatis nesciunt, voluptate expedita quos omnis assumenda quasi obcaecati
-        voluptatum labore, impedit eum non suscipit cum. Eos culpa id dolor veritatis rerum, nobis animi non laudantium
-        deserunt, officia quasi nesciunt ut natus, laborum corporis tempora nulla! Aliquid dolor odit eos illo.
-        Repudiandae deserunt veritatis consequatur dicta quia voluptate voluptas! Non minima quibusdam, voluptatibus sed
-        ipsam ad aliquid temporibus iure magnam fugiat reiciendis perspiciatis vero nisi velit eum maxime unde
-        doloremque ratione? Officia culpa dolore enim vero sapiente eaque, totam, nostrum, repellat officiis sunt animi
-        temporibus alias laudantium doloribus eligendi sit adipisci voluptas assumenda illo quos minima cum. Doloremque,
-        illo eos? Atque repellendus quae perferendis officia, libero deserunt aspernatur ducimus saepe et sint nisi
-        voluptatum quidem porro quis nam voluptatem possimus sed asperiores! Quisquam, eveniet non hic consequuntur
-        dicta totam? Minima impedit nisi totam. Animi dolor perspiciatis maiores nesciunt non in repellat distinctio
-        quae odio voluptatem, voluptatum sint, consequuntur reprehenderit inventore quo quos possimus harum vel culpa!
-      </div>
-    </div>
 
-  </div>
+      <div />
+  </main>
+
+  <!-- footer will be added from footer component-->
+  <script type="module" src="../scripts/page2.js"></script>
+
 
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
-  <script src="../scripts/page2.js"></script>
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/8d91ab7046.js" crossorigin="anonymous"></script>
+
 
 </body>
 
