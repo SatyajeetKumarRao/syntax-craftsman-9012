@@ -19,7 +19,7 @@ header {
     left: 0px;
     right: 0px;
     z-index: 3000;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.123) 0px 5px 15px;
 
     >.header_bar {
         width: 100%;
@@ -144,7 +144,6 @@ header {
             gap: 20px;
 
             >#category_dropdown_container {
-                background-color: #5e9400;
                 width: fit-content;
                 height: fit-content;
                 padding: 10px;
@@ -152,6 +151,7 @@ header {
                 font-size: 14px;
 
                 >a {
+                    background-color: #5e9400;
                     color: white;
                     text-decoration: none;
                 }
@@ -191,8 +191,6 @@ header {
                     border: none;
                     background-color: transparent;
                 }
-
-
             }
 
             >.divider {

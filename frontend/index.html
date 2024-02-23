@@ -73,11 +73,30 @@
                 </div>
             </div>
             <div id="header_bottom">
-                <div id="category_dropdown_container">
-                    <a id="" href="#">Shop by Category &nbsp; &nbsp;<i class="fa-solid fa-caret-down"
-                            style="color: #ffffff;"></i></a>
-                </div>
 
+                <div class="dropdown" id="category_dropdown_container">
+                    <a id="categoryDropdown" class="btn dropdown-toggle" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Shop by Category
+                    </a>
+
+                    <ul class="dropdown-menu">
+                        <li> <a class="dropdown-item" href="fruits_veg.html" name="fruits">Fruits & Vegetables</a> </li>
+                        <li> <a class="dropdown-item" href="foodgrains.html" name="foodgrains">Foodgrains, Oil &
+                                Masala</a> </li>
+                        <li> <a class="dropdown-item" href="bread_bakery.html" name="bakery">Bakery, Cakes & Dairy</a>
+                        </li>
+                        <li> <a class="dropdown-item" href="#" name="beverages">Beverages</a> </li>
+                        <li> <a class="dropdown-item" href="#" name="snacks">Snacks & Branded Foods</a> </li>
+                        <li> <a class="dropdown-item" href="#" name="beauty">Beauty & Hygiene</a> </li>
+                        <li> <a class="dropdown-item" href="#" name="cleaning">Cleaning & HouseHold</a> </li>
+                        <li> <a class="dropdown-item" href="#" name="kitchen">Kitchen,Garden & Pets </a> </li>
+                        <li> <a class="dropdown-item" href="#" name="eggs">Eggs, Meat & Fish</a> </li>
+                        <li> <a class="dropdown-item" href="#" name="gourmet">Gourmet & World Foods</a> </li>
+                        <li> <a class="dropdown-item" href="#" name="babycare">Baby Care</a> </li>
+                        <li> <a class="dropdown-item" href="#" name="viewall">Paan Corner</a> </li>
+                    </ul>
+                </div>
                 <div id="category_section">
                     <ul>
                         <li><a href="#">Exotic Fruits & Veggies</a></li>
@@ -102,14 +121,41 @@
                     <a href="#"><img src="https://i.ibb.co/KmS2bT9/Smart-basket.webp" alt="Smart basket"></a>
                     <a href="#"><img src="https://i.ibb.co/559vn7H/offer.png" alt="offer"></a>
                 </div>
-
-
             </div>
 
         </div>
     </header>
 
     <main>
+
+        <div id="main">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_fnv_t2_tb_fnv_patna_460_230224.jpg?tr=w-1920,q=80"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_staples_t2_tb_staples_patna_460_230224.jpg?tr=w-1920,q=80"
+                            class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_fmcg_t2_tb_fmcg_patna_460_230224.jpg?tr=w-1920,q=80"
+                            class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
     </main>
 
