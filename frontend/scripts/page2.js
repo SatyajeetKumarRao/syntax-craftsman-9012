@@ -1,29 +1,52 @@
-
 function toggleSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    const hide_filter_btn = document.querySelector('.hide-filter-btn');
-    sidebar.classList.toggle('hidden-sidebar');
+      const sidebar = document.getElementById('sidebar');
+      const hide_filter_btn = document.querySelector('.hide-filter-btn');
+      sidebar.classList.toggle('hidden-sidebar');
 
-    // Change the text of filter button
-    if (hide_filter_btn.innerText === "Hide Filters") {
-      hide_filter_btn.innerText = "Show Filters";
-    } else {
-      hide_filter_btn.innerText = "Hide Filters";
+      // Change the text of filter button
+      if (hide_filter_btn.innerText === "Hide Filters") {
+        hide_filter_btn.innerText = "Show Filters";
+      } else {
+        hide_filter_btn.innerText = "Hide Filters";
+      }
     }
-  }
 
-  //dropdown js
-  function toggleDropdown() {
-    var dropdownContent = document.getElementById("dropdownContent");
-    if (dropdownContent.classList.contains("show")) {
+    //dropdown js
+    function toggleDropdown() {
+      var dropdownContent = document.getElementById("dropdownContent");
+      var dropbtn = document.querySelector(".dropbtn");
+
+      if (dropdownContent.classList.contains("show")) {
+        dropdownContent.classList.remove("show");
+      } else {
+        dropdownContent.classList.add("show");
+        dropdownContent.style.top = (dropbtn.offsetTop + dropbtn.offsetHeight) + "px"; 
+      }
+    }
+
+    function setRating() {
+      var dropdownContent = document.getElementById("dropdownContent");
       dropdownContent.classList.remove("show");
-    } else {
-      dropdownContent.classList.add("show");
     }
-  }
-  
-  function setRating(rating) {
-    var dropdownContent = document.getElementById("dropdownContent");
-    dropdownContent.classList.remove("show");
-  }
-  
+
+    //sidebar positioning
+    function sidebarPosition(){
+        const sidebarPos = document.getElementById("sidebar");
+        const content = document.getElementById("content");
+        window.onscroll = () =>{
+            let scrollTop = window.scrollY;
+            let viewportHeight = window.innerHeight;
+            let contentHeight = content.getBoundingClientRect().height;
+            let sidebarTop = sidebarPos.getBoundingClientRect().top + window.pageYOffset;
+            
+            if(scrollTop >= contentHeight - viewportHeight + sidebarTop){
+                content.style.transform = `translateY(-${contentHeight - viewportHeight + sidebarTop}px)`;
+                content.style.position = "fixed";
+            }
+            else{
+                content.style.transform = "";
+                content.style.position = "";
+            }
+        }
+    }
+ 
