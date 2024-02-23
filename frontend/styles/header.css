@@ -139,6 +139,9 @@ header {
 
         >#header_bottom {
             margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
 
             >#category_dropdown_container {
                 background-color: #5e9400;
@@ -156,11 +159,57 @@ header {
 
             >#category_section {
 
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 10px;
+
                 >ul {
-
+                    list-style: none;
                     display: flex;
+                    margin: 0px;
+                    padding: 0px;
+                    column-gap: 70px;
 
-                    >li {}
+                    >li {
+                        font-size: 12px;
+
+                        >a {
+                            color: black;
+                            text-decoration: none;
+                        }
+
+                        >a:hover {
+                            color: red;
+                            text-decoration: underline;
+                            transition: all .3s ease;
+                        }
+                    }
+                }
+
+                >.more_category_section {
+                    border: none;
+                    background-color: transparent;
+                }
+
+
+            }
+
+            >.divider {
+                margin: 0 10px;
+                padding: 0;
+                color: rgba(0, 0, 0, 0.24);
+            }
+
+            >#offer_Section {
+
+                display: flex;
+                gap: 20px;
+                width: 150px;
+
+                >a>img {
+                    width: 100%;
+
                 }
             }
         }
