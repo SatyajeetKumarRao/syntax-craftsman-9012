@@ -191,10 +191,6 @@ main {
     cursor: pointer;
 }
 
-.rating-option:hover {
-    background-color: #ddd;
-}
-
 .show {
     display: block;
 }
@@ -213,18 +209,6 @@ main {
     align-items: center;
     justify-content: center;
 }
-
-/* .options {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9a9;
-    width: 95%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    z-index: 1;
-  } */
-/* .brand-options-show {
-    display: block;
-  } */
 
 .price-options-show {
     display: block;
