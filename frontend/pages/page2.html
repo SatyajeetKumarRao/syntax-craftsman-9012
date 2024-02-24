@@ -85,16 +85,26 @@
               <li><a href="" class="text-decoration-none text-dark">Exotic Vegetables</a></li>
             </ul>
           </div>
+          <!-- bootstrap -->
+          <!-- <p class="d-inline-flex gap-1">
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" >
+              Button with data-bs-target
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+              Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div> -->
+          <!-- bootstrap -->
           <h6 class="fw-bold">Refined by</h6>
           <div class="Refined-items">
             <!-- rating dropdown -->
             <div class="rating-dropdown">
               <div class="dropdown">
-                <div onclick="toggleDropdown()" class="dropbtn">
+                <div  type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" class="dropbtn">
                   <p class="me-5 ms-2">Show Rating</p>
                   <box-icon name="chevron-down"></box-icon>
                 </div>
-                <div id="dropdownContent" class="dropdown-content">
+                <div  class="collapse dropdown-content" id="collapseExample">
                   <div class="rating-container">
                     <label class="material-checkbox ms-3">
                       <input type="checkbox">
@@ -114,11 +124,11 @@
             <!-- end -->
             <!-- Brand Dropdown -->
             <div class="brand-menu mt-5">
-              <div class="brand-btn d-flex mb-3 border border-secondary-subtle">
+              <div class="brand-btn d-flex mb-3 border border-secondary-subtle" data-bs-toggle="collapse" data-bs-target="#collapseExample2">
                 <span class="sBtn-text me-5">Brands</span>
                 <box-icon name="chevron-down" class="ms-5"></box-icon>
               </div>
-              <div class="options  ">
+              <div class="options  " id="collapseExample2">
                 <div class="option d-flex mt-3">
                   <label class="material-checkbox ms-3">
                     <input type="checkbox">
@@ -139,11 +149,11 @@
             <!-- end -->
             <!-- Price Dropdown -->
             <div class="price-menu mt-5">
-              <div class="price-btn d-flex mb-3 border border-secondary-subtle">
+              <div class="price-btn d-flex mb-3 border border-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample3">
                 <span class="sBtn-text me-5">Price</span>
                 <box-icon name="chevron-down" class="ms-5"></box-icon>
               </div>
-              <div class="options  ">
+              <div class="options collapse"  id="collapseExample3">
                 <div class="option d-flex mt-3">
                   <label class="material-checkbox ms-3">
                     <input type="checkbox">
@@ -185,11 +195,11 @@
             <!-- end -->
             <!-- Discount Dropdown -->
             <div class="discount-menu mt-5">
-              <div class="discount-btn d-flex mb-3 border border-secondary-subtle">
+              <div class="discount-btn d-flex mb-3 border border-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample4">
                 <span class="sBtn-text me-5">Discount</span>
                 <box-icon name="chevron-down" class="ms-5"></box-icon>
               </div>
-              <div class="options  ">
+              <div class="options collapse" id="collapseExample4">
                 <div class="option d-flex mt-3">
                   <label class="material-checkbox ms-3">
                     <input type="checkbox">
@@ -202,11 +212,11 @@
             <!-- end -->
             <!-- Country of Origin Dropdown -->
             <div class="country-menu mt-5">
-              <div class="country-btn d-flex mb-3 border border-secondary-subtle">
+              <div class="country-btn d-flex mb-3 border border-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample5">
                 <span class="sBtn-text me-3">Country of Origin</span>
                 <box-icon name="chevron-down" class="ms-2"></box-icon>
               </div>
-              <div class="options  ">
+              <div class="options collapse" id="collapseExample5">
                 <div class="option d-flex mt-3">
                   <label class="material-checkbox ms-3">
                     <input type="checkbox">
@@ -292,11 +302,11 @@
             <!-- end -->
             <!-- Food Preference Dropdown -->
             <div class="food-menu mt-5">
-              <div class="food-btn d-flex mb-3 border border-secondary-subtle">
+              <div class="food-btn d-flex mb-3 border border-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample6">
                 <span class="sBtn-text me-2">Food Preference</span>
                 <box-icon name="chevron-down" class="ms-2"></box-icon>
               </div>
-              <div class="options  ">
+              <div class="options collapse" id="collapseExample6">
                 <div class="option d-flex mt-3">
                   <label class="material-checkbox ms-3">
                     <input type="checkbox">
@@ -309,11 +319,11 @@
             <!-- end -->
             <!-- Pack Size Dropdown -->
             <div class="pack-menu mt-5">
-              <div class="pack-btn d-flex mb-3 border border-secondary-subtle">
+              <div class="pack-btn d-flex mb-3 border border-secondary-subtle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample7">
                 <span class="sBtn-text me-5">Pack Size</span>
                 <box-icon name="chevron-down" class="ms-5"></box-icon>
               </div>
-              <div class="options  ">
+              <div class="options collapse" id="collapseExample7">
 
                 <div class="option d-flex mt-3">
                   <label class="material-checkbox ms-3">
