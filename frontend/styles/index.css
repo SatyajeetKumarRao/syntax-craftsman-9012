@@ -15,23 +15,83 @@ main {
         max-width: 1080px;
         width: 100%;
 
+        >.carousel {
 
-
-        >.carousel>.carousel-inner>.carousel-item {
-            >img {
+            >.carousel-inner {
 
                 border-radius: 20px;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 
-            }
+                >.carousel-item {
+                    >img {
+                        border-radius: 20px;
+                    }
 
-            >img:hover {
-
-                cursor: pointer;
+                    >img:hover {
+                        cursor: pointer;
+                    }
+                }
             }
         }
 
+        #store_offer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin: 10px 0px;
+            padding: 20px 0px;
 
+            >a {
+                display: block;
 
+                >img {
+                    width: 150px;
+
+                }
+            }
+        }
+
+        #discount_banner {
+
+            width: 100%;
+            margin: 10px 0px;
+            padding: 20px 0px;
+
+            >img {
+                width: 100%;
+            }
+        }
+
+        >#bank_offer,
+        >#top_offer {
+            margin-top: 20px;
+
+            >div {
+
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+                width: 100%;
+                padding: 10px 0px;
+
+                >a {
+                    display: block;
+                    width: 240px;
+
+                    >img {
+
+                        width: 100%;
+                        border-radius: 10px;
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+                    }
+
+                    >img:hover {
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+                    }
+                }
+            }
+        }
 
     }
 }

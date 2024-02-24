@@ -1,34 +1,81 @@
 {
   "users": [
     {
+      "name": "satyajeet kumar rao",
       "email": "satyajeet@gmail.com",
       "password": "$2a$10$05QyEIKLxLILW3hmDDNa9OUN29mcCQaZy/ayj2kMLizBQyyxeI1gO",
       "role": "admin",
       "id": 1
     },
     {
+      "name": "admin1",
       "email": "admin1@gmail.com",
       "password": "$2a$10$408xtkC5Bbr76dzazXf7O.P7FdspfHTQhgOgidBj1EgVmjGLIYdQO",
       "role": "admin",
       "id": 2
     },
     {
+      "name": "admin2",
       "email": "admin2@gmail.com",
       "password": "$2a$10$oOrECYVDfYh.gT3r40KOb.1aZdrDiPyE0zthc7jUufGXiJN/t8IiO",
       "role": "admin",
       "id": 3
     },
     {
+      "name": "user1",
       "email": "user1@gmail.com",
       "password": "$2a$10$0oax7Qg8ATfFNsMV1xwk5.JaX65G.nki.cRQl9yn4kX4O3/OZEpJu",
       "role": "user",
       "id": 4
+    },
+    {
+      "email": "aman@gmail.com",
+      "password": "$2a$10$gelCihGrCUutu5dg4KH.9eqJapv4jANeJSEbwjqN1w9SqpbqAyrXi",
+      "name": "aman",
+      "role": "user",
+      "id": 5
+    },
+    {
+      "email": "aniket@gmail.com",
+      "password": "$2a$10$OGZ6pJ9g5FcbQAkRFzUOfuRpesR3ns2gLXfMotL2rdw/GJM5QsL8m",
+      "name": "aniket",
+      "role": "user",
+      "id": 6
+    },
+    {
+      "email": "rahul@gmail.com",
+      "password": "$2a$10$SEFw1LimywK9oo079VnjA.QC70zYTWrNGITo1UkWBuUcMntDa2exS",
+      "name": "rahul",
+      "role": "user",
+      "id": 7
+    },
+    {
+      "email": "rishank@gmail.com",
+      "password": "$2a$10$WPoUzcCEM8bRN49O/0RxDunrLtA42Y.RonLdGRKDoiTnkmSvKmZ3G",
+      "name": "rishank",
+      "role": "user",
+      "id": 8
+    },
+    {
+      "email": "ujjwal@gmaill.com",
+      "password": "$2a$10$X0VQk1DLZJ5LrDdQMBY2gOMeLEbypqr9hKKs5f2sQx097slzYlzim",
+      "name": "ujjwal",
+      "role": "user",
+      "id": 9
+    },
+    {
+      "email": "user2@gmail.com",
+      "password": "$2a$10$NqOD9ycdIJasDZPKnEASfuzeyjOVb7BsWGpNu/qr7ALCtGcva2q.2",
+      "name": "user2",
+      "role": "user",
+      "id": 10
     }
   ],
   "product": [
     {
+      "id": 1,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40057966_6-fresho-tender-coconut-medium.jpg?tr=w-3840,q=80",
-      "discount": 33,
+      "discount": "33% OFF",
       "brand": "Fresho",
       "title": "Tender Coconut",
       "quantity": "1 pc",
@@ -39,8 +86,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 2,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40097808_2-fresho-pomegranate-peeled.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pomegranate - Peeled",
       "quantity": "500 g",
@@ -51,8 +99,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 3,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40090775_3-fresho-pineapple-slices.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pineapple - Slices",
       "quantity": "200 g",
@@ -63,8 +112,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 4,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40018977_9-fresho-sugarcane-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sugarcane - Diced",
       "quantity": "200 g",
@@ -75,8 +125,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 5,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40019380_4-fresho-papaya-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Papaya- Diced",
       "quantity": "200 g",
@@ -87,8 +138,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 6,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40119401_5-fresho-pomegranate-single-serve-peeled.jpg?tr=w-3840,q=80",
-      "discount": 53,
+      "discount": "53% OFF",
       "brand": "Fresho",
       "title": "Pomegranate - Single Serve, Peeled",
       "quantity": "80 g",
@@ -99,8 +151,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 7,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40119402_5-fresho-pineapple-chunks-single-serve.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pineapple - Chunks, Single Serve",
       "quantity": "80 g",
@@ -111,8 +164,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 8,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40083559_2-fresho-pomelo-peeled.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pomelo - Peeled",
       "quantity": "200 g",
@@ -123,8 +177,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 9,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40235522_1-fresho-pineapple-slices-round.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pineapple - Slices, Round",
       "quantity": "400 g",
@@ -135,8 +190,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 10,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30005195_11-fresho-pineapple-slices.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pineapple - Slices",
       "quantity": "350 g",
@@ -147,8 +203,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 11,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40119406_5-fresho-coconut-chunks-single-serve.jpg?tr=w-3840,q=80",
-      "discount": 62,
+      "discount": "62% OFF",
       "brand": "Fresho",
       "title": "Coconut Chunks - Single Serve",
       "quantity": "80 g",
@@ -159,8 +216,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 12,
       "image": "https://www.bigbasket.com/media/uploads/p/m/1221534_1-earthmade-organix-organic-tender-coconut-water-unsweetened-natural.jpg?tr=w-3840,q=80",
-      "discount": 35,
+      "discount": "35% OFF",
       "brand": "EARTHMADE ORGANIX",
       "title": "Organic Tender Coconut Water - Unsweetened, Natural",
       "quantity": "12X200 ml - Multipack",
@@ -171,6 +229,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 13,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40020812_6-fresho-jackfruit-seeds.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -183,8 +242,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 14,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40084516_5-fresho-pineapple-bulk-cut-veg.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pineapple Bulk (Cut Veg)",
       "quantity": "1 kg",
@@ -195,8 +255,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 15,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40153380_2-fresho-mango-sliceamsatta-regular.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mango Slice/Amsatta - Regular",
       "quantity": "200 g",
@@ -207,8 +268,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 16,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20006455_2-fresho-jackfruit-peeled.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Jackfruit - Peeled",
       "quantity": "250 g",
@@ -219,8 +281,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 17,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001494_1-turkel-apricot-dried.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Turkel",
       "title": "Apricot - Dried",
       "quantity": "200 g - Box",
@@ -231,6 +294,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 18,
       "image": "https://www.bigbasket.com/media/uploads/p/m/1221805_1-fresho-tender-coconut-premium-45-kg-6-kg.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -243,8 +307,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 19,
       "image": "https://www.bigbasket.com/media/uploads/p/m/1221868_1-fresho-tender-coconut.jpg?tr=w-3840,q=80",
-      "discount": 33,
+      "discount": "33% OFF",
       "brand": "Fresho",
       "title": "Tender Coconut",
       "quantity": "5 pcs - (5 kg - 8 kg)",
@@ -255,6 +320,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 20,
       "image": "https://www.bigbasket.com/media/uploads/p/m/1202819_1-fresho-pomegranate-peeled-250-g-cucumber-1-kg-approx-4-to-5-nos.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -267,8 +333,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 21,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40021631_3-fresho-sugar-palm-fruit.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sugar Palm Fruit",
       "quantity": "4 pcs",
@@ -279,6 +346,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 22,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40086154_3-fresho-tender-coconut-premium-king-coconut.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -291,6 +359,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 23,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40113933_1-fresho-mixed-fruit-regular-salad.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -303,8 +372,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 24,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005854_14-fresho-muskmelon-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Muskmelon - Diced",
       "quantity": "200 g",
@@ -315,6 +385,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 25,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40013420_2-edanta-foods-garlic-peeled.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Edanta Foods",
@@ -327,6 +398,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 26,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40113932_1-fresho-mixed-veg-premium-salad.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -339,8 +411,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 27,
       "image": "https://www.bigbasket.com/media/uploads/p/m/1202745_1-bb-combo-pineapple-and-pomegranate-cut.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "bb Combo",
       "title": "Pineapple and Pomegranate Cut",
       "quantity": "Combo - 2 Items",
@@ -351,6 +424,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 28,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005852_6-fresho-watermelon-diced.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -363,8 +437,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 29,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40134284_2-fresho-coconut-grated.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Coconut - Grated",
       "quantity": "100 g",
@@ -375,8 +450,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 30,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40200234_1-fresho-tender-coconut.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Tender Coconut",
       "quantity": "1 pc",
@@ -387,8 +463,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 31,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40192104_9-fresho-frozen-green-peas.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Frozen Green Peas",
       "quantity": "500 g - Pouch",
@@ -399,8 +476,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 32,
       "image": "https://www.bigbasket.com/media/uploads/p/m/1203447_1-fresho-garlic-peeled.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Garlic - Peeled",
       "quantity": "3x100 g - Multipack",
@@ -411,8 +489,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 33,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40208830_10-fresho-frozen-sweet-corn.jpg?tr=w-3840,q=80",
-      "discount": 28,
+      "discount": "28% OFF",
       "brand": "Fresho",
       "title": "Frozen Sweet Corn",
       "quantity": "1 kg - Pouch",
@@ -423,8 +502,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 34,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40050087_4-fresho-pumpkin-green-cut.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pumpkin Green - Cut",
       "quantity": "500 g",
@@ -435,8 +515,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 35,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40050704_2-fresho-ash-gourd-cut.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ash Gourd - Cut",
       "quantity": "500 g",
@@ -447,8 +528,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 36,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000018_20-fresho-baby-corn-peeled.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Baby Corn - Peeled",
       "quantity": "500 g",
@@ -459,8 +541,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 37,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005790_8-fresho-cut-cauliflower-washed.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Cut Cauliflower, Washed",
       "quantity": "250 g",
@@ -471,8 +554,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 38,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005767_13-fresho-beans-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Beans - Diced",
       "quantity": "200 g",
@@ -483,8 +567,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 39,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40019379_5-fresho-coconut-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Coconut - Diced",
       "quantity": "201 g",
@@ -495,8 +580,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 40,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40016101_3-fresho-broccoli-florets.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Broccoli - Florets",
       "quantity": "202 g",
@@ -507,8 +593,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 41,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30005204_3-fresho-methi-chopped.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Methi - Chopped",
       "quantity": "203 g",
@@ -519,8 +606,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 42,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005846_6-fresho-yam-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Yam - Diced",
       "quantity": "250 g",
@@ -531,8 +619,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 43,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40152633_1-fresho-dry-copracoconut.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Dry Copra/Coconut",
       "quantity": "251 g",
@@ -543,8 +632,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 44,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40055177_4-fresho-spinach-chopped.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Spinach - Chopped",
       "quantity": "252 g",
@@ -555,8 +645,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 45,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005784_6-fresho-carrots-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Carrots - Diced",
       "quantity": "200 g",
@@ -567,8 +658,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 46,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30005202_10-fresho-ginger-chopped.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ginger - Chopped",
       "quantity": "201 g",
@@ -579,8 +671,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 47,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30005196_9-fresho-drumstick-cut.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Drumstick - Cut",
       "quantity": "202 g",
@@ -591,8 +684,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 48,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40050085_4-fresho-yam-cut.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Yam - Cut",
       "quantity": "500 g",
@@ -603,8 +697,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 49,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000693_11-fresho-sweet-corn-pellets.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sweet Corn - Pellets",
       "quantity": "250 g",
@@ -615,6 +710,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 50,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40021066_4-fresho-cut-mushroom.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -627,8 +723,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 51,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20004776_3-fresho-delhi-carrots-grated.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Delhi Carrots - Grated",
       "quantity": "250 g",
@@ -639,8 +736,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 52,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005778_5-fresho-bitter-gourd-sliced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bitter Gourd - Sliced",
       "quantity": "250 g",
@@ -651,8 +749,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 53,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005782_5-fresho-carrot-sliced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Carrot - Sliced",
       "quantity": "200 g",
@@ -663,8 +762,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 54,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40035573_3-fresho-onion-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Onion - Diced",
       "quantity": "500 g",
@@ -675,8 +775,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 55,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20004774_3-fresho-ridge-gourd-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ridge Gourd - Diced",
       "quantity": "250 g",
@@ -687,8 +788,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 56,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20004773_4-fresho-snake-gourd-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Snake gourd - Diced",
       "quantity": "250 g",
@@ -699,8 +801,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 57,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40010689_3-fresho-potato-wedges.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Potato - Wedges",
       "quantity": "250 g",
@@ -711,8 +814,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 58,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005825_5-fresho-ready-to-cook-potato-french-fries.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ready to Cook - Potato French Fries",
       "quantity": "251 g",
@@ -723,8 +827,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 59,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005796_8-fresho-coriander-leaves-chopped.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Coriander Leaves - Chopped",
       "quantity": "252 g",
@@ -735,8 +840,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 60,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40055174_4-fresho-mint-chopped.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mint - Chopped",
       "quantity": "253 g",
@@ -747,8 +853,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 61,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40035691_3-fresho-capsicum-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Capsicum - Diced",
       "quantity": "500 g",
@@ -759,8 +866,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 62,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30005197_10-fresho-bottle-gourd-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bottle Gourd - Diced",
       "quantity": "250 g",
@@ -771,8 +879,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 63,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40055175_4-fresho-spring-onion-chopped.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Spring Onion - Chopped",
       "quantity": "251 g",
@@ -783,8 +892,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 64,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005776_16-fresho-bitter-gourd-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bitter Gourd - Diced",
       "quantity": "252 g",
@@ -795,8 +905,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 65,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40035571_1-fresho-tomato-diced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Tomato - Diced",
       "quantity": "500 g",
@@ -807,8 +918,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 66,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005798_5-fresho-cucumber-sliced.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Cucumber - Sliced",
       "quantity": "200 g",
@@ -819,8 +931,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 67,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40158434_4-fresho-organic-sprouts-mixed-gram.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Organic Sprouts Mixed Gram",
       "quantity": "200 g",
@@ -831,8 +944,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 68,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40292148_2-fresho-organic-sprouts-mixed-gram.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Organic Sprouts Mixed Gram",
       "quantity": "150 g",
@@ -843,8 +957,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 69,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40292145_2-fresho-organic-sprouts-moong-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Organic Sprouts Moong Green",
       "quantity": "150 g",
@@ -855,8 +970,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 70,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40292146_2-fresho-organic-sprouts-channa-brown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Organic Sprouts Channa Brown",
       "quantity": "150 g",
@@ -867,8 +983,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 71,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40292147_2-fresho-organic-sprouts-horse-gram.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Organic Sprouts Horse Gram",
       "quantity": "150 g",
@@ -879,8 +996,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 72,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001465_13-fresho-cut-indian-fruit-pack.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Cut Indian Fruit Pack",
       "quantity": "400 g",
@@ -891,8 +1009,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 73,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20005457_4-fresho-cut-fruit-salad.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Cut - Fruit Salad",
       "quantity": "235 g",
@@ -903,8 +1022,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 74,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40020129_8-fresho-green-salad.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Green Salad",
       "quantity": "300 g",
@@ -915,8 +1035,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 75,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40157564_2-fresho-microgreen-sunflower.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Microgreen Sunflower",
       "quantity": "50 g",
@@ -927,6 +1048,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 76,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40119455_2-brotos-dehydrated-sprouts-moth-bean.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Brotos",
@@ -939,6 +1061,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 77,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40119454_2-brotos-dehydrated-sprouts-moong-bean.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Brotos",
@@ -951,8 +1074,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 78,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000984_11-fresho-sprouts-mataki.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Mataki",
       "quantity": "200 g",
@@ -963,6 +1087,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 79,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20004313_1-sproutamins-sprouts-mixed.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Sproutamins",
@@ -975,8 +1100,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 80,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40158437_4-fresho-organic-sprouts-channa-brown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Organic Sprouts Channa Brown",
       "quantity": "200 g",
@@ -987,6 +1113,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 81,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001458_12-fresho-sprouts-alfalfa.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -999,6 +1126,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 82,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40077317_2-fresho-sprouts-methi.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1011,6 +1139,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 83,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40111614_1-tadaa-boiled-rajma.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Tadaa",
@@ -1023,6 +1152,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 84,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40111613_1-tadaa-boiled-kabuli-chana.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Tadaa",
@@ -1035,6 +1165,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 85,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40077316_2-fresho-sprouts-green-pea.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1047,8 +1178,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 86,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40141974_1-brotos-lobia-sprouts-dehydrated.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Brotos",
       "title": "Lobia Sprouts - Dehydrated",
       "quantity": "80 g",
@@ -1059,6 +1191,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 87,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40077318_2-fresho-beans-moth-sprouts.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1071,8 +1204,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 88,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40025935_2-fresho-sprouts-mataki.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Mataki",
       "quantity": "200 g",
@@ -1083,8 +1217,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 89,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001112_11-fresho-sprouts-mixed-gram.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Mixed Gram",
       "quantity": "200 g",
@@ -1095,8 +1230,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 90,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001123_14-fresho-sprouts-channa-brown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Channa Brown",
       "quantity": "200 g",
@@ -1107,8 +1243,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 91,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40208992_5-fresho-organic-sprouts-horse-gram.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Organic Sprouts Horse Gram",
       "quantity": "200 g",
@@ -1119,8 +1256,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 92,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40158436_4-fresho-organic-sprouts-moong-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Organic Sprouts Moong Green",
       "quantity": "200 g",
@@ -1131,8 +1269,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 93,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40251947_4-fresho-organic-sprouts-mataki-for-indian-cooking-salad.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Organic Sprouts - Mataki",
       "quantity": "200 g",
@@ -1143,8 +1282,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 94,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40025936_2-fresho-sprouts-mixed-gram.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Mixed Gram",
       "quantity": "200 g",
@@ -1155,8 +1295,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 95,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20003617_1-fresho-sprouts-green-moong.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Green Moong",
       "quantity": "150 g",
@@ -1167,8 +1308,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 96,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20003616_1-fresho-sprouts-mixed.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Mixed",
       "quantity": "150 g",
@@ -1179,8 +1321,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 97,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000355_11-fresho-sprouts-mixed-gram.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Mixed Gram",
       "quantity": "200 g",
@@ -1191,8 +1334,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 98,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000356_11-fresho-sprouts-moong-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Moong Green",
       "quantity": "200 g",
@@ -1203,8 +1347,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 99,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000357_11-fresho-sprouts-channa-brown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Channa Brown",
       "quantity": "200 g",
@@ -1215,8 +1360,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 100,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000983_11-fresho-sprouts-moong-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sprouts - Moong Green",
       "quantity": "200 g",
@@ -1227,8 +1373,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 101,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30005183_12-fresho-pulav-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Carrot Strips and Beans Strip",
       "quantity": "200 g",
@@ -1239,8 +1386,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 102,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40115641_2-fresho-fried-rice-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pulav Mix",
       "quantity": "250 g",
@@ -1251,8 +1399,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 103,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005881_9-fresho-sambar-pack.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Fried Rice Mix",
       "quantity": "300 g",
@@ -1263,8 +1412,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 104,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40010010_3-fresho-cut-cauliflower-broccoli-washed.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sambar Pack",
       "quantity": "250 g",
@@ -1275,8 +1425,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 105,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40010011_6-fresho-carrots-sliced-broccoli-florets-and-cauliflower-florets.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Cut Cauliflower & Broccoli, Washed",
       "quantity": "200 g",
@@ -1287,8 +1438,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 106,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005882_9-fresho-veg-biriyani-pack.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Carrots Sliced, Broccoli Florets and Cauliflower Florets",
       "quantity": "220 g",
@@ -1299,8 +1451,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 107,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40010009_3-fresho-carrots-and-peas.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Veg Biriyani Pack",
       "quantity": "1 pc",
@@ -1311,8 +1464,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 108,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40010008_5-fresho-sliced-peppers.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Carrots and Peas",
       "quantity": "200 g",
@@ -1323,8 +1477,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 109,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20006190_4-fresho-mix-gobhi-parantha.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sliced Peppers",
       "quantity": "300 g",
@@ -1335,8 +1490,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 110,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40025986_3-fresho-mooli-paratha-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mix - Gobhi Parantha",
       "quantity": "150 g",
@@ -1347,6 +1503,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 111,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40133907_1-institutional-channa-brown.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1359,8 +1516,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 112,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40025988_3-fresho-chutney-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Institutional",
       "title": "Chana - Brown//Kadale Kaalu",
       "quantity": "1 kg",
@@ -1371,8 +1529,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 113,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40125654_5-fresho-veg-spice-combo-pack.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Chutney Mix",
       "quantity": "140 g",
@@ -1383,8 +1542,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 114,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40012483_5-fresho-sandwich-chutney-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Veg Spice - Combo Pack",
       "quantity": "400 g - Punnet",
@@ -1395,8 +1555,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 115,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40012479_3-fresho-sweet-corn-mexican.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sandwich Chutney - Mix",
       "quantity": "250 g",
@@ -1407,8 +1568,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 116,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40020131_3-fresho-lettuce-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sweet Corn - Mexican",
       "quantity": "250 g",
@@ -1419,8 +1581,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 117,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40020127_4-fresho-aloo-mutter.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lettuce Mix",
       "quantity": "200 g",
@@ -1431,6 +1594,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 118,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005884_6-fresho-karakozhmbu-pack-spicy-sambar-pack.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1443,8 +1607,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 119,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20006189_3-fresho-mix-palak-saag.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Karakozhmbu Pack ( Spicy Sambar pack)",
       "quantity": "300 g",
@@ -1455,6 +1620,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 120,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005883_2-fresho-chow-chow-kootu-pack.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1467,6 +1633,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 121,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20004712_8-fresho-pulusumix.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1479,6 +1646,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 122,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005890_3-fresho-morekozhambu-pack.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1491,6 +1659,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 123,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005878_3-fresho-exotic-veg-hamper.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1503,8 +1672,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 124,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40012482_3-fresho-pizza-topping.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Exotic Veg Hamper",
       "quantity": "220 g",
@@ -1515,8 +1685,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 125,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40020130_2-fresho-kids-vegetables.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pizza - Topping",
       "quantity": "270 g",
@@ -1527,6 +1698,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 126,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40012473_2-fresho-continental-stir-fry.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1539,8 +1711,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 127,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40012480_3-fresho-mushroom-stir-fry.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Continental - Stir Fry",
       "quantity": "250 g",
@@ -1551,8 +1724,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 128,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40012478_4-fresho-makhanwala-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mushroom - Stir Fry",
       "quantity": "400 g",
@@ -1563,6 +1737,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 129,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30005184_11-fresho-cut-indian-rice-noddles-mix.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1575,6 +1750,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 130,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40133903_1-institutional-moong-whole-green.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -1587,8 +1763,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 131,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40010012_6-fresho-carrot-strips-aloo-strips-green-peas-peeled.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Institutional",
       "title": "Institutional Green Moong - Whole",
       "quantity": "1 kg",
@@ -1599,8 +1776,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 132,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40025987_2-fresho-veg-medley.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Carrot Strips, Aloo Strips, Green peas peeled",
       "quantity": "235 g",
@@ -1611,8 +1789,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 133,
       "image": "https://www.bigbasket.com/media/uploads/p/m/1202322_1-fresho-pear-green-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pear - Green, Imported",
       "quantity": "2x4 pcs - Multipack",
@@ -1623,8 +1802,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 134,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30009286_9-fresho-blueberry.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Blueberry",
       "quantity": "125 g",
@@ -1635,8 +1815,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 135,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000911_32-fresho-kiwi-green.jpg?tr=w-3840,q=80",
-      "discount": 28,
+      "discount": "28% OFF",
       "brand": "Fresho",
       "title": "Kiwi - Green",
       "quantity": "3 pcs",
@@ -1647,8 +1828,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 136,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40008982_15-fresho-dragon-fruit.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Dragon Fruit (Loose)",
       "quantity": "1 pc - 250 to 350 g",
@@ -1659,8 +1841,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 137,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30002322_11-fresho-guava-thai.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Guava - Thai (Loose)",
       "quantity": "1 pc",
@@ -1671,8 +1854,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 138,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30009284_8-fresho-avocado-imported-medium.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Avocado - Imported, Medium (Loose)",
       "quantity": "1 pc",
@@ -1683,8 +1867,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 139,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40132831_4-fresho-avocado-imported-small.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Avocado Imported - Small",
       "quantity": "1 pc - Approx. 120-160gm",
@@ -1695,8 +1880,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 140,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40113536_4-fresho-dragon-fruit-red-flesh.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Dragon Fruit - Red Flesh",
       "quantity": "1 pc",
@@ -1707,8 +1893,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 141,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40083980_6-fresho-blueberry.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Blueberry",
       "quantity": "125 g",
@@ -1719,8 +1906,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 142,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000482_23-fresho-grapes-red-globe.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grapes - Red Globe",
       "quantity": "1 kg",
@@ -1731,8 +1919,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 143,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000263_12-fresho-strawberry.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Strawberry",
       "quantity": "200 g",
@@ -1743,8 +1932,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 144,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40229414_1-fresho-grapes-black-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grapes - Black Seedless",
       "quantity": "500 g",
@@ -1755,8 +1945,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 145,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000312_19-fresho-avocado.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Avocado (Loose)",
       "quantity": "1 kg",
@@ -1767,8 +1958,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 146,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20001009_11-fresho-grapes-bangalore-blue.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grapes - Bangalore Blue",
       "quantity": "1 kg",
@@ -1779,8 +1971,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 147,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20001006_8-fresho-fresh-figs.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Fresh Figs",
       "quantity": "1 kg",
@@ -1791,8 +1984,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 148,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40099566_1-fresho-cape-gooseberry.jpg?tr=w-3840,q=80",
-      "discount": 36,
+      "discount": "36% OFF",
       "brand": "Fresho",
       "title": "Cape Gooseberry",
       "quantity": "100 g",
@@ -1803,8 +1997,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 149,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20003957_2-fresho-ber-apple.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ber - Apple (Loose)",
       "quantity": "1 kg",
@@ -1815,8 +2010,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 150,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000350_20-fresho-custard-apple.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Custard Apple",
       "quantity": "1 kg",
@@ -1827,8 +2023,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 151,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30002319_2-fresho-longan.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Longan",
       "quantity": "1 kg",
@@ -1839,8 +2036,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 152,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000544_14-fresho-passion-fruit.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Passion Fruit",
       "quantity": "1 kg",
@@ -1851,8 +2049,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 153,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40066486_4-fresho-soursop.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Soursop",
       "quantity": "1 pc - 400 - 800g",
@@ -1863,8 +2062,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 154,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30009291_4-fresho-grape-fruit-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grape fruit - Imported (Loose)",
       "quantity": "1 pc - (Approx. 200 g -  300 g)",
@@ -1875,8 +2075,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 155,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40025342_18-fresho-zespri-kiwi-sun-gold.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Zespri Kiwi - Sun Gold",
       "quantity": "3 pcs",
@@ -1887,8 +2088,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 156,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001528_10-fresho-persimmon-amarphal.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Persimmon /Amarphal",
       "quantity": "1 kg",
@@ -1899,8 +2101,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 157,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001778_2-fresho-cherry-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Cherry - Imported",
       "quantity": "250 g",
@@ -1911,8 +2114,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 158,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40004344_17-fresho-tamarind-sweet.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Tamarind - Sweet",
       "quantity": "225 g",
@@ -1923,8 +2127,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 159,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30005030_9-fresho-grape-fruit-indian.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grape Fruit - Indian (Loose)",
       "quantity": "1 pc - 300gm-500gm",
@@ -1935,8 +2140,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 160,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000573_14-fresho-plum-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Plum - Imported",
       "quantity": "1 kg",
@@ -1947,8 +2153,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 161,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40085590_1-fresho-blackberry-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "BlackBerry - Imported",
       "quantity": "125 g",
@@ -1959,8 +2166,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 162,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40085589_1-fresho-raspberry-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Raspberry - Imported",
       "quantity": "125 g",
@@ -1971,8 +2179,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 163,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40277781_1-fresho-guava-thai.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Guava - Thai",
       "quantity": "1 kg",
@@ -1983,8 +2192,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 164,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40122798_4-fresho-grapes-assorted-seedless-bi-colour-green-black.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grapes - Assorted Seedless, Bi Colour, Green & Black",
       "quantity": "500 g",
@@ -1995,8 +2205,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 165,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40229412_1-fresho-peach-flat-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Peach Flat - Imported",
       "quantity": "2 pcs",
@@ -2007,8 +2218,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 166,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40220292_2-fresho-zespri-kiwi-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Zespri Kiwi - Green",
       "quantity": "4 pcs",
@@ -2019,8 +2231,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 167,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40197365_4-fresho-custard-apple-premium.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Custard Apple - Premium",
       "quantity": "4 pcs - (Approx. 800 g - 900 g)",
@@ -2031,8 +2244,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 168,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40134283_6-fresho-custard-apple-premium.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Custard Apple - Premium",
       "quantity": "2 pcs",
@@ -2043,8 +2257,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 169,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40321580_1-fresho-custard-apple.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Custard Apple Golden",
       "quantity": "1 kg",
@@ -2055,8 +2270,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 170,
       "image": "https://www.bigbasket.com/media/uploads/p/m/60000614_3-fresho-grapes-panner.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grapes - Panner",
       "quantity": "1 kg",
@@ -2067,8 +2283,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 171,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40018335_6-fresho-grapes-red-globe.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grapes - Red globe",
       "quantity": "250 g",
@@ -2079,8 +2296,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 172,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000998_15-fresho-cherry.jpg?tr=w-3840,q=80",
-      "discount": 24,
+      "discount": "24% OFF",
       "brand": "Fresho",
       "title": "Cherry",
       "quantity": "400 g",
@@ -2091,6 +2309,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 173,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40218330_1-fresho-peach-indian.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -2103,8 +2322,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 174,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40027410_3-fresho-apricot.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apricot",
       "quantity": "250 g",
@@ -2115,8 +2335,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 175,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000063_20-fresho-broccoli.jpg?tr=w-3840,q=80",
-      "discount": 39,
+      "discount": "39% OFF",
       "brand": "Fresho",
       "title": "Broccoli",
       "quantity": "1 pc - (Approx. 250g-500g)",
@@ -2127,8 +2348,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 176,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000273_16-fresho-mushrooms-button.jpg?tr=w-3840,q=80",
-      "discount": 42,
+      "discount": "42% OFF",
       "brand": "Fresho",
       "title": "Mushrooms - Button",
       "quantity": "1 pack - (Approx. 180g - 200 g)",
@@ -2139,8 +2361,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 177,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000668_12-fresho-cucumber-english.jpg?tr=w-3840,q=80",
-      "discount": 50,
+      "discount": "50% OFF",
       "brand": "Fresho",
       "title": "Cucumber - English (Loose)",
       "quantity": "1 kg",
@@ -2151,8 +2374,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 178,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40004992_14-fresho-sweet-corn.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sweet Corn (Loose)",
       "quantity": "2 pcs",
@@ -2163,8 +2387,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 179,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000133_14-fresho-lettuce-iceberg.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lettuce - Iceberg",
       "quantity": "1 pc - (Approx. 250g-500g)",
@@ -2175,8 +2400,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 180,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000018_20-fresho-baby-corn-peeled.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Baby Corn - Peeled",
       "quantity": "500 g",
@@ -2187,8 +2413,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 181,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40016101_3-fresho-broccoli-florets.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Broccoli - Florets",
       "quantity": "200 g",
@@ -2199,8 +2426,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 182,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000062_22-fresho-broccoli.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Broccoli",
       "quantity": "1 pc - (Approx. 100g-300g)",
@@ -2211,8 +2439,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 183,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000061_22-fresho-broccoli.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Broccoli",
       "quantity": "100 g",
@@ -2223,8 +2452,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 184,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40029981_3-fresho-mint-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mint - Organically Grown",
       "quantity": "1 kg",
@@ -2235,8 +2465,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 185,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000328_13-fresho-dill-leaves.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Dill Leaves",
       "quantity": "1 kg",
@@ -2247,8 +2478,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 186,
       "image": "https://www.bigbasket.com/media/uploads/p/m/50000556_4-fresho-sweet-potato-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sweet Potato - Organically Grown (Loose)",
       "quantity": "1 kg",
@@ -2259,8 +2491,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 187,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000316_15-fresho-baby-potato.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Baby Potato (Loose)",
       "quantity": "1 kg",
@@ -2271,8 +2504,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 188,
       "image": "https://www.bigbasket.com/media/uploads/p/m/50000479_5-fresho-capsicum-green-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Capsicum - Green, Organically Grown (Loose)",
       "quantity": "1 kg",
@@ -2283,8 +2517,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 189,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40001242_16-fresho-amaranthus-red-cleaned-without-roots.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Amaranthus - Red Cleaned, without roots",
       "quantity": "1 kg",
@@ -2295,8 +2530,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 190,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001962_4-fresho-tomato-cherry.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Tomato - Cherry",
       "quantity": "1 kg",
@@ -2307,8 +2543,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 191,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000318_13-fresho-lettuce-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lettuce - Green",
       "quantity": "1 kg",
@@ -2319,8 +2556,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 192,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40026326_2-fresho-rosemary.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Rosemary",
       "quantity": "10 g",
@@ -2331,8 +2569,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 193,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000129_17-fresho-lemon-grass.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lemon Grass",
       "quantity": "100 g",
@@ -2343,8 +2582,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 194,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000313_13-fresho-celery.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Celery",
       "quantity": "1 kg",
@@ -2355,8 +2595,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 195,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40124625_1-fresho-capsicum-red-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Capsicum - Red, Organically Grown (Loose)",
       "quantity": "1 pc",
@@ -2367,8 +2608,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 196,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40211817_1-fresho-zucchini-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Zucchini - Green",
       "quantity": "2 pcs Approx (300-400g)",
@@ -2379,8 +2621,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 197,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000019_17-fresho-baby-corn-unpeeled.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Baby Corn - Unpeeled (Loose)",
       "quantity": "1 kg",
@@ -2391,8 +2634,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 198,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40124626_1-fresho-capsicum-yellow-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Capsicum - Yellow, Organically Grown (Loose)",
       "quantity": "1 pc",
@@ -2403,8 +2647,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 199,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40001526_13-fresho-wheat-grass-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Wheat Grass - Organically Grown",
       "quantity": "20 g",
@@ -2415,8 +2660,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 200,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40016095_2-fresho-lettuce-romaine.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lettuce - Romaine",
       "quantity": "500 g",
@@ -2427,8 +2673,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 201,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20002674_5-fresho-asparagus.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Asparagus",
       "quantity": "1 kg",
@@ -2439,8 +2686,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 202,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40198830_2-fresho-basil-italian-hydroponically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Basil Italian - Hydroponically Grown",
       "quantity": "100 g",
@@ -2451,8 +2699,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 203,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000319_19-fresho-capsicum-red.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Capsicum - Red (Loose)",
       "quantity": "1 kg",
@@ -2463,8 +2712,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 204,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40211818_1-fresho-zucchini-yellow.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Zucchini - Yellow",
       "quantity": "2 pcs Approx (300-400g)",
@@ -2475,8 +2725,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 205,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40198833_1-fresho-celery-hydroponically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Celery - Hydroponically Grown",
       "quantity": "150 - 200 g",
@@ -2487,8 +2738,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 206,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000663_2-fresho-parsley-leaves-curly.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Parsley Leaves - Curly",
       "quantity": "1 kg",
@@ -2499,8 +2751,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 207,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20003682_4-fresho-mushrooms-milky.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mushrooms - Milky",
       "quantity": "200 g",
@@ -2511,8 +2764,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 208,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001293_20-fresho-aloe-vera-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Aloe Vera - Organically grown (Loose)",
       "quantity": "1 pc",
@@ -2523,8 +2777,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 209,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000315_13-fresho-pak-choi.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pak Choi",
       "quantity": "1 kg",
@@ -2535,8 +2790,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 210,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40050056_3-fresho-english-cucumber-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "English Cucumber - Organically grown (Loose)",
       "quantity": "1 kg",
@@ -2547,8 +2803,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 211,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40101325_1-fresho-kale-curled-american.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Kale - Curled, American",
       "quantity": "1 pc - 200 to 250 gm",
@@ -2559,8 +2816,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 212,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30006463_4-fresho-tulsi-leaves.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Tulsi Leaves",
       "quantity": "1 kg",
@@ -2571,8 +2829,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 213,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40265954_4-fresho-snibs-peppers-pack.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Snibs Peppers Pack",
       "quantity": "250 g",
@@ -2583,8 +2842,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 214,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000693_11-fresho-sweet-corn-pellets.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sweet Corn - Pellets",
       "quantity": "250 g",
@@ -2595,8 +2855,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 215,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000455_10-fresho-cucumber-white.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Cucumber - White (Loose)",
       "quantity": "1 kg",
@@ -2607,8 +2868,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 216,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40004345_10-fresho-lettuce-red.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lettuce - Red",
       "quantity": "70 to 100 g (Bunch)",
@@ -2619,8 +2881,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 217,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40200232_1-fresho-chinese-cabbage.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Chinese Cabbage",
       "quantity": "1 pc - (Approx. 750 g - 1 kg)",
@@ -2631,8 +2894,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 218,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20001020_9-fresho-leeks.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Leeks",
       "quantity": "1 kg",
@@ -2643,8 +2907,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 219,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000323_15-fresho-capsicum-yellow.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Capsicum - Yellow (Loose)",
       "quantity": "1 Kg",
@@ -2655,8 +2920,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 220,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40198829_1-fresho-baby-spinach-hydroponically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Baby Spinach - Hydroponically Grown",
       "quantity": "100 g",
@@ -2667,6 +2933,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 221,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40021066_4-fresho-cut-mushroom.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -2679,8 +2946,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 222,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30006456_1-fresho-chilli-thai-bird.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Chilli - Thai Bird (Loose)",
       "quantity": "1 kg",
@@ -2691,8 +2959,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 223,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20005421_3-fresho-rose-red-flower.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Rose - Red Flower",
       "quantity": "1 pc",
@@ -2703,8 +2972,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 224,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40201307_1-fresho-white-orchids.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "White Orchids",
       "quantity": "10 pcs",
@@ -2715,8 +2985,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 225,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40201306_1-fresho-purple-orchids.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Purple Orchids",
       "quantity": "10 pcs",
@@ -2727,8 +2998,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 226,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40234328_1-shades-of-spring-designers-choice-bouquet-surprise-box-without-vase-farm-fresh.jpg?tr=w-3840,q=80",
-      "discount": 24,
+      "discount": "24% OFF",
       "brand": "Shades of Spring",
       "title": "Designers Choice Bouquet Surprise Box - Without Vase, Farm Fresh",
       "quantity": "1 Pc",
@@ -2739,8 +3011,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 227,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40234326_1-shades-of-spring-flowers-with-aroma-without-vase-farm-fresh.jpg?tr=w-3840,q=80",
-      "discount": 24,
+      "discount": "24% OFF",
       "brand": "Shades of Spring",
       "title": "Flowers With Aroma - Without Vase, Farm Fresh",
       "quantity": "1 Pc",
@@ -2751,8 +3024,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 228,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40276785_2-fresho-roses-dutch-red.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Fresho Roses - Dutch Red",
       "quantity": "50 gm - 1 pc",
@@ -2763,8 +3037,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 229,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40323324_1-hoovu-fresh-10-red-roses-bouquet.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "10 Red Roses Bouquet",
       "quantity": "1 pc",
@@ -2775,8 +3050,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 230,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40322026_3-the-floral-portrait-5-gerberas-bouquet-red.jpg?tr=w-3840,q=80",
-      "discount": 82,
+      "discount": "82% OFF",
       "brand": "The Floral Portrait",
       "title": "5 Gerberas Bouquet - Red",
       "quantity": "1 pc",
@@ -2787,8 +3063,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 231,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40322038_3-the-floral-portrait-5-sunflowers-bouquet.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "The Floral Portrait",
       "title": "5 Sunflowers Bouquet",
       "quantity": "1 pc",
@@ -2799,8 +3076,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 232,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40276786_1-fresho-roses-dutch-white.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Fresho Roses - Dutch White",
       "quantity": "50 gm - 1 pc",
@@ -2811,8 +3089,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 233,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20002678_3-fresho-chrysanthemumshevanti-flower.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Chrysanthemum/Shevanti Flower",
       "quantity": "1 kg",
@@ -2823,8 +3102,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 234,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20001032_9-fresho-marigold-flower-yellow.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Marigold Flower - Yellow",
       "quantity": "500 g",
@@ -2835,8 +3115,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 235,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20002679_4-fresho-marigold-flower-orange.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Marigold Flower - Orange",
       "quantity": "1 kg",
@@ -2847,8 +3128,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 236,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232197_1-fresho-tulsi-mola-used-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Tulsi Mola - Used To Decorate, For Festivals & Puja",
       "quantity": "1 pc",
@@ -2859,8 +3141,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 237,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232540_1-fresho-aralioleander-flower-used-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "kanagale/Oleander Flower - Used To Decorate  For Festivals",
       "quantity": "100 g",
@@ -2871,8 +3154,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 238,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232198_1-fresho-bilpatre-used-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bilpatre - Used To Decorate , For Festivals & Puja",
       "quantity": "50 g",
@@ -2883,8 +3167,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 239,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40202207_1-hoovu-fresh-bilpatre.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Bilpatre",
       "quantity": "50 g",
@@ -2895,8 +3180,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 240,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40202206_1-hoovu-fresh-tulsi-mola.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Tulsi Mola",
       "quantity": "40 cm",
@@ -2907,8 +3193,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 241,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40086156_2-fresho-mango-leaves.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mango Leaves",
       "quantity": "5 pcs",
@@ -2919,8 +3206,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 242,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40277470_1-fresho-marigold-flower-yellow-for-decoration.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Marigold Flower - Yellow, For Decoration",
       "quantity": "50 g",
@@ -2931,8 +3219,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 243,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40277471_1-fresho-marigold-flower-orange-for-decoration.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Marigold Flower - Orange, For Decoration",
       "quantity": "50 g",
@@ -2943,8 +3232,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 244,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40240448_1-fresho-chrysanthemumshevathi-flowers-white-fresh-fragrant.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Chrysanthemum/Shevathi Flowers - White, Fresh & Fragrant",
       "quantity": "1 kg",
@@ -2955,8 +3245,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 245,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232199_1-fresho-durva-grassgarike-used-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Durva Grass/Garike - Used To Decorate, For Festivals & Puja",
       "quantity": "50 g",
@@ -2967,8 +3258,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 246,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40202208_1-hoovu-fresh-durva-grassgarike.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Durva Grass/Garike",
       "quantity": "50 g",
@@ -2979,8 +3271,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 247,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40086265_1-fresho-ganpati-flower-pack.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ganpati Flower Pack",
       "quantity": "5 pcs",
@@ -2991,8 +3284,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 248,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30007008_1-fresho-bel-patta.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bel Patta",
       "quantity": "1 kg",
@@ -3003,8 +3297,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 249,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40304975_1-fresho-assorted-puja-flowers.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Assorted Puja Flowers",
       "quantity": "50 g",
@@ -3015,8 +3310,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 250,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40304974_1-fresho-assorted-puja-flowers-greens-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Assorted Puja Flowers & Greens Mix",
       "quantity": "50 g",
@@ -3027,8 +3323,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 251,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40304977_1-fresho-marigold-rose-petals-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Marigold & Rose Petals Mix",
       "quantity": "100 g",
@@ -3039,8 +3336,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 252,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40304976_1-fresho-chrysanthemumshevanti-flower-purple.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Chrysanthemum/Shevanti Flower - Purple",
       "quantity": "100 g",
@@ -3051,8 +3349,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 253,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40040790_1-fresho-bel-patta.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bel Patta",
       "quantity": "50 g",
@@ -3063,8 +3362,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 254,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40069083_1-fresho-flowers-gerbera-orange.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Flowers - Gerbera Orange",
       "quantity": "1 pc",
@@ -3075,8 +3375,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 255,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40069087_1-fresho-flowers-gerbera-pink.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Flowers - Gerbera Pink",
       "quantity": "1 pc",
@@ -3087,8 +3388,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 256,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40069086_1-fresho-flowers-gerbera-red.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Flowers - Gerbera Red",
       "quantity": "1 pc",
@@ -3099,8 +3401,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 257,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40069085_1-fresho-flowers-gerbera-white.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Flowers - Gerbera White",
       "quantity": "1 pc",
@@ -3111,8 +3414,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 258,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40069084_1-fresho-flowers-gerbera-yellow.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Flowers - Gerbera Yellow",
       "quantity": "1 pc",
@@ -3123,8 +3427,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 259,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20003765_4-fresho-chrysanthemumshevanti-flower.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Chrysanthemum/Shevanti Flower",
       "quantity": "1 kg",
@@ -3135,8 +3440,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 260,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30007028_2-fresho-lotus-pink.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lotus - Pink",
       "quantity": "1 pc",
@@ -3147,8 +3453,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 261,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30007005_1-fresho-ganpati-flowers-pack.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ganpati Flowers Pack",
       "quantity": "1 pc",
@@ -3159,8 +3466,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 262,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20003770_4-fresho-jasmine-flower.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Jasmine Flower",
       "quantity": "1 kg",
@@ -3171,8 +3479,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 263,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20001348_9-fresho-betel-leaf.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Betel Leaf",
       "quantity": "10 pcs",
@@ -3183,8 +3492,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 264,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20003403_3-fresho-banana-leaf.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Banana Leaf",
       "quantity": "5 pcs",
@@ -3195,8 +3505,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 265,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232194_1-fresho-lotus-flower-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lotus Flower - To Decorate, For Festivals & Puja",
       "quantity": "2 pcs",
@@ -3207,8 +3518,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 266,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232206_1-fresho-mango-bunches-used-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mango Leaves - Used To Decorate, For Festivals & Puja",
       "quantity": "2 pcs",
@@ -3219,8 +3531,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 267,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40196765_1-hoovu-fresh-assorted-puja-flowers.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Assorted Puja Flowers",
       "quantity": "100 g",
@@ -3231,8 +3544,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 268,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40196767_1-hoovu-fresh-assorted-roses-puja-flowers.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Assorted Roses Puja Flowers",
       "quantity": "100 g",
@@ -3243,8 +3557,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 269,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232544_1-fresho-marigold-string-used-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Marigold String - Used To Decorate, For Festivals & Puja",
       "quantity": "1 pc",
@@ -3255,8 +3570,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 270,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232195_1-fresho-assorted-puja-flowers-greens-mix-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Assorted Puja Flowers & Greens Mix - To Decorate, For Festivals & Puja",
       "quantity": "100 g",
@@ -3267,8 +3583,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 271,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40222660_1-hoovu-fresh-rose-molastring.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Rose Mola/String",
       "quantity": "40 cm",
@@ -3279,8 +3596,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 272,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40322790_1-hoovu-fresh-purple-sevanthi.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Purple Sevanthi",
       "quantity": "100 g",
@@ -3291,8 +3609,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 273,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40214550_1-hoovu-fresh-marigold-string.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Marigold String",
       "quantity": "40 cm",
@@ -3303,8 +3622,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 274,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40322789_1-hoovu-fresh-paneer-roses.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Paneer Roses",
       "quantity": "100 g",
@@ -3315,8 +3635,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 275,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40196771_1-hoovu-fresh-rajnigandha-puja-mola.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Rajnigandha Puja Mola",
       "quantity": "1 Mola (35cm)",
@@ -3327,8 +3648,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 276,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40196773_1-hoovu-fresh-assorted-puja-flowers-greens-mix.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Assorted Puja Flowers + Greens Mix",
       "quantity": "100 g",
@@ -3339,8 +3661,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 277,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40196770_1-hoovu-fresh-chrysanthemums-puja-mola.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Chrysanthemums Puja Mola",
       "quantity": "1 Mola(35cm)",
@@ -3351,8 +3674,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 278,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40214551_1-hoovu-fresh-mango-bunches.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Mango Bunches",
       "quantity": "2 Bunches",
@@ -3363,6 +3687,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 279,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40196772_1-hoovu-fresh-lotus.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Hoovu Fresh",
@@ -3375,8 +3700,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 280,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40322791_1-hoovu-fresh-turmeric-mala-40-cm.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Turmeric Mala - 40 cm",
       "quantity": "1 pc",
@@ -3387,8 +3713,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 281,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40322039_1-fresho-aavaram-poo.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Aavaram Poo",
       "quantity": "100 g",
@@ -3399,8 +3726,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 282,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40322040_1-fresho-koorai-poo.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Koorai Poo",
       "quantity": "100 g",
@@ -3411,8 +3739,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 283,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232543_1-fresho-bilpatre-string-used-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bilpatre String - Used To Decorate, For Festivals & Puja",
       "quantity": "1 pc",
@@ -3423,8 +3752,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 284,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40086155_2-fresho-betel-nut.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Betel Nut",
       "quantity": "5 pcs",
@@ -3435,8 +3765,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 285,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40149663_1-fresho-flower-garland.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Flower Garland",
       "quantity": "2 ft",
@@ -3447,8 +3778,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 286,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232188_1-fresho-assorted-puja-flowers-to-decorate-for-festivals.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Assorted Puja Flowers - To Decorate, For Festivals",
       "quantity": "100 g",
@@ -3459,8 +3791,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 287,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30006410_2-fresho-neem-leaves-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Neem Leaves - Organically Grown",
       "quantity": "1 kg",
@@ -3471,6 +3804,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 288,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40196766_1-hoovu-fresh-chrysanthemumshevanti-flower.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Hoovu Fresh",
@@ -3483,6 +3817,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 289,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40196769_1-hoovu-fresh-jasmine-mala.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Hoovu Fresh",
@@ -3495,8 +3830,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 290,
       "image": "https://www.bigbasket.com/media/uploads/p/m/900445700_1-bonzai-red-gerbera-stems.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Bonzai",
       "title": "Red Gerbera Stems",
       "quantity": "10 pcs",
@@ -3507,8 +3843,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 291,
       "image": "https://www.bigbasket.com/media/uploads/p/m/900445703_1-bonzai-white-gerbera-stems.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Bonzai",
       "title": "White Gerbera Stems",
       "quantity": "10 pcs",
@@ -3519,8 +3856,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 292,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000424_7-fresho-banana-leaf.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Banana Leaf",
       "quantity": "6 pcs",
@@ -3531,8 +3869,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 293,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30007008_1-fresho-bel-patta.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bel Patta",
       "quantity": "1 kg",
@@ -3543,6 +3882,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 294,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40214547_1-hoovu-fresh-mango-leaf-thorana.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Hoovu Fresh",
@@ -3555,6 +3895,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 295,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40214548_1-hoovu-fresh-ekkada-hoovu-string.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Hoovu Fresh",
@@ -3567,8 +3908,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 296,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40214549_1-hoovu-fresh-bilpatre-string.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Hoovu Fresh",
       "title": "Bilpatre String",
       "quantity": "40 cm",
@@ -3579,8 +3921,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 297,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232541_1-fresho-mango-leaf-thorana-used-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mango Leaf Thorana - Used To Decorate, For Festivals & Puja",
       "quantity": "1 pc",
@@ -3591,8 +3934,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 298,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40232542_1-fresho-ekkada-hoovu-string-used-to-decorate-for-festivals-puja.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ekkada Hoovu String - Used To Decorate, For Festivals & Puja",
       "quantity": "1 pc",
@@ -3603,8 +3947,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 299,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40054180_2-fresho-cut-roses-flower.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Cut Roses Flower",
       "quantity": "1 kg",
@@ -3615,8 +3960,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 300,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20005423_5-fresho-rose-petals.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Rose - Petals",
       "quantity": "100 g",
@@ -3627,6 +3973,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 301,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30007039_2-fresho-rose-yellow.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -3639,6 +3986,7 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 302,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30007043_1-fresho-rose-white.jpg?tr=w-3840,q=80",
       "discount": "",
       "brand": "Fresho",
@@ -3651,8 +3999,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 303,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40161767_5-marquis-flower-flower-hand-tied-10-red-roses-bouquet.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Marquis Flower",
       "title": "Flower - Hand Tied 10 Red Roses Bouquet",
       "quantity": "1 pc",
@@ -3663,8 +4012,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 304,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30007033_2-fresho-rose-red-flower.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Rose - Red Flower",
       "quantity": "1 kg",
@@ -3675,8 +4025,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 305,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000708_14-fresho-pomegranate.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pomegranate",
       "quantity": "1 kg",
@@ -3687,8 +4038,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 306,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40229737_3-fresho-apple-shimla-economy.jpg?tr=w-3840,q=80",
-      "discount": 43,
+      "discount": "43% OFF",
       "brand": "Fresho",
       "title": "Apple - Shimla, Economy",
       "quantity": "1 kg - (Approx. 13-14 pcs)",
@@ -3699,8 +4051,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 307,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40120006_6-fresho-pomegranate-small.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Fresho Pomegranate Regular",
       "quantity": "1 kg - (5-6 pcs per kg)",
@@ -3711,8 +4064,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 308,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40134281_16-fresho-baby-apple-shimla.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple Shimla Economy",
       "quantity": "1 kg - (Approx. 11-12 pcs)",
@@ -3723,8 +4077,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 309,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40033823_20-fresho-apple-royal-gala-regular.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Royal Gala, Regular",
       "quantity": "4 pcs - (Approx. 520 g - 600 g)",
@@ -3735,8 +4090,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 310,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000269_32-fresho-pomegranate.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pomegranate/Anar",
       "quantity": "4 pcs - (Approx. 800 g - 880 g)",
@@ -3747,8 +4103,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 311,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40277776_1-fresho-apple-red-delicious-economy.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Red Delicious, Economy",
       "quantity": "1 kg",
@@ -3759,8 +4116,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 312,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20001477_23-fresho-apple-shimla.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Shimla",
       "quantity": "6 pcs",
@@ -3771,8 +4129,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 313,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40033819_30-fresho-apple-shimla.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Shimla, Regular",
       "quantity": "4 pcs - (Approx. 550 - 640 g)",
@@ -3783,8 +4142,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 314,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40033817_10-fresho-apple-green-regular.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Green, Regular",
       "quantity": "4 pcs - (Approx. 550 - 640 g)",
@@ -3795,8 +4155,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 315,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000156_21-fresho-pineapple.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pineapple/Annanas",
       "quantity": "1 pc - 800 g -1000 g",
@@ -3807,8 +4168,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 316,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30001055_7-fresho-plum-indian.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Plum - Indian",
       "quantity": "500 g",
@@ -3819,8 +4181,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 317,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40277778_1-fresho-apple-royal-gala-economy.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Royal Gala, Economy",
       "quantity": "1 kg",
@@ -3831,8 +4194,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 318,
       "image": "https://www.bigbasket.com/media/uploads/p/m/70000495_3-fresho-pear-indian-babbu-gosha.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Indian Pears - Babbu Gosha/Babbu Gosha",
       "quantity": "1 kg",
@@ -3843,8 +4207,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 319,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000917_12-fresho-apple-fuji-regular.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Fuji, Regular",
       "quantity": "6 pcs",
@@ -3855,8 +4220,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 320,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000005_27-fresho-apple-royal-gala-economy.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Royal Gala Economy",
       "quantity": "4 pcs - (Approx.450 g-500g)",
@@ -3867,8 +4233,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 321,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40033824_23-fresho-apple-red-delicious-regular.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple Red Delicious Imported",
       "quantity": "1 kg",
@@ -3879,8 +4246,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 322,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000599_13-fresho-pear-green-indian.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pear - Green/Hara Naspati",
       "quantity": "1 kg",
@@ -3891,8 +4259,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 323,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20001088_13-fresho-apple-royal-gala.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Royal Gala",
       "quantity": "6 pcs",
@@ -3903,8 +4272,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 324,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000025_27-fresho-banana-robusta.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Banana - Robusta/Singapuri Kela",
       "quantity": "1 kg",
@@ -3915,8 +4285,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 325,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000369_13-fresho-guava.jpg?tr=w-3840,q=80",
-      "discount": 43,
+      "discount": "43% OFF",
       "brand": "Fresho",
       "title": "Guava/Amrudh",
       "quantity": "1 kg",
@@ -3927,8 +4298,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 326,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000152_22-fresho-papaya-medium.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Papaya Medium/Papita",
       "quantity": "1 pc - 800g - 1.4 kg",
@@ -3939,8 +4311,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 327,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000031_21-fresho-banana-yelakki.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Banana - Yelakki/Chinia Kela",
       "quantity": "1 kg",
@@ -3951,8 +4324,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 328,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000167_13-fresho-banana-raw-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Raw Banana - Green/Kaacha Kela",
       "quantity": "1 kg",
@@ -3963,8 +4337,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 329,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40114961_4-fresho-papaya-small.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Papaya - Small",
       "quantity": "1 pc - 500 g - 800 g",
@@ -3975,8 +4350,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 330,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000182_14-fresho-sapota.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sapota Round (Medium)/Chiku",
       "quantity": "1 kg",
@@ -3987,8 +4363,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 331,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000605_12-fresho-papaya-raw.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Papaya - Raw/Kaacha Papita",
       "quantity": "1 kg",
@@ -3999,8 +4376,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 332,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40129357_1-fresho-banana-yelakki.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Banana - Yelakki",
       "quantity": "6 pcs",
@@ -4011,8 +4389,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 333,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40129358_1-fresho-banana-robusta.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Banana - Robusta",
       "quantity": "6 pcs",
@@ -4023,8 +4402,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 334,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40194941_1-fresho-banana-raw-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Banana - Raw Green",
       "quantity": "4 pcs",
@@ -4035,8 +4415,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 335,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000911_32-fresho-kiwi-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Kiwi Green Imported",
       "quantity": "3 pcs",
@@ -4047,8 +4428,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 336,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000266_31-fresho-orange-nagpur-regular.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Orange - Nagpur (End of Season)/Santara Nagpur",
       "quantity": "1 kg - (Approx. 6 - 8 pcs)",
@@ -4059,8 +4441,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 337,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40164406_5-fresho-baby-orange-nagpur.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Baby Orange - Nagpur",
       "quantity": "1 kg - Approx (8-10 pcs)",
@@ -4071,8 +4454,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 338,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000207_24-fresho-watermelon-small.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Water Melon Kiran/Tarbuja",
       "quantity": "1 pc - 1.7 - 2.5 kg",
@@ -4083,8 +4467,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 339,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000910_12-fresho-orange-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Orange - Imported",
       "quantity": "6 pcs",
@@ -4095,8 +4480,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 340,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40094039_10-fresho-orange-nagpur-small.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Orange - Nagpur, Small",
       "quantity": "2 kg",
@@ -4107,8 +4493,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 341,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000156_21-fresho-pineapple.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pineapple/Annanas",
       "quantity": "1 pc - 800 g -1000 g",
@@ -4119,8 +4506,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 342,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40203347_2-fresho-mosambi-economy.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mosambi - Economy",
       "quantity": "1 kg",
@@ -4131,8 +4519,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 343,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000909_18-fresho-orange-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Orange Imported/Santara",
       "quantity": "4 pcs",
@@ -4143,8 +4532,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 344,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30007325_4-fresho-sun-melon.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sun Melon",
       "quantity": "1 pc - 700 g - 1.5 kg",
@@ -4155,8 +4545,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 345,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000191_19-fresho-mosambi.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mosambi",
       "quantity": "6 pcs - 800 gm - 1 kg",
@@ -4167,8 +4558,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 346,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000192_19-fresho-mosambi.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mosambi/Mosambi",
       "quantity": "4 pcs - 700-900g",
@@ -4179,8 +4571,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 347,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40008987_1-fresho-orange-mini.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Orange - Mini",
       "quantity": "3 pcs",
@@ -4191,8 +4584,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 348,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000708_14-fresho-pomegranate.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pomegranate",
       "quantity": "1 kg",
@@ -4203,8 +4597,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 349,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000263_12-fresho-strawberry.jpg?tr=w-3840,q=80",
-      "discount": 44,
+      "discount": "44% OFF",
       "brand": "Fresho",
       "title": "Strawberry",
       "quantity": "200 g",
@@ -4215,8 +4610,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 350,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40218332_1-fresho-grapes-green.jpg?tr=w-3840,q=80",
-      "discount": 48,
+      "discount": "48% OFF",
       "brand": "Fresho",
       "title": "Grapes - Green Sonaka",
       "quantity": "Approx 500 g - 1 Pack",
@@ -4227,8 +4623,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 351,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40100027_4-fresho-rasbhari.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Rasbhari",
       "quantity": "1 kg",
@@ -4239,8 +4636,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 352,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000911_32-fresho-kiwi-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Kiwi Green Imported",
       "quantity": "3 pcs",
@@ -4251,8 +4649,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 353,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40120006_6-fresho-pomegranate-small.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Fresho Pomegranate Regular",
       "quantity": "1 kg - (5-6 pcs per kg)",
@@ -4263,8 +4662,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 354,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30002322_11-fresho-guava-thai.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Guava Premium (Thai)",
       "quantity": "1 kg",
@@ -4275,8 +4675,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 355,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30009284_8-fresho-avocado-imported-medium.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Avocado - Imported, Medium",
       "quantity": "1 pc",
@@ -4287,8 +4688,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 356,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30009286_9-fresho-blueberry.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Blueberry",
       "quantity": "125 g",
@@ -4299,8 +4701,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 357,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000266_31-fresho-orange-nagpur-regular.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Orange - Nagpur (End of Season)/Santara Nagpur",
       "quantity": "1 kg - (Approx. 6 - 8 pcs)",
@@ -4311,8 +4714,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 358,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40229414_1-fresho-grapes-black-imported.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grapes - Black Seedless",
       "quantity": "500 g",
@@ -4323,8 +4727,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 359,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000092_15-fresho-coconut-large.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Coconut - Large",
       "quantity": "1 pc - (approx. 550g to 650g)",
@@ -4335,8 +4740,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 360,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40008982_15-fresho-dragon-fruit.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Dragon Fruit",
       "quantity": "1 pc - 250 to 350 g",
@@ -4347,8 +4753,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 361,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000725_12-fresho-ber.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ber",
       "quantity": "1 kg",
@@ -4359,8 +4766,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 362,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000727_13-fresho-dates-kimia-with-seed.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Dates - Kimia, with Seed",
       "quantity": "1 pc - (Approx. 400 to 500g)",
@@ -4371,8 +4779,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 363,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40033823_20-fresho-apple-royal-gala-regular.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Apple - Royal Gala, Regular",
       "quantity": "4 pcs - (Approx. 520 g - 600 g)",
@@ -4383,8 +4792,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 364,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000093_16-fresho-coconut-medium.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Coconut - Medium",
       "quantity": "1 pc - (approx. 450g to 500)",
@@ -4395,8 +4805,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 365,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000269_32-fresho-pomegranate.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pomegranate/Anar",
       "quantity": "4 pcs - (Approx. 800 g - 880 g)",
@@ -4407,8 +4818,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 366,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40218331_1-fresho-grapes-thompson-seedless.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grapes - Thompson Seedless",
       "quantity": "500 g - 1 Pack",
@@ -4419,8 +4831,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 367,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000482_23-fresho-grapes-red-globe.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Grapes - Red Globe",
       "quantity": "1 kg",
@@ -4431,8 +4844,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 368,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000283_11-fresho-green-peas.jpg?tr=w-3840,q=80",
-      "discount": 55,
+      "discount": "55% OFF",
       "brand": "Fresho",
       "title": "Green Peas",
       "quantity": "500 g",
@@ -4443,8 +4857,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 369,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000704_8-fresho-brinjal-purple-long.jpg?tr=w-3840,q=80",
-      "discount": 63,
+      "discount": "63% OFF",
       "brand": "Fresho",
       "title": "Brinjal - Purple, Long",
       "quantity": "500 g",
@@ -4455,8 +4870,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 370,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000042_42-fresho-beans-french-ring.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Beans - French, Ring",
       "quantity": "1 kg",
@@ -4467,8 +4883,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 371,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000142_17-fresho-ladies-finger.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ladies Finger/Bhindi",
       "quantity": "1 kg",
@@ -4479,8 +4896,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 372,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000435_13-fresho-brinjal-purple-bharta.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Brinjal - Purple (Bharta)/Bhanta",
       "quantity": "1 kg",
@@ -4491,8 +4909,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 373,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000664_10-fresho-beans-double.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Beans - Double",
       "quantity": "1 kg",
@@ -4503,8 +4922,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 374,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000036_20-fresho-beans-broad.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Broad Beans/Seem",
       "quantity": "1 kg",
@@ -4515,8 +4935,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 375,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000055_21-fresho-brinjal-green-long.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Brinjal - Green, Long",
       "quantity": "1 kg",
@@ -4527,8 +4948,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 376,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40160815_2-fresho-cauliflower-small.jpg?tr=w-3840,q=80",
-      "discount": 54,
+      "discount": "54% OFF",
       "brand": "Fresho",
       "title": "Cauliflower - Small",
       "quantity": "1 pc - 250 to 400 gm per pc",
@@ -4539,8 +4961,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 377,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000074_19-fresho-cauliflower.jpg?tr=w-3840,q=80",
-      "discount": 53,
+      "discount": "53% OFF",
       "brand": "Fresho",
       "title": "Cauliflower (Medium)/Phool Ghobhi",
       "quantity": "1 pc - (approx. 400 to 600 g)",
@@ -4551,8 +4974,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 378,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000066_25-fresho-cabbage.jpg?tr=w-3840,q=80",
-      "discount": 61,
+      "discount": "61% OFF",
       "brand": "Fresho",
       "title": "Cabbage Small/Patta Gobi",
       "quantity": "1 pc - (approx. 500 g to 800 g)",
@@ -4563,8 +4987,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 379,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40200233_1-fresho-cabbage.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Cabbage - Small",
       "quantity": "1 pc - (Approx. 350 g - 500 g)",
@@ -4575,8 +5000,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 380,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000278_12-fresho-knol-khol.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Knol Khol",
       "quantity": "500 g",
@@ -4587,8 +5013,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 381,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40138445_3-fresho-red-cabbage-small.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Red Cabbage - Small",
       "quantity": "1 pc - Approx. 300-600 g",
@@ -4599,8 +5026,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 382,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000084_14-fresho-chinese-cabbage.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Chinese Cabbage",
       "quantity": "1 kg",
@@ -4611,8 +5039,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 383,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000745_5-fresho-bottle-gourd.jpg?tr=w-3840,q=80",
-      "discount": 62,
+      "discount": "62% OFF",
       "brand": "Fresho",
       "title": "Bottle Gourd/Kaddu",
       "quantity": "1 pc - (Approx. 500 g - 800 g)",
@@ -4623,8 +5052,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 384,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000162_16-fresho-pumpkin-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pumpkin Green/Kaacha Kohnra",
       "quantity": "1 kg",
@@ -4635,8 +5065,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 385,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000282_10-fresho-pumpkin-disco.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pumpkin - Disco/Pakka Kohnra",
       "quantity": "1 kg",
@@ -4647,8 +5078,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 386,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000110_20-fresho-drumstickmoringa.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Drumstick/Moringa",
       "quantity": "500 g",
@@ -4659,8 +5091,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 387,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000010_20-fresho-ash-gourd.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Ash Gourd",
       "quantity": "1 kg",
@@ -4671,8 +5104,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 388,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20003767_11-fresho-bitter-gourd-forest.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Forest Bittergourd/Ghee Karela",
       "quantity": "1 kg",
@@ -4683,8 +5117,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 389,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000049_20-fresho-bitter-gourd.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bitter Gourd",
       "quantity": "500 g",
@@ -4695,8 +5130,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 390,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000979_12-fresho-palak-cleaned-without-roots.jpg?tr=w-3840,q=80",
-      "discount": 71,
+      "discount": "71% OFF",
       "brand": "Fresho",
       "title": "Palak - Cleaned, without roots",
       "quantity": "250 g",
@@ -4707,8 +5143,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 391,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000326_14-fresho-coriander-leaves.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Coriander/Dhania Patta",
       "quantity": "1 kg",
@@ -4719,8 +5156,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 392,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000111_20-fresho-methiventhaya-keerai-cleaned-without-roots.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Methi/Methi Saag",
       "quantity": "1 kg",
@@ -4731,8 +5169,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 393,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20002684_6-fresho-spring-onion.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Spring Onion/Piyaz Patta",
       "quantity": "1 kg",
@@ -4743,8 +5182,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 394,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40068300_2-fresho-bathua-saag.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Bathua Saag",
       "quantity": "1 kg",
@@ -4755,8 +5195,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 395,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000138_18-fresho-mint-leaves-cleaned-without-roots.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mint Leaves - Cleaned, without roots",
       "quantity": "250 g",
@@ -4767,8 +5208,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 396,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40001242_16-fresho-amaranthus-red-cleaned-without-roots.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Amaranthus - Red/Laal Saag",
       "quantity": "1 kg",
@@ -4779,8 +5221,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 397,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000923_9-fresho-lettuce-green.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lettuce - Green",
       "quantity": "1 pc - (Approx. 100g-250g)",
@@ -4791,8 +5234,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 398,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30006375_3-fresho-garlic-chives.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Garlic Chives",
       "quantity": "200 g",
@@ -4803,8 +5247,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 399,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000129_17-fresho-lemon-grass.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lemon Grass",
       "quantity": "100 g",
@@ -4815,8 +5260,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 400,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000107_18-fresho-dill-leaves.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Dill Leaves",
       "quantity": "500 g",
@@ -4827,8 +5273,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 401,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000075_16-fresho-celery.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Celery",
       "quantity": "250 g",
@@ -4839,8 +5286,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 402,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000157_14-fresho-pak-choi.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Pak Choi",
       "quantity": "250 g",
@@ -4851,8 +5299,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 403,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30002250_4-fresho-colocasia-leaf.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Colocasia Leaf",
       "quantity": "10 pcs",
@@ -4863,8 +5312,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 404,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000104_17-fresho-curry-leaves.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Curry Leaves",
       "quantity": "100 g",
@@ -4875,8 +5325,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 405,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40017831_2-fresho-leaf-betel-with-arracknut-pan-supari.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Leaf - Betel, with Arracknut, Pan Supari",
       "quantity": "10 g",
@@ -4887,8 +5338,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 406,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20001348_9-fresho-betel-leaf.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Betel Leaf/Pan Patta",
       "quantity": "10 pcs",
@@ -4899,8 +5351,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 407,
       "image": "https://www.bigbasket.com/media/uploads/p/m/1201413_1-fresho-onion.jpg?tr=w-3840,q=80",
-      "discount": 50,
+      "discount": "50% OFF",
       "brand": "Fresho",
       "title": "Onion",
       "quantity": "2 kg - Multipack",
@@ -4911,8 +5364,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 408,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000204_16-fresho-tomato-local.jpg?tr=w-3840,q=80",
-      "discount": 53,
+      "discount": "53% OFF",
       "brand": "Fresho",
       "title": "Tomato - Local",
       "quantity": "500 g",
@@ -4923,8 +5377,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 409,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40048457_9-fresho-potato-new-crop.jpg?tr=w-3840,q=80",
-      "discount": 50,
+      "discount": "50% OFF",
       "brand": "Fresho",
       "title": "Potato New/Naya Aalu",
       "quantity": "1 kg",
@@ -4935,8 +5390,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 410,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40162469_7-fresho-potato-new-crop.jpg?tr=w-3840,q=80",
-      "discount": 47,
+      "discount": "47% OFF",
       "brand": "Fresho",
       "title": "Potato",
       "quantity": "2 kg",
@@ -4947,8 +5403,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 411,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40125217_3-fresho-potato-red.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Potato - Red",
       "quantity": "5 kg",
@@ -4959,8 +5416,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 412,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000193_12-fresho-sweet-potato.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sweet Potato/Shakarkand",
       "quantity": "1 kg",
@@ -4971,8 +5429,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 413,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40235659_1-fresho-baby-potato-new-crop.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Baby Potato - New Crop",
       "quantity": "1 kg",
@@ -4983,8 +5442,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 414,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000331_13-fresho-onion-sambhar.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Onion - Sambhar",
       "quantity": "1 kg",
@@ -4995,8 +5455,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 415,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000198_14-fresho-tomato-cherry.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Tomato - Cherry",
       "quantity": "250 g",
@@ -5007,8 +5468,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 416,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000382_10-fresho-carrot-red.jpg?tr=w-3840,q=80",
-      "discount": 59,
+      "discount": "59% OFF",
       "brand": "Fresho",
       "title": "Carrot - Red",
       "quantity": "500 g",
@@ -5019,8 +5481,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 417,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000045_18-fresho-beetroot.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Beetroot/Chukandar",
       "quantity": "1 kg",
@@ -5031,8 +5494,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 418,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000164_14-fresho-radish-white.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Radish White/Safed Muli",
       "quantity": "1 kg",
@@ -5043,8 +5507,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 419,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40004372_11-fresho-turmeric-fresh.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Turmeric/Haldi-Kachha",
       "quantity": "1 kg",
@@ -5055,8 +5520,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 420,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000205_13-fresho-turnip.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Turnip",
       "quantity": "500 g",
@@ -5067,8 +5533,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 421,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40059853_2-fresho-yam-bean-shakalu.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Yam Bean (Shakalu)/Misrikand/Kesaur",
       "quantity": "1 kg",
@@ -5079,8 +5546,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 422,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30000472_11-fresho-thai-ginger.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Thai Ginger",
       "quantity": "250 g",
@@ -5091,8 +5559,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 423,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000273_16-fresho-mushrooms-button.jpg?tr=w-3840,q=80",
-      "discount": 54,
+      "discount": "54% OFF",
       "brand": "Fresho",
       "title": "Mushrooms - Button",
       "quantity": "1 pack - (Approx. 180g - 200 g)",
@@ -5103,8 +5572,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 424,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000283_11-fresho-green-peas.jpg?tr=w-3840,q=80",
-      "discount": 55,
+      "discount": "55% OFF",
       "brand": "Fresho",
       "title": "Green Peas",
       "quantity": "500 g",
@@ -5115,8 +5585,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 425,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000063_20-fresho-broccoli.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Broccoli",
       "quantity": "1 pc - (Approx. 250g-500g)",
@@ -5127,8 +5598,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 426,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000332_15-fresho-amla.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Amla",
       "quantity": "1 kg",
@@ -5139,8 +5611,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 427,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40066294_1-fresho-green-choliya.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Green Choliya/Hara Chana",
       "quantity": "200 g",
@@ -5151,8 +5624,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 428,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000189_13-fresho-sweet-corn-indian-bhutta.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Sweet Corn - Grade A/Indian Bhutta",
       "quantity": "1 pc",
@@ -5163,8 +5637,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 429,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40004992_14-fresho-sweet-corn.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Corn Cob /Makai",
       "quantity": "2 pcs",
@@ -5175,8 +5650,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 430,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40027363_1-fresho-neem-stem-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Neem Stem - Organically Grown",
       "quantity": "20 pcs",
@@ -5187,8 +5663,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 431,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40005817_3-fresho-green-peas-peeled.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Green Peas - Peeled",
       "quantity": "200 g",
@@ -5199,8 +5676,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 432,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000069_20-fresho-capsicum-green.jpg?tr=w-3840,q=80",
-      "discount": 62,
+      "discount": "62% OFF",
       "brand": "Fresho",
       "title": "Capsicum - Green",
       "quantity": "500 g",
@@ -5211,8 +5689,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 433,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000103_16-fresho-cucumber.jpg?tr=w-3840,q=80",
-      "discount": 65,
+      "discount": "65% OFF",
       "brand": "Fresho",
       "title": "Cucumber",
       "quantity": "500 g",
@@ -5223,8 +5702,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 434,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000668_12-fresho-cucumber-english.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "English Cucumber/Chota Khira",
       "quantity": "1 kg",
@@ -5235,8 +5715,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 435,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40058671_3-fresho-mixed-capsicum.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Mixed Capsicum",
       "quantity": "2 pcs",
@@ -5247,8 +5728,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 436,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000326_14-fresho-coriander-leaves.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Coriander/Dhania Patta",
       "quantity": "1 kg",
@@ -5259,8 +5741,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 437,
       "image": "https://www.bigbasket.com/media/uploads/p/m/30006375_3-fresho-garlic-chives.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Garlic Chives",
       "quantity": "200 g",
@@ -5271,8 +5754,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 438,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000129_17-fresho-lemon-grass.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lemon Grass",
       "quantity": "100 g",
@@ -5283,8 +5767,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 439,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000107_18-fresho-dill-leaves.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Dill Leaves",
       "quantity": "500 g",
@@ -5295,8 +5780,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 440,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000075_16-fresho-celery.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Celery",
       "quantity": "250 g",
@@ -5307,8 +5793,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 441,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000104_17-fresho-curry-leaves.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Curry Leaves",
       "quantity": "100 g",
@@ -5319,8 +5806,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 442,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40017831_2-fresho-leaf-betel-with-arracknut-pan-supari.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Leaf - Betel, with Arracknut, Pan Supari",
       "quantity": "10 g",
@@ -5331,8 +5819,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 443,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20001348_9-fresho-betel-leaf.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Betel Leaf/Pan Patta",
       "quantity": "10 pcs",
@@ -5343,8 +5832,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 444,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000117_17-fresho-ginger.jpg?tr=w-3840,q=80",
-      "discount": 60,
+      "discount": "60% OFF",
       "brand": "Fresho",
       "title": "Ginger",
       "quantity": "100 g",
@@ -5355,8 +5845,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 445,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000083_17-fresho-chilli-green-long-medium.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Chilli - Green Long, Medium",
       "quantity": "500 g",
@@ -5367,8 +5858,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 446,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000116_16-fresho-garlic.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Garlic",
       "quantity": "500 g",
@@ -5379,8 +5871,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 447,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000128_17-fresho-lemon.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lemon",
       "quantity": "500 g",
@@ -5391,8 +5884,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 448,
       "image": "https://www.bigbasket.com/media/uploads/p/m/20000732_11-fresho-lemon.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Lemon",
       "quantity": "6 pcs",
@@ -5403,8 +5897,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 449,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40122049_3-fresho-acchar-mirchiachari-mirch-lal.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Acchar Mirchi/Achari Mirch - Lal",
       "quantity": "500 g",
@@ -5415,8 +5910,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 450,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40122050_3-fresho-acchar-mirchiachari-mirch-lal.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Acchar Mirchi/Achari Mirch - Lal",
       "quantity": "250 g",
@@ -5427,8 +5923,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 451,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40122048_3-fresho-acchar-mirchiachari-mirch-lal.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Acchar Mirchi/Achari Mirch - Lal",
       "quantity": "1 kg",
@@ -5439,8 +5936,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 452,
       "image": "https://www.bigbasket.com/media/uploads/p/m/10000332_15-fresho-amla.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Amla",
       "quantity": "1 kg",
@@ -5451,8 +5949,9 @@
       "main_category": "Fruits & Vegetables"
     },
     {
+      "id": 453,
       "image": "https://www.bigbasket.com/media/uploads/p/m/40027363_1-fresho-neem-stem-organically-grown.jpg?tr=w-3840,q=80",
-      "discount": 27,
+      "discount": "27% OFF",
       "brand": "Fresho",
       "title": "Neem Stem - Organically Grown",
       "quantity": "20 pcs",
