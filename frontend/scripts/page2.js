@@ -10,6 +10,7 @@ document.body.appendChild(footer);
 let hide_button = document.getElementById('hide-filter');
 hide_button.addEventListener('click', toggleSidebar);
 
+
 function toggleSidebar() {
   const sidebar = document.getElementById('sidebar');
   const hide_filter_btn = document.querySelector('.hide-filter-btn');
@@ -23,41 +24,25 @@ function toggleSidebar() {
   }
 }
 
-//dropdown js
-function toggleDropdown() {
-  var dropdownContent = document.getElementById("dropdownContent");
-  var dropbtn = document.querySelector(".dropbtn");
 
-  if (dropdownContent.classList.contains("show")) {
-    dropdownContent.classList.remove("show");
-  } else {
-    dropdownContent.classList.add("show");
-    dropdownContent.style.top = (dropbtn.offsetTop + dropbtn.offsetHeight) + "px";
-  }
-}
-
-function setRating() {
-  var dropdownContent = document.getElementById("dropdownContent");
-  dropdownContent.classList.remove("show");
-}
 
 //sidebar positioning
-function sidebarPosition() {
-  const sidebarPos = document.getElementById("sidebar");
-  const content = document.getElementById("content");
-  window.onscroll = () => {
-    let scrollTop = window.scrollY;
-    let viewportHeight = window.innerHeight;
-    let contentHeight = content.getBoundingClientRect().height;
-    let sidebarTop = sidebarPos.getBoundingClientRect().top + window.pageYOffset;
+// function sidebarPosition() {
+//   const sidebarPos = document.getElementById("sidebar");
+//   const content = document.getElementById("content");
+//   window.onscroll = () => {
+//     let scrollTop = window.scrollY;
+//     let viewportHeight = window.innerHeight;
+//     let contentHeight = content.getBoundingClientRect().height;
+//     let sidebarTop = sidebarPos.getBoundingClientRect().top + window.pageYOffset;
 
-    if (scrollTop >= contentHeight - viewportHeight + sidebarTop) {
-      content.style.transform = `translateY(-${contentHeight - viewportHeight + sidebarTop}px)`;
-      content.style.position = "fixed";
-    }
-    else {
-      content.style.transform = "";
-      content.style.position = "";
-    }
-  }
-}
+//     if (scrollTop >= contentHeight - viewportHeight + sidebarTop) {
+//       content.style.transform = `translateY(-${contentHeight - viewportHeight + sidebarTop}px)`;
+//       content.style.position = "fixed";
+//     }
+//     else {
+//       content.style.transform = "";
+//       content.style.position = "";
+//     }
+//   }
+// }
