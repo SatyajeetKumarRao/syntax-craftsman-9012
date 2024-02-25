@@ -1,296 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Product Information</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 20px;
-        box-sizing: border-box;
-      }
-      .bodyPattern {
-        /* Basic dimensions and centering */
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
 
-        /* Dark mode colors and gradient */
-        background: #121212; /* Fallback for browsers that don't support gradients */
-        background: linear-gradient(
-          135deg,
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Information</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .bodyPattern {
+      /* Basic dimensions and centering */
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      /* Dark mode colors and gradient */
+      background: #121212;
+      /* Fallback for browsers that don't support gradients */
+      background: linear-gradient(135deg,
           #121212 25%,
           #1a1a1a 25%,
           #1a1a1a 50%,
           #121212 50%,
           #121212 75%,
           #1a1a1a 75%,
-          #1a1a1a
-        );
-        background-size: 40px 40px;
-
-        /* Animation */
-        animation: move 4s linear infinite;
-      }
-
-      @keyframes move {
-        0% {
-          background-position: 0 0;
-        }
-        100% {
-          background-position: 40px 40px;
-        }
-      }
-      .container {
-        max-width: 600px;
-        margin: auto;
-        background: #fff;
-        padding: 20px;
-        border-radius: 5px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      h2 {
-        text-align: center;
-        margin-bottom: 20px;
-      }
-
-      label {
-        font-weight: bold;
-      }
-
-      input[type="text"],
-      input[type="number"] {
-        width: calc(100% - 12px);
-        padding: 10px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-      }
-
-      button {
-        background-color: #4caf50;
-        color: white;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        width: 100%;
-      }
-
-      button:hover {
-        background-color: #45a049;
-      }
+          #1a1a1a);
+      background-size: 40px 40px;
 
       /* Animation */
-      .success-animation {
-        animation: slideIn 1s ease forwards;
-        display: none;
+      animation: move 4s linear infinite;
+    }
+
+    @keyframes move {
+      0% {
+        background-position: 0 0;
       }
 
-      @keyframes slideIn {
-        0% {
-          opacity: 0;
-          transform: translateY(50px);
-        }
-        100% {
-          opacity: 1;
-          transform: translateY(0);
-        }
+      100% {
+        background-position: 40px 40px;
+      }
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="number"] {
+      width: calc(100% - 12px);
+      padding: 10px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    button {
+      background-color: #4caf50;
+      color: white;
+      padding: 14px 20px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    /* Animation */
+    .success-animation {
+      animation: slideIn 1s ease forwards;
+      display: none;
+    }
+
+    @keyframes slideIn {
+      0% {
+        opacity: 0;
+        transform: translateY(50px);
       }
 
-      .error-message {
-        color: red;
-        font-weight: bold;
-        text-align: center;
+      100% {
+        opacity: 1;
+        transform: translateY(0);
       }
-      .btn {
-        --color: #00a97f;
-        --color2: rgb(10, 25, 30);
-        padding: 0.8em 1.75em;
-        background-color: transparent;
-        border-radius: 6px;
-        border: 0.3px solid var(--color);
-        transition: 0.5s;
-        position: relative;
-        overflow: hidden;
-        cursor: pointer;
-        z-index: 1;
-        font-weight: 300;
-        font-size: 17px;
-        font-family: "Roboto", "Segoe UI", sans-serif;
-        text-transform: uppercase;
-        color: var(--color);
-      }
+    }
 
-      .btn::after,
-      .btn::before {
-        content: "";
-        display: block;
-        height: 100%;
-        width: 100%;
-        transform: skew(90deg) translate(-50%, -50%);
-        position: absolute;
-        inset: 50%;
-        left: 25%;
-        z-index: -1;
-        transition: 0.5s ease-out;
-        background-color: var(--color);
-      }
+    .error-message {
+      color: red;
+      font-weight: bold;
+      text-align: center;
+    }
 
-      .btn::before {
-        top: -50%;
-        left: -25%;
-        transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
-      }
+    .btn {
+      --color: #00a97f;
+      --color2: rgb(10, 25, 30);
+      padding: 0.8em 1.75em;
+      background-color: transparent;
+      border-radius: 6px;
+      border: 0.3px solid var(--color);
+      transition: 0.5s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+      z-index: 1;
+      font-weight: 300;
+      font-size: 17px;
+      font-family: "Roboto", "Segoe UI", sans-serif;
+      text-transform: uppercase;
+      color: var(--color);
+    }
 
-      .btn:hover::before {
-        transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
-      }
+    .btn::after,
+    .btn::before {
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      transform: skew(90deg) translate(-50%, -50%);
+      position: absolute;
+      inset: 50%;
+      left: 25%;
+      z-index: -1;
+      transition: 0.5s ease-out;
+      background-color: var(--color);
+    }
 
-      .btn:hover::after {
-        transform: skew(45deg) translate(-50%, -50%);
-      }
+    .btn::before {
+      top: -50%;
+      left: -25%;
+      transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
+    }
 
-      .btn:hover {
-        color: var(--color2);
-      }
+    .btn:hover::before {
+      transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
+    }
 
-      .btn:active {
-        filter: brightness(0.7);
-        transform: scale(0.98);
-      }
-      .back-btn {
-        display: inline-block;
-        margin-bottom: 20px;
-        margin-top: 20px;
-        padding: 10px 20px;
-        background-color: #4caf50;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-      }
+    .btn:hover::after {
+      transform: skew(45deg) translate(-50%, -50%);
+    }
 
-      .back-btn:hover {
-        background-color: #828997;
-      }
-      
-    </style>
-  </head>
-  <body class="bodyPattern">
-    <div class="container">
-      <h2>Add Product Information</h2>
-      <label for="image">Image URL:</label>
-      <input
-        type="text"
-        id="image"
-        value="https://www.bigbasket.com/media/uploads/p/m/40057966_6-fresho-tender-coconut-medium.jpg?tr=w-3840,q=80"
-      />
-      <label for="discount">Discount (%):</label>
-      <input type="number" id="discount" value="33" />
-      <label for="brand">Brand:</label>
-      <input type="text" id="brand" value="Fresho" />
-      <label for="title">Title:</label>
-      <input type="text" id="title" value="Tender Coconut" />
-      <label for="quantity">Quantity:</label>
-      <input type="text" id="quantity" value="1 pc" />
-      <label for="price">Price:</label>
-      <input type="number" id="price" value="39" />
-      <label for="original_price">Original Price:</label>
-      <input type="number" id="original_price" value="58" />
-      <label for="category">Category:</label>
-      <input type="text" id="category" value="Cut Fruit, Tender Coconut" />
-      <label for="sub_category">Sub Category:</label>
-      <input type="text" id="sub_category" value="Cuts & Sprouts" />
-      <label for="main_category">Main Category:</label>
-      <input type="text" id="main_category" value="Fruits & Vegetables" />
-      <button class="btn" onclick="postData()">Submit</button>
-      <a href="http://localhost:3000/pages/admin" class="back-btn ">Back to Admin Dashboard</a>
-      <div class="success-animation" id="successAnimation">
-        Product added successfully!
-      </div>
-      <div class="error-message" id="errorMessage"></div>
-      <div id="totalProducts"></div>
+    .btn:hover {
+      color: var(--color2);
+    }
+
+    .btn:active {
+      filter: brightness(0.7);
+      transform: scale(0.98);
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .back-btn:hover {
+      background-color: #828997;
+    }
+  </style>
+</head>
+
+<body class="bodyPattern">
+  <div class="container">
+    <h2>Add Product Information</h2>
+    <label for="image">Image URL:</label>
+    <input type="text" id="image"
+      value="https://www.bigbasket.com/media/uploads/p/m/40057966_6-fresho-tender-coconut-medium.jpg?tr=w-3840,q=80" />
+    <label for="discount">Discount (%):</label>
+    <input type="number" id="discount" value="33" />
+    <label for="brand">Brand:</label>
+    <input type="text" id="brand" value="Fresho" />
+    <label for="title">Title:</label>
+    <input type="text" id="title" value="Tender Coconut" />
+    <label for="quantity">Quantity:</label>
+    <input type="text" id="quantity" value="1 pc" />
+    <label for="price">Price:</label>
+    <input type="number" id="price" value="39" />
+    <label for="original_price">Original Price:</label>
+    <input type="number" id="original_price" value="58" />
+    <label for="category">Category:</label>
+    <input type="text" id="category" value="Cut Fruit, Tender Coconut" />
+    <label for="sub_category">Sub Category:</label>
+    <input type="text" id="sub_category" value="Cuts & Sprouts" />
+    <label for="main_category">Main Category:</label>
+    <input type="text" id="main_category" value="Fruits & Vegetables" />
+    <button class="btn" onclick="postData()">Submit</button>
+    <a href="http://localhost:3000/pages/admin" class="back-btn ">Back to Admin Dashboard</a>
+    <div class="success-animation" id="successAnimation">
+      Product added successfully!
     </div>
+    <div class="error-message" id="errorMessage"></div>
+    <div id="totalProducts"></div>
+  </div>
 
-    <script>
-      // Function to clear text inputs
-      function clearTextInputs() {
-        const inputs = document.querySelectorAll(
-          'input[type="text"], input[type="number"]'
-        );
-        inputs.forEach((input) => {
-          input.value = ""; // Set input value to empty string
+  <script>
+    // Function to clear text inputs
+    function clearTextInputs() {
+      const inputs = document.querySelectorAll(
+        'input[type="text"], input[type="number"]'
+      );
+      inputs.forEach((input) => {
+        input.value = ""; // Set input value to empty string
+      });
+    }
+
+    // Call the function to clear text inputs when the page loads
+    window.onload = clearTextInputs;
+
+    async function postData() {
+      const productUrl = "https://syntax-craftsman-9012.onrender.com/product";
+      const data = {
+        image: document.getElementById("image").value,
+        discount: parseFloat(document.getElementById("discount").value),
+        brand: document.getElementById("brand").value,
+        title: document.getElementById("title").value,
+        quantity: document.getElementById("quantity").value,
+        price: parseFloat(document.getElementById("price").value),
+        original_price: parseFloat(
+          document.getElementById("original_price").value
+        ),
+        category: document.getElementById("category").value,
+        sub_category: document.getElementById("sub_category").value,
+        main_category: document.getElementById("main_category").value,
+      };
+
+      try {
+        const response = await fetch(productUrl, {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         });
-      }
-
-      // Call the function to clear text inputs when the page loads
-      window.onload = clearTextInputs;
-
-      async function postData() {
-        const productUrl = "https://syntax-craftsman-9012.onrender.com/product";
-        const data = {
-          image: document.getElementById("image").value,
-          discount: parseFloat(document.getElementById("discount").value),
-          brand: document.getElementById("brand").value,
-          title: document.getElementById("title").value,
-          quantity: document.getElementById("quantity").value,
-          price: parseFloat(document.getElementById("price").value),
-          original_price: parseFloat(
-            document.getElementById("original_price").value
-          ),
-          category: document.getElementById("category").value,
-          sub_category: document.getElementById("sub_category").value,
-          main_category: document.getElementById("main_category").value,
-        };
-
-        try {
-          const response = await fetch(productUrl, {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
-          });
-          if (response.ok) {
-            document.getElementById("successAnimation").style.display = "block";
-            document.getElementById("totalProducts").innerText =
-              "Total Products: " + (await getTotalProducts());
-          } else {
-            throw new Error(
-              "Failed to submit product information. Server returned " +
-                response.status +
-                " " +
-                response.statusText
-            );
-          }
-        } catch (error) {
-          console.error("Error:", error);
-          document.getElementById("errorMessage").innerText =
-            "An error occurred. Please try again later.";
-        }
-      }
-
-      async function getTotalProducts() {
-        const response = await fetch(
-          "https://syntax-craftsman-9012.onrender.com/product"
-        );
         if (response.ok) {
-          const products = await response.json();
-          return products.length;
-          console.log(products);
+          document.getElementById("successAnimation").style.display = "block";
+          document.getElementById("totalProducts").innerText =
+            "Total Products: " + (await getTotalProducts());
         } else {
-          throw new Error("Failed to fetch total products.");
+          throw new Error(
+            "Failed to submit product information. Server returned " +
+            response.status +
+            " " +
+            response.statusText
+          );
         }
+      } catch (error) {
+        console.error("Error:", error);
+        document.getElementById("errorMessage").innerText =
+          "An error occurred. Please try again later.";
       }
-    </script>
-  </body>
+    }
+
+    async function getTotalProducts() {
+      const response = await fetch(
+        "https://syntax-craftsman-9012.onrender.com/product"
+      );
+      if (response.ok) {
+        const products = await response.json();
+        return products.length;
+        console.log(products);
+      } else {
+        throw new Error("Failed to fetch total products.");
+      }
+    }
+  </script>
+</body>
+
 </html>
