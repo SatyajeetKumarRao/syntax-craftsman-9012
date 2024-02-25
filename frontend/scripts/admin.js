@@ -3,9 +3,9 @@ const productUrl = "https://syntax-craftsman-9012.onrender.com/product";
 
 // variables for pagination
 let currentPage = 1;
-const limit = 6;
+const limit = 8;
 const buttonsPerPage = 10;
-let searchTerm = ''; 
+let searchTerm = '';
 
 // createTableElements function
 function createTableElements(data) {
@@ -47,8 +47,12 @@ function createTableElements(data) {
         let editButton = document.createElement('button');
         editButton.innerText = "Edit";
         editButton.style.margin = "5px";
-        editButton.setAttribute('type','button');
+        editButton.setAttribute('type', 'button');
         editButton.classList.add('btn', 'btn-dark');
+        editButton.addEventListener('click', () => {
+            // Open edit modal and populate fields with item data
+            openEditModal(item);
+        });
         editCell.appendChild(editButton);
         row.appendChild(editCell);
 
@@ -56,8 +60,12 @@ function createTableElements(data) {
         let deleteButton = document.createElement('button');
         deleteButton.innerText = "Delete";
         deleteButton.style.margin = "5px";
-        deleteButton.setAttribute('type','button');
+        deleteButton.setAttribute('type', 'button');
         deleteButton.classList.add('btn', 'btn-danger');
+        deleteButton.addEventListener('click', () => {
+            // Call function to handle delete operation
+            handleDelete(item.id);
+        });
         deleteCell.appendChild(deleteButton);
         row.appendChild(deleteCell);
 
@@ -73,11 +81,11 @@ async function fetchPageData(page, searchTerm = '') {
     } else {
         url = `${productUrl}?_page=${page}&_limit=${limit}`;
     }
-    console.log("Fetching data from URL:", url); 
+    console.log("Fetching data from URL:", url);
     try {
         let res = await fetch(url);
         let data = await res.json();
-        console.log("Fetched data:", data); 
+        console.log("Fetched data:", data);
         return data;
     } catch (error) {
         console.log(error);
@@ -108,8 +116,8 @@ function createPaginationButtons(totalPages) {
         const button = document.createElement('button');
         button.innerText = i;
         button.addEventListener('click', (event) => {
-            currentPage = parseInt(event.target.innerText); 
-            fetchDataAndDisplay(currentPage, searchTerm); 
+            currentPage = parseInt(event.target.innerText);
+            fetchDataAndDisplay(currentPage, searchTerm);
         });
         paginationWrapper.appendChild(button);
     }
@@ -166,3 +174,75 @@ async function fetchAndRenderPagination() {
 
 // Call the function to fetch and render pagination when the page loads
 fetchAndRenderPagination();
+
+// Function to open edit modal and populate fields with item data
+function openEditModal(item) {
+    const modal = document.getElementById('editModal');
+    if (modal) {
+        const modalTitle = modal.querySelector('.modal-title');
+        const editId = modal.querySelector('#editId');
+        const editBrand = modal.querySelector('#editBrand');
+        const editTitle = modal.querySelector('#editTitle');
+
+        modalTitle.textContent = `Edit Product ID: ${item.id}`;
+        editId.value = item.id;
+        editBrand.value = item.brand;
+        editTitle.value = item.title;
+
+        // Show the modal
+        const bootstrapModal = new bootstrap.Modal(modal);
+        bootstrapModal.show();
+    } else {
+        console.error('Edit modal not found in the DOM.');
+    }
+}
+
+
+// Function to handle updating data on form submit
+document.getElementById('editForm').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const id = document.getElementById('editId').value;
+    const updatedData = {
+        brand: document.getElementById('editBrand').value,
+        title: document.getElementById('editTitle').value,
+        // Add more fields as needed
+    };
+
+    try {
+        const response = await fetch(`${productUrl}/${id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(updatedData),
+        });
+        if (!response.ok) {
+            throw new Error('Failed to update data');
+        }
+        // Refresh data after update
+        fetchDataAndDisplay(currentPage, searchTerm);
+        // Close the modal
+        const modal = bootstrap.Modal.getInstance(document.getElementById('editModal'));
+        modal.hide();
+    } catch (error) {
+        console.error('Error:', error);
+    }
+});
+
+// Function to handle delete operation
+async function handleDelete(id) {
+    if (confirm("Are you sure you want to delete this item?")) {
+        try {
+            const response = await fetch(`${productUrl}/${id}`, {
+                method: 'DELETE',
+            });
+            if (!response.ok) {
+                throw new Error('Failed to delete item');
+            }
+            // Refresh data after delete
+            fetchDataAndDisplay(currentPage, searchTerm);
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    }
+}

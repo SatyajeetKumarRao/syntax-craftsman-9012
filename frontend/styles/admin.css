@@ -97,8 +97,6 @@ body{
   font-weight: 700;
 }
 
-
-
 .pagination-wrapper {
   display: flex;
   justify-content: center;
@@ -120,4 +118,26 @@ body{
 
 .pagination-wrapper button:hover {
   background-color: #253047;
+}
+
+/* Style for the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.7);
+  border-radius: 4px;
+  height: 40px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.7);
 }
