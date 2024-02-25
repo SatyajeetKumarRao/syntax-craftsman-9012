@@ -3,7 +3,7 @@ const productUrl = "https://syntax-craftsman-9012.onrender.com/product";
 
 // variables for pagination
 let currentPage = 1;
-const limit = 8;
+const limit = 10;
 const buttonsPerPage = 10;
 let searchTerm = '';
 
@@ -17,6 +17,7 @@ function createTableElements(data) {
 
         let idCell = document.createElement("td");
         idCell.textContent = item.id;
+        idCell.setAttribute('class',"ps-4")
         row.appendChild(idCell);
 
         let brandCell = document.createElement("td");
@@ -183,11 +184,19 @@ function openEditModal(item) {
         const editId = modal.querySelector('#editId');
         const editBrand = modal.querySelector('#editBrand');
         const editTitle = modal.querySelector('#editTitle');
+        const editQuantity = modal.querySelector('#editQuantity');
+        const editPrice = modal.querySelector('#editPrice');
+        const editorignalPrice = modal.querySelector('#editorignalPrice');
+        const editmainCategory = modal.querySelector('#editmainCategory');
 
         modalTitle.textContent = `Edit Product ID: ${item.id}`;
         editId.value = item.id;
         editBrand.value = item.brand;
         editTitle.value = item.title;
+        editQuantity.value = item.quantity;
+        editPrice.value = item.price;
+        editorignalPrice.value = item.original_price;
+        editmainCategory.value = item.main_category;
 
         // Show the modal
         const bootstrapModal = new bootstrap.Modal(modal);
@@ -205,6 +214,10 @@ document.getElementById('editForm').addEventListener('submit', async (event) => 
     const updatedData = {
         brand: document.getElementById('editBrand').value,
         title: document.getElementById('editTitle').value,
+        quantity: document.getElementById('editQuantity').value,
+        price: document.getElementById('editPrice').value,
+        original_price: document.getElementById('editorignalPrice').value,
+        main_category: document.getElementById('editmainCategory').value,
         // Add more fields as needed
     };
 
