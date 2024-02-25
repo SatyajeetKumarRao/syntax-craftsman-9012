@@ -24,9 +24,9 @@
     <div class="main-section">
       <!-- path section -->
       <div class="path">
-        <box-icon name="home" flip="horizontal" color="#817f7f"></box-icon>
-        <p>
-          <a href="">Home/</a>
+        <p style="display: flex; align-items: center;">
+          <a style="display: flex; align-items: center;" href="../index.html"><box-icon name="home" flip="horizontal"
+              color="#817f7f"></box-icon> Home/</a>
           <a href="">Fruits &#38 Vegetables/</a>
           <span>Exotic Fruits &#38 Veggies</span>
         </p>
@@ -47,8 +47,20 @@
         <!-- Relevance button -->
         <div class="dropdown">
 
+
+
+          <select name="pets" id="pet-select">
+            <option value="">Relevance</option>
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster">Hamster</option>
+            <option value="parrot">Parrot</option>
+            <option value="spider">Spider</option>
+            <option value="goldfish">Goldfish</option>
+          </select>
+
         </div>
-        <div class="dropdown" id="relevance">
+        <!-- <div class="dropdown" id="relevance">
           <div type="button" data-bs-toggle="dropdown" aria-expanded="false">
             Relevance
           </div>
@@ -66,7 +78,7 @@
             <hr>
             <li><a class="dropdown-item" href="#">% Off - High to Low</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
       <hr />
       <!-- sideBar and content -->

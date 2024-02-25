@@ -19,14 +19,18 @@ function toggleSidebar() {
     hide_filter_btn.innerText = "Show Filters";
 
     let content = document.getElementById("content");
-    content.style.gridTemplateColumns = "repeat(4,1fr)";
+    content.style.gridTemplateColumns = "repeat(4, 1fr)";
   } else {
     hide_filter_btn.innerText = "Hide Filters";
 
     let content = document.getElementById("content");
-    content.style.gridTemplateColumns = "repeat(3,1fr)";
+    content.style.gridTemplateColumns = "repeat(3, 1fr)";
   }
 }
+
+let pageNumber = 1;
+
+let queryParamString = "";
 
 const productsURL = "https://syntax-craftsman-9012.onrender.com/product";
 
@@ -62,14 +66,6 @@ function createRenderData(dataArray) {
   });
 }
 
-function shuffleArray(array) {
-  for (let i = array.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
-  }
-  return array;
-}
-
 function createProductCard(element) {
   // Create main container div
   const cardContainer = document.createElement("div");
@@ -101,6 +97,10 @@ function createProductCard(element) {
   // Append discount div and image to card image container
   cardImageContainer.appendChild(discountDiv);
   cardImageContainer.appendChild(image);
+
+  cardImageContainer.addEventListener("click", () => {
+    itemPageRedirect(element);
+  });
 
   // Create brand title container
   const brandTitleContainer = document.createElement("div");
@@ -224,6 +224,11 @@ function createProductCard(element) {
   cardContainer.appendChild(buttonsContainer);
 
   return cardContainer;
+}
+
+function itemPageRedirect(element) {
+  localStorage.setItem("productDetails", JSON.stringify(element));
+  window.location.href = "../pages/item.html";
 }
 
 function addItemToWishlist(element) {
