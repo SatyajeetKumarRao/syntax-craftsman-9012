@@ -13,6 +13,12 @@ function createTableElements(data) {
     tableBody.innerHTML = "";
     data.forEach((item) => {
         let row = document.createElement("tr");
+        row.style.backgroundColor = "white";
+
+        let idCell = document.createElement("td");
+        idCell.textContent = item.id;
+        row.appendChild(idCell);
+
         let brandCell = document.createElement("td");
         brandCell.textContent = item.brand;
         row.appendChild(brandCell);
@@ -36,6 +42,24 @@ function createTableElements(data) {
         let main_categoryCell = document.createElement("td");
         main_categoryCell.textContent = item.main_category;
         row.appendChild(main_categoryCell);
+
+        let editCell = document.createElement("td");
+        let editButton = document.createElement('button');
+        editButton.innerText = "Edit";
+        editButton.style.margin = "5px";
+        editButton.setAttribute('type','button');
+        editButton.classList.add('btn', 'btn-dark');
+        editCell.appendChild(editButton);
+        row.appendChild(editCell);
+
+        let deleteCell = document.createElement("td");
+        let deleteButton = document.createElement('button');
+        deleteButton.innerText = "Delete";
+        deleteButton.style.margin = "5px";
+        deleteButton.setAttribute('type','button');
+        deleteButton.classList.add('btn', 'btn-danger');
+        deleteCell.appendChild(deleteButton);
+        row.appendChild(deleteCell);
 
         tableBody.appendChild(row);
     });
@@ -91,22 +115,22 @@ function createPaginationButtons(totalPages) {
     }
 
     // Add Previous button
-    if (startPage > 1) {
+    if (currentPage > 1) {
         const prevButton = document.createElement('button');
         prevButton.innerText = 'Previous';
         prevButton.addEventListener('click', () => {
-            currentPage = Math.max(1, currentPage - buttonsPerPage);
+            currentPage--;
             fetchDataAndDisplay(currentPage, searchTerm);
         });
         paginationWrapper.insertBefore(prevButton, paginationWrapper.firstChild);
     }
 
     // Add Next button
-    if (endPage < totalPages) {
+    if (currentPage < totalPages) {
         const nextButton = document.createElement('button');
         nextButton.innerText = 'Next';
         nextButton.addEventListener('click', () => {
-            currentPage = Math.min(totalPages, currentPage + buttonsPerPage);
+            currentPage++;
             fetchDataAndDisplay(currentPage, searchTerm);
         });
         paginationWrapper.appendChild(nextButton);

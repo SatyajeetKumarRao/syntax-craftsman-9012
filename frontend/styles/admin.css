@@ -15,7 +15,7 @@ body{
 #menu{
   background: black;
   width: 20vw;
-  height: 100vh;
+  height: 140vh;
 }
 
 #menu .logo img{
@@ -92,6 +92,11 @@ body{
   font-size: 16px;
   color: #828997;
 }
+
+.tableMain>thead>tr>th{
+  font-weight: 700;
+}
+
 
 
 .pagination-wrapper {
