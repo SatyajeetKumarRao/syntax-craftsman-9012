@@ -10,6 +10,7 @@
         background-color: #f4f4f4;
         margin: 0;
         padding: 20px;
+        box-sizing: border-box;
       }
       .bodyPattern {
         /* Basic dimensions and centering */
@@ -167,6 +168,21 @@
         filter: brightness(0.7);
         transform: scale(0.98);
       }
+      .back-btn {
+        display: inline-block;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+
+      .back-btn:hover {
+        background-color: #828997;
+      }
+      
     </style>
   </head>
   <body class="bodyPattern">
@@ -197,6 +213,7 @@
       <label for="main_category">Main Category:</label>
       <input type="text" id="main_category" value="Fruits & Vegetables" />
       <button class="btn" onclick="postData()">Submit</button>
+      <a href="http://localhost:3000/pages/admin" class="back-btn ">Back to Admin Dashboard</a>
       <div class="success-animation" id="successAnimation">
         Product added successfully!
       </div>
