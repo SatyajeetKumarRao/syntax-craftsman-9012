@@ -1,10 +1,11 @@
 // Define the product URL
 const productUrl = "https://syntax-craftsman-9012.onrender.com/product";
 
-// Define variables for pagination
+// variables for pagination
 let currentPage = 1;
-const limit = 6; 
-const buttonsPerPage = 10; 
+const limit = 6;
+const buttonsPerPage = 10;
+let searchTerm = ''; 
 
 // createTableElements function
 function createTableElements(data) {
@@ -40,12 +41,19 @@ function createTableElements(data) {
     });
 }
 
-// Function to fetch data for a specific page
-async function fetchPageData(page) {
-    const url = `${productUrl}?_page=${page}&_limit=${limit}`;
+// Function to fetch data for a specific page and search term
+async function fetchPageData(page, searchTerm = '') {
+    let url;
+    if (searchTerm.trim() !== '') {
+        url = `${productUrl}?title_like=${searchTerm}&_page=${page}&_limit=${limit}`;
+    } else {
+        url = `${productUrl}?_page=${page}&_limit=${limit}`;
+    }
+    console.log("Fetching data from URL:", url); 
     try {
         let res = await fetch(url);
         let data = await res.json();
+        console.log("Fetched data:", data); 
         return data;
     } catch (error) {
         console.log(error);
@@ -54,9 +62,14 @@ async function fetchPageData(page) {
 }
 
 // Function to fetch and display data for the current page
-async function fetchDataAndDisplay(page) {
-    const data = await fetchPageData(page);
-    createTableElements(data);
+async function fetchDataAndDisplay(page, searchTerm = '') {
+    const data = await fetchPageData(page, searchTerm);
+    if (data.length === 0) {
+        // If no data is returned, display a message
+        document.getElementById("tableBody").innerHTML = "<tr><td colspan='6'>No matching data found.</td></tr>";
+    } else {
+        createTableElements(data);
+    }
 }
 
 // Function to create pagination buttons
@@ -70,10 +83,9 @@ function createPaginationButtons(totalPages) {
     for (let i = startPage; i <= endPage; i++) {
         const button = document.createElement('button');
         button.innerText = i;
-        button.addEventListener('click', () => {
-            currentPage = i; 
-            fetchDataAndDisplay(currentPage);
-            createPaginationButtons(totalPages); 
+        button.addEventListener('click', (event) => {
+            currentPage = parseInt(event.target.innerText); 
+            fetchDataAndDisplay(currentPage, searchTerm); 
         });
         paginationWrapper.appendChild(button);
     }
@@ -84,8 +96,7 @@ function createPaginationButtons(totalPages) {
         prevButton.innerText = 'Previous';
         prevButton.addEventListener('click', () => {
             currentPage = Math.max(1, currentPage - buttonsPerPage);
-            fetchDataAndDisplay(currentPage);
-            createPaginationButtons(totalPages);
+            fetchDataAndDisplay(currentPage, searchTerm);
         });
         paginationWrapper.insertBefore(prevButton, paginationWrapper.firstChild);
     }
@@ -96,8 +107,7 @@ function createPaginationButtons(totalPages) {
         nextButton.innerText = 'Next';
         nextButton.addEventListener('click', () => {
             currentPage = Math.min(totalPages, currentPage + buttonsPerPage);
-            fetchDataAndDisplay(currentPage);
-            createPaginationButtons(totalPages);
+            fetchDataAndDisplay(currentPage, searchTerm);
         });
         paginationWrapper.appendChild(nextButton);
     }
@@ -109,18 +119,22 @@ function calculateAndRenderPagination(totalDataCount) {
     createPaginationButtons(totalPages);
 }
 
+// Add event listener to the search form
+document.querySelector('form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    searchTerm = document.querySelector('input[type="search"]').value.trim();
+    currentPage = 1; // Reset current page when performing a new search
+    await fetchDataAndDisplay(currentPage, searchTerm);
+});
+
 // Fetch total data count and render pagination
 async function fetchAndRenderPagination() {
     try {
         const data = await fetch(productUrl);
         const jsonData = await data.json();
-        const totalDataCount = jsonData.length; 
-        // console.log("Total data count:", totalDataCount);
-
+        const totalDataCount = jsonData.length;
         calculateAndRenderPagination(totalDataCount);
-
-        // Fetch and display data for the first page
-        fetchDataAndDisplay(currentPage);
+        fetchDataAndDisplay(currentPage, searchTerm);
     } catch (error) {
         console.log(error);
     }
