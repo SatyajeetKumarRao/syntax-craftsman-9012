@@ -19,7 +19,7 @@ header {
     left: 0px;
     right: 0px;
     z-index: 3000;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    box-shadow: rgba(0, 0, 0, 0.123) 0px 5px 15px;
 
     >.header_bar {
         width: 100%;
@@ -92,17 +92,70 @@ header {
                 }
             }
 
-            >#login_signup_container {
-                >#login_signup {
+            >#login_signup_container,
+            >#admin_panel_container {
+
+                display: none;
+
+                >a {
+                    >button {
+                        color: white;
+                        background-color: black;
+                        font-size: 12px;
+                        width: 130px;
+                        border-radius: 5px;
+                        box-sizing: border-box;
+                        border: none;
+                        height: 40px;
+                    }
+                }
+            }
+
+
+
+            >#user_profile_container {
+                display: none;
+
+                >button {
                     color: white;
                     background-color: black;
                     font-size: 12px;
-                    width: 130px;
+                    width: fit-content;
                     border-radius: 5px;
                     box-sizing: border-box;
                     border: none;
                     height: 40px;
                 }
+
+                >ul {
+                    color: white;
+                    background-color: black;
+                    font-size: 14px;
+
+                    >li {
+                        padding: 5px;
+
+                        >a {
+                            color: white;
+                        }
+
+                        >a:hover {
+                            background-color: #2e2e2e;
+                        }
+                    }
+                }
+            }
+
+            >#login_signup_container.disable,
+            >#admin_panel_container.disable,
+            >#user_profile_container.disable {
+                display: none;
+            }
+
+            >#login_signup_container.active,
+            >#admin_panel_container.active,
+            >#user_profile_container.active {
+                display: block;
             }
 
             >#cart {
@@ -144,7 +197,6 @@ header {
             gap: 20px;
 
             >#category_dropdown_container {
-                background-color: #5e9400;
                 width: fit-content;
                 height: fit-content;
                 padding: 10px;
@@ -152,8 +204,27 @@ header {
                 font-size: 14px;
 
                 >a {
+                    background-color: #5e9400;
                     color: white;
                     text-decoration: none;
+                    font-size: 14px;
+                }
+
+                >ul {
+                    background-color: #202020;
+
+                    >li {
+                        padding: 5px;
+
+                        >a {
+                            color: white;
+                            font-size: 14px;
+                        }
+
+                        >a:hover {
+                            background-color: #404040;
+                        }
+                    }
                 }
             }
 
@@ -191,8 +262,6 @@ header {
                     border: none;
                     background-color: transparent;
                 }
-
-
             }
 
             >.divider {
