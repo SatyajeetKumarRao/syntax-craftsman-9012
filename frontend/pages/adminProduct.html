@@ -112,6 +112,17 @@
     </div>
 
     <script>
+        // Function to clear text inputs
+        function clearTextInputs() {
+            const inputs = document.querySelectorAll('input[type="text"], input[type="number"]');
+            inputs.forEach(input => {
+                input.value = ''; // Set input value to empty string
+            });
+        }
+
+        // Call the function to clear text inputs when the page loads
+        window.onload = clearTextInputs;
+
         async function postData() {
             const productUrl = "https://syntax-craftsman-9012.onrender.com/product";
             const data = {
