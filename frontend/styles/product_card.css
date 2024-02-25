@@ -1,9 +1,7 @@
 .card_container {
-
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     border: none;
     padding: 10px;
-
 
     * {
         margin: 0px;
@@ -31,10 +29,11 @@
 
         >img {
             width: 100%;
+            height: 100%;
         }
     }
 
-    >.brans_title_container {
+    >.brand_title_container {
         margin-top: 20px;
 
         >.card_brand {
@@ -60,12 +59,19 @@
         >.card_product_quantity {
             margin: 0px;
             padding: 0px;
+            font-size: 14px;
             font-weight: 500;
         }
 
         >.quantity_count_container {
             margin: 0px;
             padding: 0px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5px;
+
 
             >label {
                 font-size: 14px;
