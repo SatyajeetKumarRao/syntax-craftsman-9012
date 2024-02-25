@@ -101,15 +101,18 @@ body{
 }
 
 .pagination-wrapper button {
+  height: 40px;
+  width: 60px;
   margin: 0 5px;
-  padding: 5px 10px;
-  background-color: #007bff;
+  padding: 5px 15px;
+  background-color: #444a53;
   color: #fff;
   border: none;
   border-radius: 5px;
+  margin-top: 20px;
   cursor: pointer;
 }
 
 .pagination-wrapper button:hover {
-  background-color: #0056b3;
+  background-color: #253047;
 }
