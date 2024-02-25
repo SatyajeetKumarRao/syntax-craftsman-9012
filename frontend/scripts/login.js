@@ -24,8 +24,8 @@ signInButton.addEventListener('click', () => {
 
 
 // backend server url
-const signInURL = 'http://localhost:4000/login';
-const signUpURL = 'http://localhost:4000/signup';
+const signInURL = 'https://syntax-craftsman-9012.onrender.com/login';
+const signUpURL = 'https://syntax-craftsman-9012.onrender.com/signup';
 
 
 // login operation

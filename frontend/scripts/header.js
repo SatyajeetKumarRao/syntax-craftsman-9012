@@ -43,7 +43,7 @@ async function chechUser() {
 
 async function getUserDetails(userId) {
 
-    const userURL = 'http://localhost:4000/users';
+    const userURL = 'https://syntax-craftsman-9012.onrender.com/users';
 
     try {
         let response = await fetch(`${userURL}/${userId}`);

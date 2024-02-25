@@ -14,7 +14,9 @@ cleaning_household_create();
 beauty_hygiene_create();
 home_kitchen_essential_create();
 
-Initialize_Swiper();
+Initialize_Bottom_Banner_Swiper();
+Initialize_My_Smart_basket_Swiper();
+Initialize_Best_Seller_Swiper();
 
 function store_offer_create() {
     let store_offer_array = [
@@ -172,8 +174,31 @@ function createCardElement(dataArray, altText) {
     return elementArray;
 }
 
-function Initialize_Swiper() {
-    var swiper = new Swiper(".mySwiper", {
+
+function Initialize_My_Smart_basket_Swiper() {
+
+    var swiper = new Swiper(".my_smart_basket_Swiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+}
+
+function Initialize_Best_Seller_Swiper() {
+
+    var swiper = new Swiper(".best_seller_Swiper", {
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+}
+
+function Initialize_Bottom_Banner_Swiper() {
+    var swiper = new Swiper(".bottom_banner_swiper", {
         spaceBetween: 30,
         centeredSlides: true,
         autoplay: {
