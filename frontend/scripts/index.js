@@ -34,7 +34,6 @@ function store_offer_create() {
 
     store_offer.append(...elementArray);
 
-    console.log(elementArray);
 }
 
 function bank_offer_create() {
@@ -53,7 +52,6 @@ function bank_offer_create() {
 
     bank_offer_img_container.append(...elementArray);
 
-    console.log(elementArray);
 }
 
 function top_offer_create() {
@@ -72,7 +70,6 @@ function top_offer_create() {
 
     top_offer_img_container.append(...elementArray);
 
-    console.log(elementArray);
 }
 
 
@@ -93,7 +90,6 @@ function snacks_store_create() {
 
     snacks_store_img_container.append(...elementArray);
 
-    console.log(elementArray);
 }
 
 function cleaning_household_create() {
@@ -112,8 +108,6 @@ function cleaning_household_create() {
     let elementArray = createCardElement(cleaning_household_array, 'cleaning_household');
 
     cleaning_household_img_container.append(...elementArray);
-
-    console.log(elementArray);
 }
 
 
@@ -136,7 +130,6 @@ function beauty_hygiene_create() {
 
     beauty_hygiene_img_container.append(...elementArray);
 
-    console.log(elementArray);
 }
 
 function home_kitchen_essential_create() {
@@ -158,7 +151,6 @@ function home_kitchen_essential_create() {
 
     home_kitchen_essential_img_container.append(...elementArray);
 
-    console.log(elementArray);
 }
 
 
@@ -179,7 +171,6 @@ function createCardElement(dataArray, altText) {
 
     return elementArray;
 }
-
 
 function Initialize_Swiper() {
     var swiper = new Swiper(".mySwiper", {

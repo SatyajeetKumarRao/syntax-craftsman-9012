@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/product_card.css">
 </head>
 
 <body>
@@ -223,9 +224,58 @@
                 <!-- store_offer will be added dynamically -->
             </div>
 
-            <div id="discount_banner">
-                <img src="https://i.ibb.co/FX0fT2f/discount-banner.webp" alt="Discount Banner" loading="lazy">
+            <div id="my_smart_basket">
+                <h4>My Smart Basket</h4>
+
+                <div class="card card_container" style="max-width: 17rem;">
+
+                    <div class="card_image_container card">
+                        <div class="discount">
+                            <p class="card-text">56% OFF</p>
+                        </div>
+
+                        <img src="https://www.bigbasket.com/media/uploads/p/m/40057966_6-fresho-tender-coconut-medium.jpg?tr=w-3840,q=80"
+                            class="card-img-top item_image" alt="Capsicum Hybrid Green/Simla
+                            Mirch">
+                    </div>
+
+
+                    <div class="brans_title_container card-body">
+                        <p class="card_brand card-text">Fresho</p>
+                        <h5 class="card_product_name card-title">Capsicum Hybrid Green/Simla
+                            Mirch</h5>
+                    </div>
+                    <div class="quantity_container card-body">
+                        <p class="card_product_quantity card-text">1 kg</p>
+                        <div class="quantity_count_container">
+                            <label for="quantity_count">Quantity</label>
+                            <input type="number" class="quantity_count" name="quantity_count" min="1" max="5" value="1">
+                        </div>
+                    </div>
+
+                    <div class="price_container card-body">
+                        <p class="current_price card-text">₹79</p>
+                        <p class="original_price card-text">₹100</p>
+                    </div>
+
+                    <div class="buttons_container card-body">
+                        <button class="wishlist" type="button">
+                            <i class="fa-regular fa-bookmark" style="color: #000000;"></i>
+                        </button>
+                        <button class="add_cart" type="button">Add
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+                </div>
+
             </div>
+
+
+
+
+            <a href="#" id="discount_banner">
+                <img src="https://i.ibb.co/FX0fT2f/discount-banner.webp" alt="Discount Banner" loading="lazy">
+            </a>
 
             <div id="bank_offer">
                 <h3>Bank Offers</h3>
@@ -247,17 +297,17 @@
                 <div id="fruits_veg_img_container">
                     <div id="fruits_veg_main_img_container">
                         <a href="#"><img src="https://i.ibb.co/nb9vNd9/fruits-vegitable-main.webp"
-                                alt="fruits_veg_main_img"></a>
+                                alt="fruits_veg_main_img" loading="lazy"></a>
                     </div>
                     <div id="fruits_veg_sub_img_container">
                         <a href="#"><img src="https://i.ibb.co/pJnC2sk/fruits-vegitable1.webp" alt="fruits-vegitable1"
-                                border="0"></a>
+                                border="0" loading="lazy"></a>
                         <a href="#"><img src="https://i.ibb.co/qWnkx5c/fruits-vegitable2.webp" alt="fruits-vegitable2"
-                                border="0"></a>
+                                border="0" loading="lazy"></a>
                         <a href="#"><img src="https://i.ibb.co/9ZzbVdT/fruits-vegitable4.webp" alt="fruits-vegitable4"
-                                border="0"></a>
+                                border="0" loading="lazy"></a>
                         <a href="#"><img src="https://i.ibb.co/GTP9bT9/fruits-vegitable3.webp" alt="fruits-vegitable3"
-                                border="0"></a>
+                                border="0" loading="lazy"></a>
 
                     </div>
                 </div>
@@ -272,10 +322,14 @@
                     </div>
                     <div id="beverages_sub_img_container">
 
-                        <a href="#"><img src="https://i.ibb.co/9Ws2s27/beverages3.webp" alt="beverages3" border="0"></a>
-                        <a href="#"><img src="https://i.ibb.co/J2zwM4w/beverages1.webp" alt="beverages1" border="0"></a>
-                        <a href="#"><img src="https://i.ibb.co/pwnQ2wH/beverages4.webp" alt="beverages4" border="0"></a>
-                        <a href="#"><img src="https://i.ibb.co/3TzcsDc/beverages2.webp" alt="beverages2" border="0"></a>
+                        <a href="#"><img src="https://i.ibb.co/9Ws2s27/beverages3.webp" alt="beverages3" border="0"
+                                loading="lazy"></a>
+                        <a href="#"><img src="https://i.ibb.co/J2zwM4w/beverages1.webp" alt="beverages1" border="0"
+                                loading="lazy"></a>
+                        <a href="#"><img src="https://i.ibb.co/pwnQ2wH/beverages4.webp" alt="beverages4" border="0"
+                                loading="lazy"></a>
+                        <a href="#"><img src="https://i.ibb.co/3TzcsDc/beverages2.webp" alt="beverages2" border="0"
+                                loading="lazy"></a>
 
                     </div>
                 </div>
@@ -320,22 +374,68 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_babycare_250923_400.jpg?tr=w-1920,q=80"
-                                alt="Banner Slider 1">
+                                alt="Banner Slider 1" loading="lazy">
                         </div>
                         <div class="swiper-slide"> <img
                                 src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_petstore_250923_400.jpg?tr=w-1920,q=80"
-                                alt="Banner Slider 2"></div>
+                                alt="Banner Slider 2" loading="lazy"></div>
                         <div class="swiper-slide"> <img
                                 src="https://www.bigbasket.com/media/uploads/banner_images/hp_bcd_m_bcd_250923_400.jpg?tr=w-1920,q=80"
-                                alt="Banner Slider 3"></div>
+                                alt="Banner Slider 3" loading="lazy"></div>
                         <div class="swiper-slide"> <img
                                 src="https://www.bigbasket.com/media/uploads/banner_images/hp_m_health_suppliment_250923_400.jpg?tr=w-1920,q=80"
-                                alt="Banner Slider 4"></div>
+                                alt="Banner Slider 4" loading="lazy"></div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-pagination"></div>
                 </div>
+            </div>
+
+            <div id="bottom_information">
+
+                <h5>bigbasket - online grocery store</h5>
+                <p>
+                    Did you ever imagine that the freshest of fruits and vegetables, top-quality pulses and food grains,
+                    dairy products, and hundreds of branded items could be handpicked and delivered to your home, all at
+                    the click of a button? In today's fast-paced world, bigbasket.com, India's pioneering online grocery
+                    store, continues to bring a staggering array of over 40,000 products from more than 1,000 brands to
+                    the doorsteps of over 10 million satisfied customers. From essential household cleaning products to
+                    the latest beauty and makeup trends, bigbasket remains your one-stop shop for daily needs.
+                </p>
+
+
+                <p>these times, we've eliminated the stress associated with shopping for daily essentials. You can
+                    now effortlessly order all your household products and groceries online. Plus, the added convenience
+                    of finding all your requirements at a single source, coupled with substantial savings, demonstrates
+                    that bigbasket, India's largest online supermarket, has transformed the way we shop for groceries.
+                    Online grocery shopping has become second nature. And when it comes to freshness, whether it's
+                    fruits and vegetables or dairy and meat, we've got you covered! Easily obtain fresh eggs, meat,
+                    fish, and more with just a few clicks.</p>
+
+
+                <p>We now serve 300+ cities and towns across India and ensure swift delivery times, guaranteeing that
+                    all your groceries, snacks and branded foods reach you on time.
+                </p>
+
+
+                <p>Slotted Delivery: Choose the most convenient delivery slot to receive your groceries, ranging from
+                    early morning delivery for early birds to late-night delivery for those on the night shift.
+                    bigbasket caters to every schedule.</p>
+
+
+                <p>Instant delivery from bbnow: In response to the ever-increasing demand for convenience, bbnow by
+                    bigbasket offers lightning-fast grocery delivery, ensuring that your essentials are at your doorstep
+                    within 15-30 minutes. Our quick delivery service has revolutionized the way you shop for groceries.
+                    Choose from 5000+ grocery essentials. bbnow is available only in select cities.
+                </p>
+
+
+                <p>Whether it's a last-minute dinner party or you simply need something urgently, we've got you
+                    covered. This service exemplifies our commitment to providing you with not just the widest range of
+                    products but also the fastest and most efficient shopping experience, making bigbasket.com the go-to
+                    destination for all your immediate grocery needs.</p>
+
             </div>
 
         </div>
