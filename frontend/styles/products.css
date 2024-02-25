@@ -1,369 +1,368 @@
 body {
-    display: flex;
-    justify-content: center;
-    background-color: #f0f0f0;
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  font-weight: 400;
+  font-style: normal;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-
 main {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-section {
-    /* background-color: pink; */
-    /* width: 75%;
+  /* background-color: pink; */
+  /* width: 75%;
     height: 100vh; */
-    max-width: 1080px;
-    width: 100%;
-
+  max-width: 1080px;
+  width: 100%;
 }
 
 .path {
-    margin-top: 10px;
-    height: 6vh;
-    display: flex;
-    align-items: baseline;
-    cursor: pointer;
+  margin-top: 10px;
+  height: 6vh;
+  display: flex;
+  align-items: baseline;
+  cursor: pointer;
 }
 
-.path>p {
-    color: gray;
+.path > p {
+  color: gray;
 }
 
-.path>p>span {
-    color: black;
-    font-weight: 600;
+.path > p > span {
+  color: black;
+  font-weight: 600;
 }
 
-.path>p>a {
-    color: gray;
-    text-decoration: none;
+.path > p > a {
+  color: gray;
+  text-decoration: none;
 }
 
 .main-heading {
-    margin-top: 10px;
-    color: rgb(90, 88, 88);
+  margin-top: 10px;
+  color: rgb(90, 88, 88);
 }
 
 .buttons-menu {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
 }
 
 #hide-filter {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 160px;
-    background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin-right: 75%;
-    cursor: pointer;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 160px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin-right: 75%;
+  cursor: pointer;
 }
 
 .hide-logo {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 #hide-filter:hover {
-    background-color: rgb(80, 78, 78);
-    color: white;
+  background-color: rgb(80, 78, 78);
+  color: white;
 }
 
 #relevance {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 160px;
-    background-color: whitesmoke;
-    border: 1px solid black;
-    border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 160px;
+  background-color: whitesmoke;
+  border: 1px solid black;
+  border-radius: 5px;
 }
 
 .relevance-logo {
-    margin-left: 5px;
+  margin-left: 5px;
 }
 
 #relevance:hover {
-    background-color: rgb(80, 78, 78);
-    color: white;
+  background-color: rgb(80, 78, 78);
+  color: white;
 }
 
 .sidebar_content {
-    display: flex;
+  display: flex;
 }
 
 .content {
-    width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .sidebar {
-    display: block;
-    width: 30%;
-    transition: width 0.3s ease;
-    overflow-y: auto;
-    height: 100vh;
+  display: block;
+  width: 30%;
+  transition: width 0.3s ease;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .hidden-sidebar {
-    width: 0;
-    overflow: hidden;
+  width: 0;
+  overflow: hidden;
 }
 
 .custom-dropdown-menu {
-    margin-top: 20px !important;
-    left: -95% !important;
+  margin-top: 20px !important;
+  left: -95% !important;
 }
 
 .fruit-vegie-card {
-    width: 90%;
-    height: 20%;
-    background-color: #f1f1f1;
-    border-radius: 2%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 90%;
+  height: 20%;
+  background-color: #f1f1f1;
+  border-radius: 2%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.fruit-vegie-card>p>a {
-    color: #6ca609;
-    font-weight: bold;
-    text-decoration: none;
+.fruit-vegie-card > p > a {
+  color: #6ca609;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-.fruit-vegie-card>ul {
-    list-style: none;
+.fruit-vegie-card > ul {
+  list-style: none;
 }
 
 .rating-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .rating-container input[type="checkbox"] {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 /* first-dropdown */
 .dropbtn {
-    display: flex;
-    width: 95%;
-    background-color: #f1f1f1;
-    color: black;
-    padding: 8px;
-    font-size: 16px;
-    border: 0.5px solid #dcd9d9;
-    cursor: pointer;
+  display: flex;
+  width: 95%;
+  background-color: #f1f1f1;
+  color: black;
+  padding: 8px;
+  font-size: 16px;
+  border: 0.5px solid #dcd9d9;
+  cursor: pointer;
 }
 
 .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9a9;
-    width: 95%;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    z-index: 1;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9a9;
+  width: 95%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  z-index: 1;
 }
 
 .ratings {
-    display: flex;
+  display: flex;
 }
 
 .rating-option {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
 }
 
 .show {
-    display: block;
+  display: block;
 }
 
 .brand-options-show {
-    display: block;
+  display: block;
 }
 
 .brand-menu {
-    width: 95%;
+  width: 95%;
 }
 
 .brand-btn {
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .price-options-show {
-    display: block;
+  display: block;
 }
 
 .price-menu {
-    width: 95%;
+  width: 95%;
 }
 
 .price-btn {
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .discount-options-show {
-    display: block;
+  display: block;
 }
 
 .discount-menu {
-    width: 95%;
+  width: 95%;
 }
 
 .discount-btn {
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .country-options-show {
-    display: block;
+  display: block;
 }
 
 .country-menu {
-    width: 95%;
+  width: 95%;
 }
 
 .country-btn {
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .food-options-show {
-    display: block;
+  display: block;
 }
 
 .food-menu {
-    width: 95%;
+  width: 95%;
 }
 
 .food-btn {
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pack-options-show {
-    display: block;
+  display: block;
 }
 
 .pack-menu {
-    width: 95%;
+  width: 95%;
 }
 
 .pack-btn {
-    height: 54px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* checkbox css */
 .material-checkbox {
-    display: flex;
-    align-items: center;
-    font-size: 16px;
-    color: #777777;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #777777;
+  cursor: pointer;
 }
 
 .material-checkbox input[type="checkbox"] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
-    height: 0;
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
 }
 
 .checkmark {
-    position: relative;
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-right: 12px;
-    border: 2px solid #454b00;
-    border-radius: 4px;
-    transition: all 0.3s;
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  border: 2px solid #454b00;
+  border-radius: 4px;
+  transition: all 0.3s;
 }
 
-.material-checkbox input[type="checkbox"]:checked~.checkmark {
-    background-color: #2f3300;
-    border-color: #454b00;
+.material-checkbox input[type="checkbox"]:checked ~ .checkmark {
+  background-color: #2f3300;
+  border-color: #454b00;
 }
 
-.material-checkbox input[type="checkbox"]:checked~.checkmark:after {
-    content: "";
-    position: absolute;
-    top: 2px;
-    left: 6px;
-    width: 4px;
-    height: 10px;
-    border: solid white;
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+.material-checkbox input[type="checkbox"]:checked ~ .checkmark:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 6px;
+  width: 4px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
-.material-checkbox input[type="checkbox"]:focus~.checkmark {
-    box-shadow: 0 0 0 2px #dfec5065;
+.material-checkbox input[type="checkbox"]:focus ~ .checkmark {
+  box-shadow: 0 0 0 2px #dfec5065;
 }
 
-.material-checkbox:hover input[type="checkbox"]~.checkmark {
-    border-color: #c3cf34;
+.material-checkbox:hover input[type="checkbox"] ~ .checkmark {
+  border-color: #c3cf34;
 }
 
-.material-checkbox input[type="checkbox"]:disabled~.checkmark {
-    opacity: 0.5;
-    cursor: not-allowed;
+.material-checkbox input[type="checkbox"]:disabled ~ .checkmark {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
-.material-checkbox input[type="checkbox"]:disabled~.checkmark:hover {
-    border-color: #4d4d4d;
+.material-checkbox input[type="checkbox"]:disabled ~ .checkmark:hover {
+  border-color: #4d4d4d;
 }
 
 /* Style for the scrollbar */
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: rgba(241, 241, 241, 0.5);
+  background: rgba(241, 241, 241, 0.5);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgba(136, 136, 136, 0.7);
-    border-radius: 4px;
-    height: 40px;
+  background: rgba(136, 136, 136, 0.7);
+  border-radius: 4px;
+  height: 40px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgba(85, 85, 85, 0.7);
+  background: rgba(85, 85, 85, 0.7);
 }
