@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product Display</title>
+<style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap");
+    body {
+        font-family: Poppins, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .product-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        margin: 20px auto;
+        width: 70%;
+    }
+    
+    .product-image img {
+        width: 400px;
+        height: auto;
+        border-radius: 8px;
+        border: 1px solid;
+        margin: 20px;
+    }
+    
+    .product-details {
+        margin-left: 20px;
+    }
+    
+    .product-title {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .product-price, .product-original-price {
+        font-size: 18px;
+        margin-bottom: 5px;
+        color: #333;
+    }
+    
+    .product-discount {
+        font-size: 16px;
+        margin-bottom: 5px;
+        color: #00b300;
+    }
+</style>
+</head>
+<body>
+
+<div class="product-container">
+    <div class="product-image">
+        <img src="https://www.bigbasket.com/media/uploads/p/m/40017831_2-fresho-leaf-betel-with-arracknut-pan-supari.jpg?tr=w-3840,q=80" alt="Product Image">
+    </div>
+    <div class="product-details">
+        <p class="product-brand"><u>Fortune </u></p>
+        <h2 class="product-title">Fortune Premium Kachi Ghani Pure Mustard Oil, 500 ml Bottle</h2>
+        <p class="product-price">Price: ₹71.47</p>
+        <p class="product-original-price">MRP: <del>₹96</del></p>
+        <p class="product-quantity">500 g</p>
+        <p class="product-discount">You Save: 26% OFF</p>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        fetchProductDetails();
+    });
+
+    function fetchProductDetails() {
+        let data = JSON.parse(localStorage.getItem('productDetails'));
+        if (data) {
+            document.querySelector('.product-brand').innerHTML = `<u>${data.brand}</u>`;
+            document.querySelector('.product-title').textContent = data.title;
+            document.querySelector('.product-price').textContent = `Price: ₹${data.price}`;
+            document.querySelector('.product-original-price').innerHTML = `MRP: <del>₹${data.originalPrice}</del>`;
+            document.querySelector('.product-quantity').textContent = data.quantity;
+            document.querySelector('.product-discount').textContent = `You Save: ${data.discount}% OFF`;
+            document.querySelector('.product-image img').src = data.image;
+            document.querySelector('.product-image img').alt = data.title;
+        }
+    }
+</script>
+</body>
+</html>
