@@ -151,6 +151,89 @@
 
     <main>
 
+        <div id="scheckoutMain">
+            <div id="sFirstdiv">
+                <p style="font-family: 'Figtree','sans-serif'" ;>Your Basket</p>
+                <p id="checkoutLength">(0 Items)</p>
+            </div>
+            <hr>
+            <main id="scheckoutTableMain">
+                <table id="scheckoutTable">
+                    <thead id="sThead">
+                        <tr id="sTrow">
+                            <th id="stImage"></th>
+                            <th id="stDesc">ITEM DESCRIPTION</th>
+                            <th id="stUnit">UNIT PRICE</th>
+                            <th id="stQty">QUANTITY</th>
+                            <th id="stTotal">SUBTOTAL</th>
+                            <th id="stSavings">SAVINGS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </main>
+            <div id="sbaskThs">
+                <div id="sbaskLhs">
+                    <button id="sbEmpty"><i class="fa-solid fa-basket-shopping"></i>EMPTY BASKET</button>
+                    <button id="sbContShop" onclick='window.location.href="index.html"'>CONTINUE SHOPPING</button>
+                </div>
+                <div id="sbaskRhs">
+                    <div id="sbsavingsMainDiv">
+                        <div id="sbsavingsDiv1">
+                            <div>
+                                <div id="sbSubTotal1">
+                                    <p>Subtotal</p>
+                                    <p id="stotalPrice">0</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div id="sbSubTotal2">
+                                    <div id="sbQuestionMarkDiv">
+                                        <p>Delivery Charges</p>
+                                        <i class="fa-solid fa-circle-question"></i>
+                                    </div>
+
+                                    <p id="p_DeliveryCharges"></p>
+                                </div>
+                            </div>
+                            <hr id="hr1">
+                            <div>
+                                <div id="sbMainTotal">
+                                    <p>TOTAL</p>
+                                    <P id="sbCheckTP">0</P>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="sbSavingsImageDiv">
+                            <img id="sbPiggyBank" src="./images/piggy-bank.png" alt="">
+                            <div id="sbYouSavedDiv">
+                                <p id="sbYouSaved">You saved!</p>
+                                <p id="sbYouSavedAmount">0</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sbCouponDiv">
+                        <p id="sbCoupon">* Discount Coupons are available for your order</p>
+                        <p>
+                        <p></p>
+                        </p>
+                    </div>
+                    <hr id="hr2">
+                    <button id="sbCheckOutBtnDiv" onclick="window.location.href='payment.html'">
+                        <div id="sbCheckBtnDiv">
+                            <p id="sbCheckBtn">CHECKOUT</p>
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </div>
+                    </button>
+                    <div id='sbDelivChargeDiv'>
+                        <p id="sbDelivCharge">** Actual delivery charges computed at checkout time</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </main>
 
 
