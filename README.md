@@ -1,55 +1,67 @@
-# syntax-craftsman-9012
-This repository is for construction week project for course JS204.
+# Basket Blend
 
-<br>
+## Introduction
+My project, a BigBasket clone, is designed to replicate the functionality of the popular online grocery shopping platform. Using HTML, CSS, JavaScript, and Bootstrap, along with modules like json-server and json-server-auth, I created a web application where users can browse through various products, add them to their cart, and proceed to checkout.
 
-# Before staring to code, Please go through the <a href="https://masai-school.notion.site/MSI-CW-Block-33-064ef60239a34a76ad8ca8ba4ed58eba?pvs=4" target="_blank"> notion doc</a> to understand how branching is going to work.
+The main purpose of this project was to apply the coding and testing skills I've learned during my journey at Masai School. By building a practical project like this, I aimed to solidify my understanding of web development concepts and enhance my proficiency in using different technologies. Through hands-on experience, I gained insights into front-end and back-end development processes, including data management and authentication. This project serves as a testament to my learning journey and showcases my ability to develop functional web applications.
+
+## Project Type
+Fullstack
+
+## Deplolyed App
+- Frontend: https://syntax-craftsman-9012.onrender.com/
+- Backend: https://syntax-craftsman-9012.onrender.com/
+- Database: https://syntax-craftsman-9012.onrender.com/product
+
+## Directory Structure
+BasketBlend/
+├─ backend/
+├─ frontend/
+│-....
+
+## Video Walkthrough of the project
+https://drive.google.com/file/d/1flH8UQVaW2BVaMi7lvAtDKAzx3wR8PQt/view?usp=sharing
+
+## Video Walkthrough of the codebase
+Attach a very short video walkthough of codebase [ 1 - 5 minutes ]
+
+## Features
+List out the key features of your application.
+
+- Login/SignUp
+- Search Product
+- Sort Product
+- Filter 
+- Pagination/Infinity Scroll
+- CRUD Operations
+- Add to Cart
+- Add to WishList
+
+## Installation & Getting started
+Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
+
+```bash
+npm run install_all
+npm run start_fe
+npm run start_be
+```
+
+## Usage
 
 
-1 - **Open any drive or folder with VS code**
 
-2 - **Clone using**
-`git clone https://github.com/SatyajeetKumarRao/syntax-craftsman-9012.git`
-
-3 - `cd /syntax-craftsman-9012`
-
-4 - `code .`
-
-<br>
-
-# Important Steps (Strictly Follow)
-
-Follow thess steps to Initialize and Run 
-
-- **To install all package and dependencies use command :-  `npm run install_all`**
-
----
-
-- **To Start Frontend Server use command :-  `npm run start_fe`**
-
----
-
-- **To Start Backend Server use command :-  `npm run start_be`**
-
-<br>
-
-# Important Instruction
-
-1- Our main branch is 'main'. But you have to push code to your own branch. So Push code accordingly.
-
-2- Notion doc for all references https://masai-school.notion.site/MSI-CW-Block-33-064ef60239a34a76ad8ca8ba4ed58eba?pvs=4
-
-3- Use Kanban to update issues and todo list.
-
-4- Check tasks after completing the task.
+## Credentials
+- For Admin Access - ``{ UserId : admin1@gmail.com , Password : admin1 }``
+- For User Access -``{  UserId : user1@gmail.com , Password : user1  }``
 
 
-<br>
+## Technology Stack
+List and provide a brief overview of the technologies used in the project.
 
-# Most importantly
+- HTML
+- CSS
+- JS
+- Bootstrap
+- Modules - json-server, json-server-auth
 
-### 1 - `git add .`
 
-### 2 - `git commit`
-
-### 3 - `git push`
