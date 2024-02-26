@@ -1,96 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product Display</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Display</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+
+  <style>
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800;900&display=swap");
     body {
-        font-family: Poppins, sans-serif;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 0;
+      font-family: Poppins, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
     }
-    
+
     .product-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-        margin: 20px auto;
-        width: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+      margin: 20px auto;
+      max-width: 1080px;
     }
-    
+
     .product-image img {
-        width: 400px;
-        height: auto;
-        border-radius: 8px;
-        border: 1px solid;
-        margin: 20px;
+      width: 400px;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid;
+      margin: 20px;
     }
-    
+
     .product-details {
-        margin-left: 20px;
+      margin-left: 20px;
     }
-    
+
     .product-title {
-        font-size: 24px;
-        margin-bottom: 10px;
-        color: #333;
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #333;
     }
-    
-    .product-price, .product-original-price {
-        font-size: 18px;
-        margin-bottom: 5px;
-        color: #333;
+
+    .product-price,
+    .product-original-price {
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #333;
     }
-    
+
     .product-discount {
-        font-size: 16px;
-        margin-bottom: 5px;
-        color: #00b300;
+      font-size: 16px;
+      margin-bottom: 5px;
+      color: #00b300;
     }
-</style>
+  </style>
 </head>
 <body>
-
-<div class="product-container">
+  <div class="product-container">
     <div class="product-image">
-        <img src="https://www.bigbasket.com/media/uploads/p/m/40017831_2-fresho-leaf-betel-with-arracknut-pan-supari.jpg?tr=w-3840,q=80" alt="Product Image">
+      <img src="https://www.bigbasket.com/media/uploads/p/m/40017831_2-fresho-leaf-betel-with-arracknut-pan-supari.jpg?tr=w-3840,q=80" alt="Product Image"/>
     </div>
     <div class="product-details">
-        <p class="product-brand"><u>Fortune </u></p>
-        <h2 class="product-title">Fortune Premium Kachi Ghani Pure Mustard Oil, 500 ml Bottle</h2>
-        <p class="product-price">Price: ₹71.47</p>
-        <p class="product-original-price">MRP: <del>₹96</del></p>
-        <p class="product-quantity">500 g</p>
-        <p class="product-discount">You Save: 26% OFF</p>
+      <p class="product-brand"><u>Fortune </u></p>
+      <h2 class="product-title">Fortune Premium Kachi Ghani Pure Mustard Oil, 500 ml Bottle</h2>
+      <p class="product-price">Price: ₹71.47</p>
+      <p class="product-original-price">MRP: <del>₹96</del></p>
+      <p class="product-quantity">500 g</p>
+      <p class="product-discount">You Save: 26% OFF</p>
+      <div class="buttons mt-5">
+        <button type="button" class="btn btn-danger me-3">Add to basket</button>
+        <button type="button" class="btn btn-secondary">Save for later</button>
+      </div>
     </div>
-</div>
+  </div>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        fetchProductDetails();
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetchProductDetails();
     });
 
     function fetchProductDetails() {
-        let data = JSON.parse(localStorage.getItem('productDetails'));
-        if (data) {
-            document.querySelector('.product-brand').innerHTML = `<u>${data.brand}</u>`;
-            document.querySelector('.product-title').textContent = data.title;
-            document.querySelector('.product-price').textContent = `Price: ₹${data.price}`;
-            document.querySelector('.product-original-price').innerHTML = `MRP: <del>₹${data.originalPrice}</del>`;
-            document.querySelector('.product-quantity').textContent = data.quantity;
-            document.querySelector('.product-discount').textContent = `You Save: ${data.discount}% OFF`;
-            document.querySelector('.product-image img').src = data.image;
-            document.querySelector('.product-image img').alt = data.title;
+      let data = JSON.parse(localStorage.getItem("productDetails"));
+      if (data) {
+        document.querySelector(".product-brand").innerHTML = `<u>${data.brand}</u>`;
+        document.querySelector(".product-title").textContent = data.title;
+        document.querySelector(".product-price").textContent = `Price: ₹${data.price}`;
+        
+        // Check if originalPrice is not empty before displaying it
+        if (data.originalPrice) {
+          document.querySelector(".product-original-price").innerHTML = `MRP: <del>₹${data.originalPrice}</del>`;
+        } else {
+          // Hide the original price if it's empty
+          document.querySelector(".product-original-price").style.display = "none";
         }
+        
+        document.querySelector(".product-quantity").textContent = data.quantity;
+        document.querySelector(".product-discount").textContent = `You Save: ${data.discount}% OFF`;
+        document.querySelector(".product-image img").src = data.image;
+        document.querySelector(".product-image img").alt = data.title;
+      }
     }
-</script>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
