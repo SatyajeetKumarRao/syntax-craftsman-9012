@@ -38,7 +38,6 @@ List out the key features of your application.
 - Add to WishList
 
 ## Installation & Getting started
-Detailed instructions on how to install, configure, and get the project running. For BE/FS projects, guide the reviewer how to check mongodb schema etc.
 
 ```bash
 npm run install_all
@@ -47,6 +46,18 @@ npm run start_be
 ```
 
 ## Usage
+Landing Page
+![Screenshot 2024-02-26 145211](https://github.com/SatyajeetKumarRao/syntax-craftsman-9012/assets/67307315/3027f97e-b537-4c17-b224-c7feca16d2ab)
+Signup Page
+![Screenshot 2024-02-26 145229](https://github.com/SatyajeetKumarRao/syntax-craftsman-9012/assets/67307315/7c215813-4d6f-449a-9d7b-14d20a272483)
+cards Layout
+![Screenshot 2024-02-26 145345](https://github.com/SatyajeetKumarRao/syntax-craftsman-9012/assets/67307315/fa59bc58-cc1d-4cf5-ac80-0cc57c91ee09)
+Admin Page
+![Screenshot 2024-02-26 145254](https://github.com/SatyajeetKumarRao/syntax-craftsman-9012/assets/67307315/a358592b-cf14-401b-babe-67e6c0749fe0)
+Product Page
+![Screenshot 2024-02-26 145309](https://github.com/SatyajeetKumarRao/syntax-craftsman-9012/assets/67307315/8110601c-74d4-4767-91bc-04a81bc058ac)
+Cart Page
+![Screenshot 2024-02-26 145423](https://github.com/SatyajeetKumarRao/syntax-craftsman-9012/assets/67307315/57a1b50a-0dbb-41ac-8ac9-65244d4024e4)
 
 
 
