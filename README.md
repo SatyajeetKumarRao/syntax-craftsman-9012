@@ -9,7 +9,7 @@ The main purpose of this project was to apply the coding and testing skills I've
 Fullstack
 
 ## Deplolyed App
-- Frontend: https://syntax-craftsman-9012.onrender.com/
+- Frontend: https://syntax-craftsman-9012.vercel.app/
 - Backend: https://syntax-craftsman-9012.onrender.com/
 - Database: https://syntax-craftsman-9012.onrender.com/product
 
@@ -58,7 +58,6 @@ Product Page
 ![Screenshot 2024-02-26 145309](https://github.com/SatyajeetKumarRao/syntax-craftsman-9012/assets/67307315/8110601c-74d4-4767-91bc-04a81bc058ac)
 Cart Page
 ![Screenshot 2024-02-26 145423](https://github.com/SatyajeetKumarRao/syntax-craftsman-9012/assets/67307315/57a1b50a-0dbb-41ac-8ac9-65244d4024e4)
-
 
 
 
