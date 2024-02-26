@@ -297,6 +297,10 @@ function createProductCard(element) {
   cardImageContainer.appendChild(discountDiv);
   cardImageContainer.appendChild(image);
 
+  cardImageContainer.addEventListener("click", () => {
+    itemPageRedirect(element);
+  });
+
   // Create brand title container
   const brandTitleContainer = document.createElement("div");
   brandTitleContainer.classList.add("brand_title_container", "card-body");
@@ -421,6 +425,11 @@ function createProductCard(element) {
   return cardContainer;
 }
 
+function itemPageRedirect(element) {
+  localStorage.setItem("productDetails", JSON.stringify(element));
+  window.location.href = "../pages/item.html";
+}
+
 function addItemToWishlist(element) {
   let wishlistItemArray =
     JSON.parse(localStorage.getItem("wishlistItems")) || [];
@@ -433,4 +442,5 @@ function addItemToCart(element, itemCount) {
   element = { ...element, itemCount: itemCount };
   cartItemArray.push(element);
   localStorage.setItem("cartItems", JSON.stringify(cartItemArray));
+  showCartItemCount();
 }

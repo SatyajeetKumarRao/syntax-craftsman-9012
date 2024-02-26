@@ -245,6 +245,7 @@ function addItemToCart(element, itemCount) {
   element = { ...element, itemCount: itemCount };
   cartItemArray.push(element);
   localStorage.setItem("cartItems", JSON.stringify(cartItemArray));
+  showCartItemCount();
 }
 
 let isLoading = false;
@@ -281,3 +282,42 @@ window.addEventListener("scroll", () => {
 });
 
 loadMoreContent();
+
+//sort filter
+
+let sort_filter = document.getElementById("sort_filter");
+
+sort_filter.addEventListener("change", () => {
+  let sortingValue = sort_filter.value;
+
+  let tempQueryParamString;
+
+  switch (sortingValue) {
+    case "low_to_high":
+      tempQueryParamString = `&_sort=price&_order=asc`;
+      break;
+
+    case "high_to_low":
+      tempQueryParamString = `&_sort=price&_order=desc`;
+      break;
+
+    case "atoz":
+      tempQueryParamString = `&_sort=title&_order=asc`;
+      break;
+
+    case "discount":
+      tempQueryParamString = `&_sort=discount&_order=desc`;
+      break;
+
+    default:
+      break;
+  }
+
+  clearData();
+  fetchLoadData(pageNumber, `${queryParamString}${tempQueryParamString}`);
+});
+
+function clearData() {
+  let content = document.getElementById("content");
+  content.innerHTML = "";
+}
