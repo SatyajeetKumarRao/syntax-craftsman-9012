@@ -215,6 +215,10 @@
             <p class="product-original-price">MRP: <del>₹96</del></p>
             <p class="product-quantity">500 g</p>
             <p class="product-discount">You Save: 26% OFF</p>
+            <div class="buttons mt-5">
+                <button id="add_cart" type="button" class="btn btn-danger me-3">Add to basket</button>
+                <button id="wishlist" type="button" class="btn btn-secondary">Save for later</button>
+            </div>
         </div>
     </div>
 
@@ -224,17 +228,59 @@
         });
 
         function fetchProductDetails() {
-            let data = JSON.parse(localStorage.getItem('productDetails'));
+            let data = JSON.parse(localStorage.getItem("productDetails"));
             if (data) {
-                document.querySelector('.product-brand').innerHTML = `<u>${data.brand}</u>`;
-                document.querySelector('.product-title').textContent = data.title;
-                document.querySelector('.product-price').textContent = `Price: ₹${data.price}`;
-                document.querySelector('.product-original-price').innerHTML = `MRP: <del>₹${data.originalPrice}</del>`;
-                document.querySelector('.product-quantity').textContent = data.quantity;
-                document.querySelector('.product-discount').textContent = `You Save: ${data.discount}% OFF`;
-                document.querySelector('.product-image img').src = data.image;
-                document.querySelector('.product-image img').alt = data.title;
+                document.querySelector(".product-brand").innerHTML = `<u>${data.brand}</u>`;
+                document.querySelector(".product-title").textContent = data.title;
+                document.querySelector(".product-price").textContent = `Price: ₹${data.price}`;
+
+                // Check if originalPrice is not empty before displaying it
+                if (data.originalPrice) {
+                    document.querySelector(".product-original-price").innerHTML = `MRP: <del>₹${data.originalPrice}</del>`;
+                } else {
+                    // Hide the original price if it's empty
+                    document.querySelector(".product-original-price").style.display = "none";
+                }
+
+                document.querySelector(".product-quantity").textContent = data.quantity;
+                document.querySelector(".product-discount").textContent = `You Save: ${data.discount}% OFF`;
+                document.querySelector(".product-image img").src = data.image;
+                document.querySelector(".product-image img").alt = data.title;
             }
+        }
+
+        let add_cart = document.getElementById('add_cart');
+        add_cart.addEventListener('click', () => {
+            let data = JSON.parse(localStorage.getItem("productDetails"));
+            addItemToCart(data, 1)
+
+        })
+        let wishlist = document.getElementById('wishlist');
+        wishlist.addEventListener('click', () => {
+            let data = JSON.parse(localStorage.getItem("productDetails"));
+            addItemToWishlist(data);
+
+        })
+
+
+
+        function addItemToWishlist(element) {
+
+            console.log(element);
+            let wishlistItemArray =
+                JSON.parse(localStorage.getItem("wishlistItems")) || [];
+            wishlistItemArray.push(element);
+            localStorage.setItem("wishlistItems", JSON.stringify(wishlistItemArray));
+        }
+
+        function addItemToCart(element, itemCount) {
+
+            console.log(element);
+            let cartItemArray = JSON.parse(localStorage.getItem("cartItems")) || [];
+            element = { ...element, itemCount: itemCount };
+            cartItemArray.push(element);
+            localStorage.setItem("cartItems", JSON.stringify(cartItemArray));
+            showCartItemCount();
         }
     </script>
 

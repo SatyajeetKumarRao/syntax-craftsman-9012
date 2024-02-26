@@ -10,10 +10,10 @@ document.body.appendChild(footer);
 chechUser();
 
 function chechUser() {
-  let userId = localStorage.getItem("userId") || null;
-  let localAccessToken = localStorage.getItem("localAccessToken") || null;
+    let userId = localStorage.getItem("userId") || null;
+    let localAccessToken = localStorage.getItem("localAccessToken") || null;
 
-  if (!userId && !localAccessToken) {
-    window.location.href = "../pages/login.html";
-  }
+    if (!userId && !localAccessToken) {
+        window.location.href = "../pages/login.html";
+    }
 }
