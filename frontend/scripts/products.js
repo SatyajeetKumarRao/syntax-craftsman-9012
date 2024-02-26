@@ -90,6 +90,9 @@ function createProductCard(element) {
   const discountText = document.createElement("p");
   discountText.classList.add("card-text");
   discountText.textContent = `${element.discount}% OFF`;
+  if (!element.discount) {
+    discountText.style.display = 'none';
+  }
 
   // Append discount text to discount div
   discountDiv.appendChild(discountText);

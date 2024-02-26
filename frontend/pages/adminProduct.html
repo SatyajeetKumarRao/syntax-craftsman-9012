@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product Information</title>
+  <script src="../scripts/adminProduct.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -225,15 +226,6 @@
   </div>
 
   <script>
-    // Function to clear text inputs
-    function clearTextInputs() {
-      const inputs = document.querySelectorAll(
-        'input[type="text"], input[type="number"]'
-      );
-      inputs.forEach((input) => {
-        input.value = ""; // Set input value to empty string
-      });
-    }
 
     // Call the function to clear text inputs when the page loads
     window.onload = clearTextInputs;
