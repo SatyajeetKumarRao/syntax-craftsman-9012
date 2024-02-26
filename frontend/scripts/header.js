@@ -51,6 +51,14 @@ async function getUserDetails(userId) {
   return null;
 }
 
+//search
+let search_button = document.getElementById("search_button");
+search_button.addEventListener("click", () => {
+  let search_input = document.getElementById("search_input_box").value;
+  localStorage.setItem("queryParam", `&title_like=${search_input}`);
+  window.location.href = "../pages/products.html";
+});
+
 //logout script
 let logout = document.getElementById("logout");
 logout.addEventListener("click", () => {
@@ -69,3 +77,32 @@ function showCartItemCount() {
 
   cart_item_count.textContent = cartItems.length;
 }
+
+let exotic_fruits_veggies = document.querySelector("#exotic_fruits_veggies");
+exotic_fruits_veggies.addEventListener("click", () => {
+  localStorage.setItem(
+    "queryParam",
+    `&sub_category_like=Exotic%20Fruits%20&%20Veggies`
+  );
+  window.location.href = "../pages/products.html";
+});
+let tea = document.querySelector("#tea");
+tea.addEventListener("click", () => {
+  localStorage.setItem("queryParam", `&title_like=tea`);
+  window.location.href = "../pages/products.html";
+});
+let ghee = document.querySelector("#ghee");
+ghee.addEventListener("click", () => {
+  localStorage.setItem("queryParam", `&title_like=ghee`);
+  window.location.href = "../pages/products.html";
+});
+let nandini = document.querySelector("#nandini");
+nandini.addEventListener("click", () => {
+  localStorage.setItem("queryParam", `&title_like=nandini`);
+  window.location.href = "../pages/products.html";
+});
+let fresh_vegetable = document.querySelector("#fresh_vegetable");
+fresh_vegetable.addEventListener("click", () => {
+  localStorage.setItem("queryParam", `&sub_category_like=Fresh%20Vegetables`);
+  window.location.href = "../pages/products.html";
+});
