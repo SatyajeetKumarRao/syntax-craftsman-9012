@@ -283,6 +283,9 @@ function createProductCard(element) {
   const discountText = document.createElement("p");
   discountText.classList.add("card-text");
   discountText.textContent = `${element.discount}% OFF`;
+  if (!element.discount) {
+    discountText.style.display = 'none';
+  }
 
   // Append discount text to discount div
   discountDiv.appendChild(discountText);
@@ -296,6 +299,10 @@ function createProductCard(element) {
   // Append discount div and image to card image container
   cardImageContainer.appendChild(discountDiv);
   cardImageContainer.appendChild(image);
+
+  cardImageContainer.addEventListener("click", () => {
+    itemPageRedirect(element);
+  });
 
   // Create brand title container
   const brandTitleContainer = document.createElement("div");
@@ -421,6 +428,11 @@ function createProductCard(element) {
   return cardContainer;
 }
 
+function itemPageRedirect(element) {
+  localStorage.setItem("productDetails", JSON.stringify(element));
+  window.location.href = "../pages/item.html";
+}
+
 function addItemToWishlist(element) {
   let wishlistItemArray =
     JSON.parse(localStorage.getItem("wishlistItems")) || [];
@@ -433,4 +445,5 @@ function addItemToCart(element, itemCount) {
   element = { ...element, itemCount: itemCount };
   cartItemArray.push(element);
   localStorage.setItem("cartItems", JSON.stringify(cartItemArray));
+  showCartItemCount();
 }

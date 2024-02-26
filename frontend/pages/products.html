@@ -11,6 +11,13 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <title>Fruits &#38 Vegetables</title>
 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
   <link rel="stylesheet" href="../styles/products.css">
   <link rel="stylesheet" href="../styles/header.css">
   <link rel="stylesheet" href="../styles/footer.css">
@@ -18,9 +25,134 @@
 </head>
 
 <body>
+  <header>
+    <div class="header_bar"></div>
+    <div id="header">
+      <div id="header_top">
+        <div id="logo_container">
+          <a href="../index.html">
+            <img class="header_logo" src="https://i.ibb.co/mSsqX49/header-logo.png" alt="BasketBlend Logo">
+          </a>
+        </div>
+        <div id="search_contaner">
+          <div class="search_bar">
+            <input type="text" placeholder="Search for Products..." class="search_input_box" id="search_input_box">
+            <button id="search_button" class="search_button"> <i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+
+        </div>
+        <div id="location_container">
+          <button id="location_button">
+            <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="m10.797 13.213 1.692-.684.714-1.742-1.692.684-.714 1.742Zm5.128-3.793-1.746 4.258c-.102.25-.3.447-.55.549l-4.213 1.701a1.01 1.01 0 0 1-.374.072.998.998 0 0 1-.713-.31c-.018-.017-.037-.031-.054-.048-.009-.011-.015-.024-.023-.035a.991.991 0 0 1-.178-1.027l1.746-4.258a.998.998 0 0 1 .551-.548l4.213-1.702a1.003 1.003 0 0 1 1.1.246.996.996 0 0 1 .241 1.102ZM12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2Z"
+                fill="#231F20"></path>
+              <mask id="compass_svg__a" maskUnits="userSpaceOnUse" x="2" y="2" width="21" height="20"
+                style="mask-type: alpha;">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="m10.797 13.213 1.692-.684.714-1.742-1.692.684-.714 1.742Zm5.128-3.793-1.746 4.258c-.102.25-.3.447-.55.549l-4.213 1.701a1.01 1.01 0 0 1-.374.072.998.998 0 0 1-.713-.31c-.018-.017-.037-.031-.054-.048-.009-.011-.015-.024-.023-.035a.991.991 0 0 1-.178-1.027l1.746-4.258a.998.998 0 0 1 .551-.548l4.213-1.702a1.003 1.003 0 0 1 1.1.246.996.996 0 0 1 .241 1.102ZM12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2Z"
+                  fill="#fff"></path>
+              </mask>
+              <g mask="url(#compass_svg__a)">
+                <path fill="#101010" d="M0 0h24v24H0z"></path>
+              </g>
+            </svg> Select Location
+          </button>
+        </div>
+
+        <div id="login_signup_container" class="">
+          <a href="./login.html"><button id="login_signup">Login/Sign Up </button></a>
+        </div>
+
+        <div id="admin_panel_container" class="">
+          <a href="./admin.html"><button id="admin_panel">Admin Panel</button></a>
+        </div>
+
+        <div id="user_profile_container" class="btn-group">
+          <button type="button" class="btn btn-secondary dropdown-toggle " data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end">
+            <li><a class="dropdown-item" href="#">Account</a></li>
+            <li><a class="dropdown-item" href="./cart.html">My Basket</a></li>
+            <li><a class="dropdown-item" href="#">Contact Us</a></li>
+            <li><a class="dropdown-item" id="logout" href="#">Logout</a></li>
+          </ul>
+        </div>
+
+        <div id="cart">
+          <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="24" height="24" rx="12" fill="#D63333"></rect>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M16.795 10.2H18.3c.385 0 .7.315.7.7 0 .385-.315.7-.7.7H5.7a.702.702 0 0 1-.7-.7c0-.385.315-.7.7-.7h1.505l.998-3.01A1.75 1.75 0 0 1 9.864 6h4.27c.752 0 1.435.473 1.662 1.19l.998 3.01ZM8.867 7.418 7.94 10.2h8.12l-.91-2.782a1.035 1.035 0 0 0-.998-.718H9.866c-.455 0-.857.28-.998.718ZM6.05 16.85V12.3h11.9v4.55c0 .962-.787 1.75-1.75 1.75H7.8c-.962 0-1.75-.788-1.75-1.75Zm3.465.367c.157 0 .297-.14.297-.314v-2.888c0-.175-.122-.315-.297-.315a.314.314 0 0 0-.315.315v2.887c0 .175.14.316.315.316Zm2.485 0c.175 0 .315-.14.315-.314v-2.888A.314.314 0 0 0 12 13.7a.314.314 0 0 0-.315.315v2.887c0 .175.14.316.315.316Zm2.485 0c.175 0 .315-.14.315-.314v-2.888a.314.314 0 0 0-.315-.315c-.157 0-.297.14-.297.315v2.887c0 .175.122.316.297.316Z"
+              fill="#fff"></path>
+            <mask id="basket_svg__a" maskUnits="userSpaceOnUse" x="5" y="6" width="14" height="13"
+              style="mask-type: alpha;">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M16.795 10.2H18.3c.385 0 .7.315.7.7 0 .385-.315.7-.7.7H5.7a.702.702 0 0 1-.7-.7c0-.385.315-.7.7-.7h1.505l.998-3.01A1.75 1.75 0 0 1 9.864 6h4.27c.752 0 1.435.473 1.662 1.19l.998 3.01ZM8.867 7.418 7.94 10.2h8.12l-.91-2.782a1.035 1.035 0 0 0-.998-.718H9.866c-.455 0-.857.28-.998.718ZM6.05 16.85V12.3h11.9v4.55c0 .962-.787 1.75-1.75 1.75H7.8c-.962 0-1.75-.788-1.75-1.75Zm3.465.367c.157 0 .297-.14.297-.314v-2.888c0-.175-.122-.315-.297-.315a.314.314 0 0 0-.315.315v2.887c0 .175.14.316.315.316Zm2.485 0c.175 0 .315-.14.315-.314v-2.888A.314.314 0 0 0 12 13.7a.314.314 0 0 0-.315.315v2.887c0 .175.14.316.315.316Zm2.485 0c.175 0 .315-.14.315-.314v-2.888a.314.314 0 0 0-.315-.315c-.157 0-.297.14-.297.315v2.887c0 .175.122.316.297.316Z"
+                fill="#606060"></path>
+            </mask>
+            <g mask="url(#basket_svg__a)">
+              <path fill="#fff" d="M0 0h24v24H0z"></path>
+            </g>
+          </svg>
+          <span id="cart_item_count">0</span>
+        </div>
+      </div>
+      <div id="header_bottom">
+
+        <div class="dropdown" id="category_dropdown_container">
+          <a id="categoryDropdown" class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Shop by Category
+          </a>
+
+          <ul class="dropdown-menu">
+            <li> <a class="dropdown-item" href="" name="fruits">Fruits &amp; Vegetables</a> </li>
+            <li> <a class="dropdown-item" href="" name="foodgrains">Foodgrains, Oil &
+                Masala</a> </li>
+            <li> <a class="dropdown-item" href="" name="bakery">Bakery, Cakes &amp; Dairy</a>
+            </li>
+            <li> <a class="dropdown-item" href="#" name="beverages">Beverages</a> </li>
+            <li> <a class="dropdown-item" href="#" name="snacks">Snacks &amp; Branded Foods</a> </li>
+            <li> <a class="dropdown-item" href="#" name="beauty">Beauty &amp; Hygiene</a> </li>
+            <li> <a class="dropdown-item" href="#" name="cleaning">Cleaning &amp; HouseHold</a> </li>
+            <li> <a class="dropdown-item" href="#" name="kitchen">Kitchen,Garden &amp; Pets </a> </li>
+            <li> <a class="dropdown-item" href="#" name="eggs">Eggs, Meat &amp; Fish</a> </li>
+            <li> <a class="dropdown-item" href="#" name="gourmet">Gourmet &amp; World Foods</a> </li>
+            <li> <a class="dropdown-item" href="#" name="babycare">Baby Care</a> </li>
+            <li> <a class="dropdown-item" href="#" name="viewall">Paan Corner</a> </li>
+          </ul>
+        </div>
+        <div id="category_section">
+          <ul>
+            <li><a id="exotic_fruits_veggies" href="#">Exotic Fruits & Veggies</a></li>
+            <li><a id="tea" href="#">Tea</a></li>
+            <li><a id="ghee" href="#">Ghee</a></li>
+            <li><a id="nandini" href="#">Nandini</a></li>
+            <li><a id="fresh_vegetable" href="#">Fresh Vegetables</a></li>
+          </ul>
+          <button class="more_category_section" id="menu-button" type="button">
+            <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg" fill="false" class="cursor-pointer">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="m9.3 3.582 3.22 4c.199.247.196.6-.008.845l-3.333 4a.666.666 0 1 1-1.024-.854l2.984-3.58-2.877-3.575A.666.666 0 1 1 9.3 3.582ZM3.698 3.48a.667.667 0 0 1 .937.101l3.219 4c.198.247.196.6-.008.845l-3.333 4a.666.666 0 1 1-1.024-.854l2.983-3.58-2.876-3.575a.667.667 0 0 1 .102-.937Z">
+              </path>
+            </svg></button>
+        </div>
+
+        <p class="divider">|</p>
+
+        <div id="offer_Section">
+          <a href="#"><img src="https://i.ibb.co/KmS2bT9/Smart-basket.webp" alt="Smart basket"></a>
+          <a href="#"><img src="https://i.ibb.co/559vn7H/offer.png" alt="offer"></a>
+        </div>
+      </div>
+
+    </div>
+  </header>
 
   <main>
-
     <div class="main-section">
       <!-- path section -->
       <div class="path">
@@ -46,17 +178,12 @@
 
         <!-- Relevance button -->
         <div class="dropdown">
-
-
-
-          <select name="pets" id="pet-select">
-            <option value="">Relevance</option>
-            <option value="dog">Dog</option>
-            <option value="cat">Cat</option>
-            <option value="hamster">Hamster</option>
-            <option value="parrot">Parrot</option>
-            <option value="spider">Spider</option>
-            <option value="goldfish">Goldfish</option>
+          <select name="sort_filter" id="sort_filter">
+            <option value="" disabled selected>Sort Item</option>
+            <option value="low_to_high">Price - Low To High</option>
+            <option value="high_to_low">Price - High To Low</option>
+            <option value="atoz">Alphabetical</option>
+            <option value="discount">Discount - High To Low</option>
           </select>
 
         </div>
@@ -445,6 +572,7 @@
   <!-- footer will be added from footer component-->
   <script type="module" src="../scripts/products.js"></script>
 
+  <script src="../scripts/header.js"></script>
 
   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -453,7 +581,6 @@
 
   <!-- FONT AWESOME -->
   <script src="https://kit.fontawesome.com/8d91ab7046.js" crossorigin="anonymous"></script>
-
 
 </body>
 

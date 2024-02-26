@@ -30,13 +30,19 @@ function toggleSidebar() {
 
 let pageNumber = 1;
 
-let queryParamString = "";
+let queryParam = localStorage.getItem("queryParam") || "";
+
+let queryParamString = queryParam;
+
+let totalItems = [];
 
 const productsURL = "https://syntax-craftsman-9012.onrender.com/product";
 
-fetchLoadData();
+fetchLoadData(pageNumber, queryParam);
 
 async function fetchLoadData(pageNumber = 1, queryParamString = "") {
+  localStorage.removeItem("queryParam");
+
   try {
     let response = await fetch(
       `${productsURL}?_page=${pageNumber}&_limit=20${queryParamString}`
@@ -44,13 +50,13 @@ async function fetchLoadData(pageNumber = 1, queryParamString = "") {
     // console.log(response);
 
     let totalData = response.headers.get("x-total-count");
-    console.log(totalData);
+    // console.log(totalData);
 
     // pagination(totalPage);
 
     let data = await response.json();
-    // console.log(data);
 
+    totalItems.push(...data);
     createRenderData(data);
   } catch (error) {
     console.log("Error : Some error Occurred");
@@ -84,6 +90,9 @@ function createProductCard(element) {
   const discountText = document.createElement("p");
   discountText.classList.add("card-text");
   discountText.textContent = `${element.discount}% OFF`;
+  if (!element.discount) {
+    discountText.style.display = 'none';
+  }
 
   // Append discount text to discount div
   discountDiv.appendChild(discountText);
@@ -243,4 +252,79 @@ function addItemToCart(element, itemCount) {
   element = { ...element, itemCount: itemCount };
   cartItemArray.push(element);
   localStorage.setItem("cartItems", JSON.stringify(cartItemArray));
+  showCartItemCount();
+}
+
+let isLoading = false;
+
+function isBottomOfPage() {
+  return (
+    window.innerHeight + window.scrollY + 4000 >= document.body.offsetHeight
+  );
+}
+
+async function loadMoreContent() {
+  if (isLoading) return;
+
+  if (isBottomOfPage()) {
+    isLoading = true;
+
+    try {
+      // Simulate loading delay (replace this with your actual data loading logic)
+      await new Promise(resolve => setTimeout(resolve, 1000)); // Adjust the delay as needed
+
+      // Append new content to the body
+      pageNumber = Math.ceil(totalItems / 20) + 1;
+      fetchLoadData(pageNumber);
+    } catch (error) {
+      console.error("Error loading content:", error);
+    } finally {
+      isLoading = false;
+    }
+  }
+}
+
+window.addEventListener("scroll", () => {
+  loadMoreContent();
+});
+
+loadMoreContent();
+
+//sort filter
+
+let sort_filter = document.getElementById("sort_filter");
+
+sort_filter.addEventListener("change", () => {
+  let sortingValue = sort_filter.value;
+
+  let tempQueryParamString;
+
+  switch (sortingValue) {
+    case "low_to_high":
+      tempQueryParamString = `&_sort=price&_order=asc`;
+      break;
+
+    case "high_to_low":
+      tempQueryParamString = `&_sort=price&_order=desc`;
+      break;
+
+    case "atoz":
+      tempQueryParamString = `&_sort=title&_order=asc`;
+      break;
+
+    case "discount":
+      tempQueryParamString = `&_sort=discount&_order=desc`;
+      break;
+
+    default:
+      break;
+  }
+
+  clearData();
+  fetchLoadData(pageNumber, `${queryParamString}${tempQueryParamString}`);
+});
+
+function clearData() {
+  let content = document.getElementById("content");
+  content.innerHTML = "";
 }
