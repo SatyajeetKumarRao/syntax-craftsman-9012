@@ -30,15 +30,19 @@ function toggleSidebar() {
 
 let pageNumber = 1;
 
-let queryParamString = "";
+let queryParam = localStorage.getItem("queryParam") || "";
+
+let queryParamString = queryParam;
 
 let totalItems = [];
 
 const productsURL = "https://syntax-craftsman-9012.onrender.com/product";
 
-fetchLoadData();
+fetchLoadData(pageNumber, queryParam);
 
 async function fetchLoadData(pageNumber = 1, queryParamString = "") {
+  localStorage.removeItem("queryParam");
+
   try {
     let response = await fetch(
       `${productsURL}?_page=${pageNumber}&_limit=20${queryParamString}`
