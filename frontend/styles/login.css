@@ -15,8 +15,9 @@ body {
 
 .notifications {
   position: fixed;
-  top: 30px;
+  top: 150px;
   right: 20px;
+  z-index: 9999;
 }
 
 .notifications :where(.toast_message, .column) {

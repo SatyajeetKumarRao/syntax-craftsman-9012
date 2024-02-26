@@ -78,6 +78,20 @@ function showCartItemCount() {
   cart_item_count.textContent = cartItems.length;
 }
 
+let cart = document.getElementById("cart");
+
+cart.addEventListener("click", () => {
+  let userId = localStorage.getItem("userId") || null;
+  let localAccessToken = localStorage.getItem("localAccessToken") || null;
+
+  if (userId && localAccessToken) {
+    window.location.href = "../pages/cart.html";
+  } else {
+    window.location.href = "../pages/login.html";
+  }
+});
+
+//category_section click action
 let exotic_fruits_veggies = document.querySelector("#exotic_fruits_veggies");
 exotic_fruits_veggies.addEventListener("click", () => {
   localStorage.setItem(
