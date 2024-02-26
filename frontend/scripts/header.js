@@ -58,3 +58,14 @@ logout.addEventListener("click", () => {
   localStorage.removeItem("localAccessToken");
   window.location.href = "../index.html";
 });
+
+// Update Cart Item Count
+showCartItemCount();
+
+function showCartItemCount() {
+  let cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+  let cart_item_count = document.getElementById("cart_item_count");
+
+  cart_item_count.textContent = cartItems.length;
+}
