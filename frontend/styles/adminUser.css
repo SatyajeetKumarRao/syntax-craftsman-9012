@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Figtree", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  background: #e5e7eb;
+  position: relative;
+}
+
+#menu {
+  background: black;
+  width: 20vw;
+  /* height: 140vh; */
+}
+
+/* logo */
+#menu .logo img {
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 15vw;
+  /* height: 80px; */
+}
+
+#menu .items {
+  margin-top: 40px;
+}
+
+#menu .items li:nth-child(3) {
+  border-left: 4px solid #fff;
+}
+
+#menu .items li {
+  list-style: none;
+  padding: 15px 0;
+  transition: 0.3s ease;
+}
+
+#menu .items li:hover {
+  background: #253047;
+  cursor: pointer;
+}
+
+#menu .items a {
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: 0.3s ease;
+}
+
+#menu .items li:hover box-icon,
+#menu .items li:hover a {
+  color: #f3f4f6;
+}
+
+.section2 {
+  width: 100%;
+  background: rgb(226 232 240);
+}
+
+.navbar {
+  border-bottom: 2px solid rgba(4, 177, 4, 0.463);
+}
+
+.i-name {
+  color: #444a53;
+  padding: 30px 30px 0 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.values {
+  padding: 30px 30px 0 30px;
+}
+
+.values .val-box {
+  background: #fff;
+  width: 15vw;
+  padding: 16px 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.val-box img {
+  height: 25px;
+  width: 25px;
+}
+
+.values .val-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.values .val-box span {
+  font-size: 16px;
+  color: #828997;
+}
+
+.tableMain > thead > tr > th {
+  font-weight: 700;
+}
+
+.pagination-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination-wrapper button {
+  height: 40px;
+  width: 60px;
+  margin: 0 5px;
+  padding: 5px 15px;
+  background-color: #444a53;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.pagination-wrapper button:hover {
+  background-color: #253047;
+}
+
+/* Style for the scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(241, 241, 241, 0.5);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.7);
+  border-radius: 4px;
+  height: 40px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(85, 85, 85, 0.7);
+}
