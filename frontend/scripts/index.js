@@ -371,6 +371,10 @@ function createProductCard(element) {
   originalPrice.classList.add("original_price", "card-text");
   originalPrice.textContent = `₹${element.original_price}`;
 
+  if (!element.original_price) {
+    originalPrice.style.display = 'none';
+  }
+
   // Append current price and original price to price container
   priceContainer.appendChild(currentPrice);
   priceContainer.appendChild(originalPrice);
