@@ -58,7 +58,7 @@ function ShowCartItems(cartItemArray) {
   let totalCartAmount = 0;
 
   cartItemArray.forEach((element) => {
-    totalCartAmount += element.price;
+    totalCartAmount += element.price * element.items;
   });
 
   totalAmount.textContent = totalCartAmount.toFixed(2);
@@ -66,7 +66,7 @@ function ShowCartItems(cartItemArray) {
   let totalCartOriginalAmount = 0;
 
   cartItemArray.forEach((element) => {
-    totalCartOriginalAmount += element.original_price;
+    totalCartOriginalAmount += element.original_price * element.items;
   });
 
   totalSavingAmount.textContent = (
